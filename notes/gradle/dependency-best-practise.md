@@ -114,7 +114,7 @@ configurations.all {
   resolutinoStratege.eachDependency { DependencyResolveDetails details ->
   // 这里可以不用完全指明，只要能够辨识出来就好了
     if (details.requested.group == 'org.springframework' && details.requested.name == 'spring-core' && details.requested.version == '3.2.2.RELEASE') {
-      details.userVersion '3.2.1.RELEASE'
+      details.useVersion '3.2.1.RELEASE'
     }
   }
 }
@@ -126,7 +126,7 @@ configurations.all {
   resolutionStratege.eachDependency { DependencyResolveDetail details ->
     if (details.requested.version == 'default') {
       def version = findVersion(details.requested.group, details.requested.name)
-      details.userVersion version
+      details.useVersion version
     }
   }
 }
@@ -147,7 +147,7 @@ dependencies {
 configurations.all {
   resolutionStrategy.eachDependency { DependencyResolveDetails details ->
     if (details.requested.name == 'commons-logging') {
-      details.userTarget 'org.slf4j:jcl-over-slf4j:1.7.5'
+      details.useTarget 'org.slf4j:jcl-over-slf4j:1.7.5'
     }
   }
 }
