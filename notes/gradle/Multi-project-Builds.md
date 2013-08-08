@@ -541,3 +541,66 @@ Consuming message: Watch the order of evaluation.
 ```
 
 *evaluationDependsOn* 将会导致producer在consumer之前被检查
+
+## 项目间依赖
+如果一个项目需要另一个项目产生了2进制文件？或者不仅仅需要他的2进制文件更需要那个项目所依赖的2进制文件？这是在多项目配置间一个非常常见的问题。
+
+目录结构
+```
+java/
+  settings.gradle
+  build.gradle
+  api/
+    src/main/java/
+      org/gradle/sample/
+        api/
+          Person.java
+        apiImpl/
+          PersonImpl.java
+  services/personService/
+    src/
+      main/java/
+        org/gradle/sample/services/
+          PersonService.java
+      test/java/
+        org/gradle/sample/services/
+          PersonServiceTest.java
+  shared/
+    src/main/java/
+      org/gradle/sample/shared/
+        Helper.java
+```
+
+`settings.gradle`
+```groovy
+include 'api', 'shared', 'services:personService'
+```
+
+`build.gradle`
+```groovy
+subprojects {
+    apply plugin: 'java'
+    group = 'org.gradle.sample'
+    version = '1.0'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        testCompile "junit:junit:4.11"
+    }
+}
+
+project(':api') {
+    dependencies {
+        compile project(':shared')
+    }
+}
+
+project(':services:personService') {
+    dependencies {
+        compile project(':shared'), project(':api')
+    }
+}
+```
+所有的构建都在跟项目的`build.gradle`中。它使得其它项目将会在他构建之前得到构建，并且将生成的jar文件以及他的以来也都加到本项目的类路径中。
+
