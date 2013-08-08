@@ -157,3 +157,128 @@ I'm krill
 - I depend on water
 - The weight of my species in summer is twice as heavy as all human beings.
 ```
+
+## 项目的过滤
+未来来展示更多关于配置注入的强大，让我们在上一小节已有的基础上再添加一个叫做 *tropicalFish* 的项目
+
+### 首先是通过名字来过滤
+项目目录结构如下：
+```
+water/
+  build.gradle
+  settings.gradle
+  bluewhale/
+    build.gradle
+  krill/
+    build.gradle
+  tropicalFish/
+```  
+
+`settings.gradle`
+```groovy
+include 'bluewhale', 'krill', 'tropicalFish'
+```
+
+`build.gradle`
+```groovy
+allprojects {
+    task hello << {task -> println "I'm $task.project.name" }
+}
+subprojects {
+    hello << {println "- I depend on water"}
+}
+configure(subprojects.findAll {it.name != 'tropicalFish'}) {
+    hello << {println '- I love to spend time in the arctic waters.'}
+}
+```
+
+输出
+```
+> gradle -q hello
+I'm water
+I'm bluewhale
+- I depend on water
+- I love to spend time in the arctic waters.
+- I'm the largest animal that has ever lived on this planet.
+I'm krill
+- I depend on water
+- I love to spend time in the arctic waters.
+- The weight of my species in summer is twice as heavy as all human beings.
+I'm tropicalFish
+- I depend on water
+```
+
+configure()方法需要一个list的参数然后将配置应用与这个list里的所有item
+
+### 通过属性来过滤项目
+项目的目录结构
+```
+water/
+  build.gradle
+  settings.gradle
+  bluewhale/
+    build.gradle
+  krill/
+    build.gradle
+  tropicalFish/
+    build.gradle
+```
+
+`settings.gradle`
+```groovy
+include 'bluewhale', 'krill', 'tropicalFish'
+```
+
+`bluewhale/build.gradle`
+```groovy
+ext.arctic = true
+hello.doLast { println "- I'm the largest animal that has ever lived on this planet." }
+```
+
+`krill/build.gradle`
+```groovy
+ext.arctic = true
+hello.doLast {
+    println "- The weight of my species in summer is twice as heavy as all human beings."
+}
+```
+
+`tropicalFish/build.gradle`
+```groovy
+ext.arctic = false
+```
+
+`build.gradle`
+```groovy
+allprojects {
+    task hello << {task -> println "I'm $task.project.name" }
+}
+subprojects {
+    hello {
+        doLast {println "- I depend on water"}
+        afterEvaluate { Project project ->
+            if (project.arctic) { doLast {
+                println '- I love to spend time in the arctic waters.' }
+            }
+        }
+    }
+}
+```
+
+输出
+```
+> gradle -q hello
+I'm water
+I'm bluewhale
+- I depend on water
+- I'm the largest animal that has ever lived on this planet.
+- I love to spend time in the arctic waters.
+I'm krill
+- I depend on water
+- The weight of my species in summer is twice as heavy as all human beings.
+- I love to spend time in the arctic waters.
+I'm tropicalFish
+- I depend on water
+```
+
+在构建文件中我们看到了 `afterEvaluate` 这个记号，它意为者我们传递的这个闭包只有在子项目得到执行后才会得到执行。我们也必须得再子项目的`arctic`属性得到赋值以后才能得到预期的结果。
