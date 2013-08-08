@@ -282,3 +282,65 @@ I'm tropicalFish
 ```
 
 在构建文件中我们看到了 `afterEvaluate` 这个记号，它意为者我们传递的这个闭包只有在子项目得到执行后才会得到执行。我们也必须得再子项目的`arctic`属性得到赋值以后才能得到预期的结果。
+
+## 多项目的执行规则
+当我们在根项目里执行hello这个task时我们得到了比较直观的结果。在不同项目中的所有的hello任务都得到了执行。接下来让我们去bluewhale这个子项目里去执行gradle命令看看会得到什么结果。
+
+```
+> gradle -q hello
+I'm bluewhale
+- I depend on water
+- I'm the largest animal that has ever lived on this planet.
+- I love to spend time in the arctic waters.
+```
+
+> Gradle最基本的行为很简单。Gradle会从当前的目录开始向下查看整个项目的层次关系，去查找和task名字一样的任务然后去执行他们。 **有一件事情必须牢记：Gradle总是会对多项目里的每个子项目进行解析然后建立所有存在的task的对象。然后，更具输入的task名和当前的目录来过滤那些不需要的task。** 由于Gradle是一个跨项目的配置，所以只有在每一个个项目得到了解析之后给定的task才能得到执行。
+
+接下来让我们给原有的项目添加task
+
+`bluewhale/build.gradle`
+```groovy
+ext.arctic = true
+hello << { println "- I'm the largest animal that has ever lived on this planet." }
+
+task distanceToIceberg << {
+    println '20 nautical miles'
+}
+```
+
+`krill/build.gradle`
+```groovy
+ext.arctic = true
+hello << { println "- The weight of my species in summer is twice as heavy as all human beings." }
+
+task distanceToIceberg << {
+    println '5 nautical miles'
+}
+```
+
+结果
+```
+> gradle -q distanceToIceberg
+20 nautical miles
+5 nautical miles
+```
+
+下面是没有`-q`参数的结果
+```
+> gradle distanceToIceberg
+:bluewhale:distanceToIceberg
+20 nautical miles
+:krill:distanceToIceberg
+5 nautical miles
+
+BUILD SUCCESSFUL
+
+Total time: 1 secs
+```
+
+我们执行的目录是在water这个根目录，不管是water还是tropicalFish有没有distanceToIceberg这个task，Gradle并不在乎。最简单的规则已经在上面提到了： **在整个项目的task中找到给定了task，只有在所有的项目都没有这个task时Gradle才会报错！**
+
+
+
+
+
