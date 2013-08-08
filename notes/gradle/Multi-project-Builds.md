@@ -476,3 +476,28 @@ task action << {
 
 在根项目中执行也可以得到同样的结果
 
+## 跨项目task依赖最自然的用法
+当然了，跨项目间，task的依赖并没有限制在名字必须相同上（像上一个例子一样，他们的task名师一样的）。让我们来改变task的名字看看。
+`consumer/build.gradle`
+```groovy
+task consume(dependsOn: ':producer:produce') << {
+    println("Consuming message: ${rootProject.producerMessage}")
+}
+```
+
+`producer/build.gradle`
+```groovy
+task produce << {
+    println "Producing message:"
+    rootProject.producerMessage = 'Watch the order of execution.'
+}
+```
+
+`gradle -q consume`执行的结果
+```
+> gradle -q consume
+Producing message:
+Consuming message: Watch the order of execution.
+```
+
+
