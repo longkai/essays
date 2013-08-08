@@ -500,4 +500,44 @@ Producing message:
 Consuming message: Watch the order of execution.
 ```
 
+## 配置时依赖
+让我们给producer添加一个属性，然后创建一个 **从consume到producer** 的配置时的依赖。
+`consumer/build.gradle`
+```groovy
+message = rootProject.producerMessage
 
+task consume << {
+    println("Consuming message: " + message)
+}
+```
+
+`producer/build.gradle`
+```groovy
+rootProject.producerMessage = 'Watch the order of evaluation.'
+```
+
+执行`gradle -q consume`结果
+```
+> gradle -q consume
+Consuming message: null
+```
+
+默认的检查时间是基于字典的。所以consumer会在producer之前得到检查，但是此时producer还没有被检查，所以得不到我们想要的属性。Gradle给我吗提供了一下的解决方案：
+
+`consumer/build.gradle`
+```groovy
+evaluationDependsOn(':producer')
+
+message = rootProject.producerMessage
+
+task consume << {
+    println("Consuming message: " + message)
+}
+```
+`gradle -q consume`的执行结果
+```
+> gradle -q consume
+Consuming message: Watch the order of evaluation.
+```
+
+*evaluationDependsOn* 将会导致producer在consumer之前被检查
