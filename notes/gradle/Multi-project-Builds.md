@@ -355,7 +355,82 @@ I'm tropicalFish
 ```
 以上，是在tropicalFish这个子项目里执行的。它分别表示执行根项目，krill项目，和本项目里的hello这个task。
 
+## 依赖
+### 依赖和依赖执行的顺序
+下面是项目的目录结构
+```groovy
+messages/
+  settings.gradle
+  consumer/
+    build.gradle
+  producer/
+    build.gradle
+```    
 
+`settings.gradle`
+```groovy
+task action << {
+    println("Consuming message: ${rootProject.producerMessage}")
+}
+```
 
+`producer/build.gradle`
+```groovy
+task action << {
+    println "Producing message:"
+    rootProject.producerMessage = 'Watch the order of execution.'
+}
+```
 
+执行`radle -q action`的结果
+```
+> gradle -q action
+Consuming message: null
+Producing message:
+```
 
+我们可以看到，没有执行成功。如果我们什么都没有定义的话，那么Gradle就会按照字典（a-z）来执行。所以:consumer:action 会在 :producer:action 前得到执行。下面用一个技巧去解决这个问题->通过重命名。
+
+重新定义的项目结构
+```
+messages/
+  settings.gradle
+  aProducer/
+    build.gradle
+  consumer/
+    build.gradle
+```
+
+`settings.gradle`
+```groovy
+include 'consumer', 'aProducer'
+```
+
+`aProducer/build.gradle`
+```groovy
+task action << {
+    println "Producing message:"
+    rootProject.producerMessage = 'Watch the order of execution.'
+}
+```
+
+`consumer/build.gradle`
+```groovy
+task action << {
+    println("Consuming message: ${rootProject.producerMessage}")
+}
+```
+
+执行`gradle -q action`
+```
+> gradle -q action
+Producing message:
+Consuming message: Watch the order of execution.
+```
+
+现在我们先不理会这个技巧，渠道consumer这个目录执行命令
+```
+> gradle -q action
+Consuming message: null
+```
+对于Gradle来说，两个task是没有什么关联的。如果你从根目录执行，他们两个都执行时因为他们有相同的名字并且在同一层次关系下。在上一个例子中只有一个task在层次关系中被找到，所以只有一个task得到了执行。我们需要一个比这个更好的技巧。
