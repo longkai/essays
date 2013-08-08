@@ -340,6 +340,21 @@ Total time: 1 secs
 
 我们执行的目录是在water这个根目录，不管是water还是tropicalFish有没有distanceToIceberg这个task，Gradle并不在乎。最简单的规则已经在上面提到了： **在整个项目的task中找到给定了task，只有在所有的项目都没有这个task时Gradle才会报错！**
 
+## 通过绝对路径执行task
+像前面我们看到的，你可以在多项目里，进入某个子项目，然后在那个项目里执行命令。然后从那个项目开始，所有匹配到的task都会得到执行。Gradle同时也提供了通过绝对路径执行task。
+
+```
+> gradle -q :hello :krill:hello hello
+I'm water
+I'm krill
+- I depend on water
+- The weight of my species in summer is twice as heavy as all human beings.
+- I love to spend time in the arctic waters.
+I'm tropicalFish
+- I depend on water
+```
+以上，是在tropicalFish这个子项目里执行的。它分别表示执行根项目，krill项目，和本项目里的hello这个task。
+
 
 
 
