@@ -61,3 +61,99 @@ I'm bluewhale
 I'm krill
 ```
 这很酷。project API提供了一个`allproject`的属性，它会返回当前的项目和所有他里面的项目的一个list。如果你调用了allprojests并传递一个闭包进去，那么该闭包就会关联到所有的项目（声明在settings.gradle中的）
+
+## 子项目相关的配置
+Project API同时也提供了只能够访问到子项目的属性。
+
+### 定义通用的行为
+`build.gradle`
+```groovy
+allprojects {
+    task hello << {task -> println "I'm $task.project.name" }
+}
+subprojects {
+    hello << {println "- I depend on water"}
+}
+```
+`gradle -q hello`将会得到如下的输出
+```
+> gradle -q hello
+I'm water
+I'm bluewhale
+- I depend on water
+I'm krill
+- I depend on water
+```
+
+为某个指定的项目定义特定的行为
+```groovy
+allprojects {
+    task hello << {task -> println "I'm $task.project.name" }
+}
+subprojects {
+    hello << {println "- I depend on water"}
+}
+project(':bluewhale').hello << {
+    println "- I'm the largest animal that has ever lived on this planet."
+}
+```
+
+```
+I'm water
+I'm bluewhale
+- I depend on water
+- I'm the largest animal that has ever lived on this planet.
+I'm krill
+- I depend on water
+```
+但是，就像我们之前所说的，我们通常更喜欢把某个项目相关的行为放到那个项目的`build.gradle`中去。下面让我们来重构一下我们项目的构建文件。
+
+下面是项目的目录结构。
+```
+water/
+  build.gradle
+  settings.gradle
+  bluewhale/
+    build.gradle
+  krill/
+    build.gradle
+```
+
+`settings.gradle`
+```groovy
+include 'bluewhale', 'krill'
+```
+
+`bluewhale/build.gradle`
+```groovy
+hello.doLast { println "- I'm the largest animal that has ever lived on this planet." }
+```
+
+`krill/build.gradle`
+```groovy
+hello.doLast {
+    println "- The weight of my species in summer is twice as heavy as all human beings."
+}
+```
+
+`build.gradle`
+```groovy
+allprojects {
+    task hello << {task -> println "I'm $task.project.name" }
+}
+subprojects {
+    hello << {println "- I depend on water"}
+}
+```
+
+`gradle -q hello`的输出
+```
+> gradle -q hello
+I'm water
+I'm bluewhale
+- I depend on water
+- I'm the largest animal that has ever lived on this planet.
+I'm krill
+- I depend on water
+- The weight of my species in summer is twice as heavy as all human beings.
+```
