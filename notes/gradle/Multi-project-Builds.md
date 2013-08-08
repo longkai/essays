@@ -434,3 +434,45 @@ Consuming message: Watch the order of execution.
 Consuming message: null
 ```
 对于Gradle来说，两个task是没有什么关联的。如果你从根目录执行，他们两个都执行时因为他们有相同的名字并且在同一层次关系下。在上一个例子中只有一个task在层次关系中被找到，所以只有一个task得到了执行。我们需要一个比这个更好的技巧。
+
+## 声明依赖
+项目结构
+```
+messages/
+  settings.gradle
+  consumer/
+    build.gradle
+  producer/
+    build.gradle
+```
+
+`settings.gradle`
+```groovy
+include 'consumer', 'producer'
+```
+
+`consumer/build.gradle`
+```groovy
+task action(dependsOn: ":producer:action") << {
+    println("Consuming message: ${rootProject.producerMessage}")
+}
+```
+
+`producer/build.gradle`
+```groovy
+task action << {
+    println "Producing message:"
+    rootProject.producerMessage = 'Watch the order of execution.'
+}
+```
+
+执行`gradle -q action`的结果
+```
+task action << {
+    println "Producing message:"
+    rootProject.producerMessage = 'Watch the order of execution.'
+}
+```
+
+在根项目中执行也可以得到同样的结果
+
