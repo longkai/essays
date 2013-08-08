@@ -37,4 +37,11 @@ apply plugin: 'java'
 > 7. uploadConfigurationName（使用特定的配置上传项目）
 
 下面是想各种tasks间的关系
-![taskrelationship](http://www.gradle.org/docs/current/userguide/img/javaPluginTasks.png)
+> ![taskrelationship](http://www.gradle.org/docs/current/userguide/img/javaPluginTasks.png)
+
+## java plugin 的一些属性
+> 1. sourceSets 包括了项目的源代码
+> 2. sourceCompatibility 项目的兼容性
+> 3. targetCompatibility 项目编译时使用的jdk
+> 4. archivesBaseName 生成的项目名，默认是项目名.jar(.zip)等
+> 5. manifest jar文件里包含的manifest文件
