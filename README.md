@@ -18,9 +18,9 @@ longkai（龙凯）
     },
     "major": {
         "name": "Computer science",
-        "languages": ["C/C++", "Java", "JavaScript", "Html/Css", "..."],
+        "languages": ["C/C++", "Java", "JavaScript", "html/css", "..."],
         "current": ["Java Web", "Android", "Linux", "Front End"],
-        "cover": ["Linux", "Git", "Intellij Idea", "Eclipse", "Maven", "Gradle", "Vim", "Shell", "..."]
+        "label": ["Linux", "Git", "Vim", "Intellij Idea", "Eclipse", "Maven", "Gradle", "..."]
     },
     "dream": ["do some big thing", "have a love home"]
 }
