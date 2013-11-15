@@ -6,6 +6,13 @@ longkai（龙凯）
     "name": "longkai - 龙凯",
     "hometown": "Guilin - China",
     "birthday": "1991-10-13",
+    "dream": ["do some big thing", "have a love home"],
+    "major": {
+        "name": "Computer science",
+        "languages": ["C/C++", "Java", "JavaScript", "html/css", "..."],
+        "current": ["Java Web", "Android", "Linux", "Front End"],
+        "label": ["Linux", "Git", "Vim", "Intellij Idea", "Eclipse", "Maven", "Gradle", "..."]
+    },
     "interests": {
        "sports": ["badminton", "basketball", "running", "bicycling"],
        "music": ["classic songs", "Jay Chou", "Taylor Swift", "..."],
@@ -15,13 +22,6 @@ longkai（龙凯）
        "internet": ["Google", "Twitter", "Tencent", "Zhihu", "Github", "..."],
        "movie": ["The Shawshand Redemption", "many many more..."],
        "computer science": ["mathmatics", "data structrue", "coding"]
-    },
-    "major": {
-        "name": "Computer science",
-        "languages": ["C/C++", "Java", "JavaScript", "html/css", "..."],
-        "current": ["Java Web", "Android", "Linux", "Front End"],
-        "label": ["Linux", "Git", "Vim", "Intellij Idea", "Eclipse", "Maven", "Gradle", "..."]
-    },
-    "dream": ["do some big thing", "have a love home"]
+    }
 }
 ```
