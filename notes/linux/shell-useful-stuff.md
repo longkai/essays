@@ -1,4 +1,4 @@
-shell的一些很有用但是易忽略的方面
+sh的一些很有用但是易忽略的方面
 ================================
 
 #	说明
@@ -15,7 +15,7 @@ shell的一些很有用但是易忽略的方面
 4. `[^set]`	任何在set中**未**出现的单个字符
 5. `[!set]`	同^
 
-```shell
+```sh
 # 查看fib.c
 $ ls -l f[aeiou]b.c
 ```
@@ -23,17 +23,17 @@ $ ls -l f[aeiou]b.c
 ##	花括号
 含花括号的命令可以扩展为多个参数，以逗号分隔
 
-```shell
+```sh
 # 打印 hello.c hello.cpp hello.java
 $ echo hello.{c,cpp,java}
 ```
 
 ##	输入/输出重定向
-shell可以将标准输入stdin，标准输出stdout，标准错误输出stderr重定向为文件。
+sh可以将标准输入stdin，标准输出stdout，标准错误输出stderr重定向为文件。
 
 也就是说，任何命令都可以使用``<``将输入数据来源从stdin重定向到文件。
 
-```shell
+```sh
 # 将cmd的标准输入重定向到file文件
 $ cmd < file
 

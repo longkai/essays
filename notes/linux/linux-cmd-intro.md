@@ -3,7 +3,7 @@ linux命令的基本说明
 
 # 任何的linux都是以一种特定这种方式使用
 
-```shell
+```sh
 ls	stdin	stdout	-file	-- opt	--help	--version
 
 ls	[options] [files]
@@ -23,7 +23,7 @@ ls	[options] [files]
 1. 当用'-'符号代替**输入**文件名时，表示命令将从标准输入读取数据
 2. 当用'-'符号代替**输出**文件名时，表示命令将向标准输出写入数据
 
-```shell
+```sh
 # wc命令分别从file1，标准输入，file2读取数据
 $ wc file1 - file2
 ```
@@ -31,7 +31,7 @@ $ wc file1 - file2
 ## -- opt
 如果选项包括'--'，则意味着选项到此结束，其后命令行出现的任何部分都不能作为选项
 
-```shell
+```sh
 # 查看'-file'文件的信息
 $ ls -- -file
 
@@ -42,7 +42,7 @@ $ ls -file
 ## --help
 表示向该命令传递``--help``选项可以打印出其帮助信息
 
-```shell
+```sh
 # 查看ls的帮助信息
 $ ls --help
 ```
@@ -50,7 +50,7 @@ $ ls --help
 ## --version
 表示向该命令传递``--version``选项可以打印其版本信息
 
-```shell
+```sh
 # 查看ls的版本
 $ ls --version
 ```
