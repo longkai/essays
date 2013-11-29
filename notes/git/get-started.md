@@ -1,6 +1,12 @@
 git初探
 =======
 
+## 前提条件
+1. 你必须在你的操作系统安装git，如果没有的话，那请自行google:-)
+2. 懂得命令行的基本使用
+
+那么，下面我们开始git的hello world之旅吧！
+
 ## 新建git repository
 ```sh
 $ mkdir ~/public_html
@@ -71,7 +77,7 @@ $ vim index.html
 $ cat index.html
 <html>
 	<body>
-		welcome to my size!
+		welcome to my site!
     </body>
 </html>
 ```
@@ -83,7 +89,7 @@ $ git status
 # On branch master
 nothing to commit, working directory clean
 ```
-也许你会觉得奇怪，为什么不是先add再commit呢？如果熟悉git后发现其实不是这样的，因为这个文件再提交之前已经假如到repository了，git已经认识她啦！
+也许你会觉得奇怪，为什么不是先add再commit呢？如果熟悉git后发现其实不是这样的，因为这个文件在提交之前已经加入到repository了，git已经认识她啦！
 
 现在，我们已经有了2个提交
 
@@ -197,7 +203,7 @@ OK，就是这么简单！
 如果是从web上clone，那么还会有一些额外的信息复制下来，方便追踪与增加提交等，这里就先不涉及啦。
 ```sh
 $ cd ~
-clone public_html/ public_html2
+$ git clone public_html/ public_html2
 Cloning into 'public_html2'...
 done.
 Checking connectivity... done
@@ -267,4 +273,4 @@ nothing to commit, working directory clean
 可以看到，我们使用``git s``完成了``git status``的命令，另外，我们使用的是项目相关的配置哦~
 
 ## 说明
-本笔记参考自《version control with git 2nd》，感谢原作者！
+本笔记参考自[version control with git 2nd]，感谢原作者！
