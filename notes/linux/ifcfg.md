@@ -79,9 +79,4 @@ MTU=1500
 ## 联系我
 >欢迎联系我，我的邮箱是im.longkai@gmail.com
 
->也欢迎在weibo[@爱因斯坦的狗][]
-
 >longkai，2013-07-03
-
-[@爱因斯坦的狗]: http://weibo.com/coding4fun
-
