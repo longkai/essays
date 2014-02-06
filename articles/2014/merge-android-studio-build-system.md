@@ -1,4 +1,4 @@
-让android项目同时支持eclipse/idea和Android Studio两种方式构建
+android项目两种构建方式的整合（Eclipse/idea和Android Studio）
 ============================================================
 
 ## android的两种构建方式
@@ -49,8 +49,8 @@ README.txt
 dependencies {
 	compile "com.android.support:support-v4:$supportLibVersion"
 	compile "com.android.support:support-v13:$supportLibVersion"
-	// compile project(':you project')
-	// compile ('libs/*.jar') // all your jar int the libs dir
+	// compile project(':your project')
+	// compile ('libs/*.jar') // all your jar in the libs dir
 }
 ```
 
