@@ -33,10 +33,10 @@ DoneBarSample/
 		src/
 			AndroidManifest.xml
 	build.gradle  	# DoneBarSample子项目的gradle构建脚本
-gradle/			# gradle临时文件夹，不用管
+gradle/				# gradle临时文件夹，不用管
 build.gradle		# 根项目（DoneBar）的gradle构建脚本
-gradlew			# gradle-wrapper在windows平台运行脚本（有了这个在本地可以无需安装Gralde）
-gradlew.bat		# gradle-wrapper在linux，mac平台下的运行脚本（效果同上）
+gradlew				# gradle-wrapper在windows平台运行脚本（有了这个在本地可以无需安装Gralde）
+gradlew.bat			# gradle-wrapper在linux，mac平台下的运行脚本（效果同上）
 settings.gradle		# gradle多项目的项目申明文件
 README.txt
 ```
