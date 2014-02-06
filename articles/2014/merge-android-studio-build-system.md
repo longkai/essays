@@ -11,8 +11,8 @@
 ``$ANDROID_HOME/samples/android-19/legacy/ActionBarCompat``
 
 ```
-res/  # 资源文件
-src/  # 源程序
+res/
+src/
 AndroidManifest.xml
 ```
 
@@ -33,15 +33,15 @@ DoneBarSample/
 		src/
 			AndroidManifest.xml
 	build.gradle  	# DoneBarSample子项目的gradle构建脚本
-gradle/				# gradle零时文件夹，不用管
+gradle/			# gradle临时文件夹，不用管
 build.gradle		# 根项目（DoneBar）的gradle构建脚本
-gradlew				# gradle-wrapper在windows平台运行脚本（有了这个在本地可以无需安装Gralde）
-gradlew.bat			# gradle-wrapper在linux，mac平台下的运行脚本（效果同上）
+gradlew			# gradle-wrapper在windows平台运行脚本（有了这个在本地可以无需安装Gralde）
+gradlew.bat		# gradle-wrapper在linux，mac平台下的运行脚本（效果同上）
 settings.gradle		# gradle多项目的项目申明文件
 README.txt
 ```
 
-看起来，Gradle好像更搞得更复杂了，但是，gradle的优势在于多项目的构建。实际上，1方案只是一个我们项目核心的源代码而已，没有任何的依赖。通常情况下，当我们写android应用时，会依赖第三方库，如果是个jar还好办，但是不少情况下同时需要引入第三方的资源文件（比如说actionbar-compat，actionbar-sherlock等），这样就相当于把第三方库作为一个项目给引入到我们那一个独立的项目中来了（并且这里面的项目之间的依赖还得自己去调控，比如说咱们的项目依赖于support-v4, 那好，这个需要我们引入然后在项目中申明依赖关系，接下来咱们的项目依赖support-v7-appcompat，导入这个库，尼玛，这个库不仅有jar，还有资源文件，那好把这两个引入并声明好依赖关系，这时，你会发现项目依旧报错，因为v7那个jar依赖于v4那个jar...)
+看起来，Gradle好像更搞得更复杂了，但是，gradle的优势在于多项目的构建。实际上，1方案只是一个我们项目核心的源代码而已，没有任何的依赖。通常情况下，当我们写android应用时，会依赖第三方库，如果是个jar还好办，但是不少情况下同时需要引入第三方的资源文件（比如说actionbar-compat，actionbar-sherlock等），这样就相当于把第三方库作为一个项目给引入到我们这个独立的项目中来了（并且这里面的项目之间的依赖还得自己去调控，比如说咱们的项目依赖于support-v4, 那好，我们把v4引入然后在项目中申明依赖关系，接下来咱们的项目依赖support-v7-appcompat，导入这个库，尼玛，这个库不仅有jar，还有资源文件，那好把这两个引入并声明好依赖关系，这时，你会发现项目依旧报错，因为v7那个jar依赖于v4那个jar...)
 
 很讨厌是不是？还好啦，不过配多了你就觉得蛋疼了。所以，就是为什么Gradle比较有优势的地方了。对于以上的问题，我们只需要在项目中的``build.gradle``声明
 
@@ -54,21 +54,21 @@ dependencies {
 }
 ```
 
-这只是最简单的应用，gradle还提供了很多构建的特性，比如直接把第三方库依赖进来，具体参阅其文档
+这只是最简单的应用，gradle还提供了很多构建的特性，比如直接把第三方库作为一个子项目依赖进来，具体参阅其文档
 
 ## 我们是否应该从ant构建迁移到Androd Studio的Gralde构建？
-很明显，Android Studio是很明显是google力推的开发工具，是趋势，而且，老实说Eclipse在开发android应用方面不如Android-Studio（idea）好使。但是，Android Studio目前还没有到正式版，还在开发阶段，出个bug你也上不起Orz
+很明显，Android Studio是google力推的开发工具，是趋势，而且，老实说Eclipse在开发android应用方面不如Android-Studio（idea）好使。但是，Android Studio目前还没有到正式版，还在开发阶段，出个bug你也伤不起Orz
 
-另外，Gradle的构建目前还是很慢，相对与ant的构建，慢了好多，改了一处地方，run，等好久，而我在idea或者eclipse上很快就构建好了
+另外，Gradle的构建目前还是很慢，相对与ant的构建，慢了好多，改了一处地方，run，要等不少时间，而我在idea或者eclipse上很快就构建好了
 
-综上，还是不太推荐android-studio的，不过，倒是挺建议使用eclipse开发android的朋友有使用Intellij IDEA的开源社区版去开发android，事实上，Android Studio就是架在IDEA上的嘛
+综上，没有解决以上两个问题还是不太推荐android-studio的，不过，倒是挺建议使用eclipse开发android的朋友有使用Intellij IDEA的开源社区版去开发android，事实上，Android Studio就是架在IDEA上的嘛
 
 ## 一种过渡的方式，同时支持两种构建方式
-对于现有的项目，没有多大的必要切换的新的构建方式，那么对于新的项目呢？出于Gradle的灵活性，我们完全可以做出一个同时支持两种构建方式的项目。
+对于现有的项目或者新的项目，以后怎么转移到Android Studio呢，或者说，我就是想试试我这个项目在Android  Studio上开发爽不爽？出于Gradle的灵活性，我们完全可以做出一个同时支持两种构建方式的项目。
 
-项目的结构和传统的一样，这样便可以作为android项目直接导入到eclipse或者idea中，核心在与gralde的``build.gradle``文件
+项目的结构和传统的一样，这样便可以作为android项目直接导入到eclipse或者idea中，核心在于gralde的``build.gradle``文件
 
-不做过多介绍，直接上代码，看着改改就可以啦，还有更多的需要的话可以参考这里[](http://tools.android.com/tech-docs/new-build-system/user-guide)：
+不做过多介绍，直接上代码，看着改改就可以啦，还有更多的需求的话可以参考这里[](http://tools.android.com/tech-docs/new-build-system/user-guide)：
 
 ```groovy
 /*
