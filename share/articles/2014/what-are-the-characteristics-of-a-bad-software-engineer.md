@@ -1,7 +1,7 @@
 糟糕软件工程师的特征？
 ====================
 
-> 原作者[Nachiket Naik][http://www.quora.com/Nachiket-Naik]，[原文链接][http://www.quora.com/Software-Engineering/What-are-the-characteristics-of-a-bad-software-engineer]
+> 原作者[Nachiket Naik](http://www.quora.com/Nachiket-Naik)，[原文链接](http://www.quora.com/Software-Engineering/What-are-the-characteristics-of-a-bad-software-engineer)
 
 > 翻译的真不好，建议查看原文:-)
 
