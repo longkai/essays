@@ -170,3 +170,4 @@ Hi，上个周末很开心。小龙萌生了一个 wild thoughts，好像姗姗�
 
 > 在什么时候
 
+comment from 江苏同学：说好的没钱买车呢？！What the F***！
