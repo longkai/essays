@@ -1,17 +1,17 @@
 多运行时环境自动化构建
 ===
 
-**本文假设开发环境为Android Studio**
+**本文假设Android编译环境为gradle**
 
 ## 场景1
-在Android的开发和测试等环节中少不了构建。通常我们会有一个测试环境（内部环境）和一个生产环境（最终用户使用的环境）或者更多。比如，在开发中我们使用后端接口的BASE_ENDPOINT可能是``http(s)://dev.example.com``，最终用户使用的BASE_ENDPOINT可能是``http(s)://api.example.com``。这样做的好处是是显然的，没有人会如此自信到用生产环境来开发。
+在Android的开发和测试等环节中少不了构建。通常我们会有一个测试环境（内部环境）和一个生产环境（最终用户使用的环境）或者更多。比如，在开发中我们使用后端接口的BASE_ENDPOINT可能是``http(s)://dev.example.com``，最终用户使用的BASE_ENDPOINT可能是``http(s)://api.example.com``。这样做的好处是显然的，没有人会如此自信到用生产环境来开发。
 
-因此，少不了切换环境，而切换环境一般涉及到修改配置信息，这些**配置信息应该是写在自动化构建脚本中**并且自动修改，而不是打包前自己手动修改，这样改很乏味和易错。试想，开发调试到很晚都累成狗了，终于灭掉了list上的一堆bug，最后打包了，手抖把生产环境的配置写成了测试环境的，悲剧了...
+因此，少不了切换环境，而切换环境一般涉及到修改配置信息，这些**配置信息应该是写在自动化构建脚本中**并且自动应用到构建中，而不是打包前自己手动修改，这样改很乏味和易错。试想，开发调试到很晚都累成狗了，终于灭掉了list上的一堆bug，最后打包了，手抖把生产环境的配置写成了测试环境的，悲剧了...
 
 ## 技巧1
 在build(debug或者release，或者其他的flavor)的时候自动切换配置。
 
-在每一个android相关的项目中的都会有一个``BuildConfig.java``文件，这个文件是由Android-Gradle插件自动生成的，我们不应该手动修改它。正如它的名字一样，构建配置，这里面全是一些``public static final``全局常量，比如版本号，版本信息，是否debug环境等，这些常量均可以在程序中引用。试想，如果能够给这个文件添加一些自定义的配置信息，不就解决场景1的问题了吗？
+在每一个android相关的项目中的都会有一个``BuildConfig.java``文件，这个文件是由Android-Gradle插件依据构建环境（debug，release或者production flavor）自动生成的，我们不应该手动修改它。正如它的名字一样，构建配置，这里面全是一些``public static final``全局常量，比如版本号，版本信息，是否debug环境等，这些常量均可以在程序中引用。试想，如果能够给这个文件添加一些自定义的配置信息，不就解决场景1的问题了吗？
 
 ```groovy
 buildTypes {
@@ -65,7 +65,7 @@ productFlavors {
 }
 ```
 
-这里要注意，``BuildConfig.java``生成常量的顺序是先``buildType {}``，再``productFlavors``，最后到``defaultConfig {}``，**如果有重复的字段，那么只会生成最先出现的那个字段**，而不是后面的把前面的给覆盖掉，这应该是一个bug。
+这里要注意，``BuildConfig.java``生成常量的顺序是先``buildType {...}``，再``productFlavors {...}``，最后到``defaultConfig {...}``，**如果有重复的字段，那么只会生成最先出现的那个字段**，而不是后面的把前面的给覆盖掉，这应该是一个bug。
 
 ## Bonus
 最后，还有一个技巧，如果我有很多flavors，如何切换当前的开发环境（比如说不想打包，只是想debug一下）到某个flavor？
@@ -74,16 +74,15 @@ productFlavors {
 
 ```
 internalDebug
-interlnalRelease
+internalRelease
 productionDebug
 productionRelease
 ```
 
 点击Android Studio的 **Build Variants** tool window，就看可以看到这4个东东，然后选择一个，就可以把当前的工作环境切换到某个flavor了。
 
-
-以上, feedback welcome, happy coding~
-
 ===
+feedback welcome, happy coding~
+
 2015-07-22
 
