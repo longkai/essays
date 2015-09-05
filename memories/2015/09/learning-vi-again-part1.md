@@ -17,45 +17,45 @@
 1. ``ZZ``   like ``:wq``, quit vi, saving edits.
 
 ### 2. Simple Editing
- 1. ``W``   move the cursor forward one word at a time, not counting syumbols and punctuation.
- 2. ``cc``  like ``S``, change entire current line.
- 3. ``C``   like ``c$``, change the characters from the current cursor position to the end of the line.
- 4. ``R``   replace character for the current line until HITING **ESC**.
- 5. ``~``   toggle character case.
- 6. ``D``   like ``d$``, delete from the cursor position to the end of the line.
- 7. ``.``   repeat command.
- 8. ``U``   undoes all edits on a single line, **as long as the cursor remains on that line**. (todo: it is weird if you use twice repeatly)
- 9. ``8i*`` numberic args for insert command, i.e. insert 8 ``*`` before the cursor position.
+1.  ``W``    move the cursor forward one word at a time, not counting syumbols and punctuation.
+2.  ``cc``   like ``S``, change entire current line.
+3.  ``C``    like ``c$``, change the characters from the current cursor position to the end of the line.
+4.  ``R``    replace character for the current line until HITING **ESC**.
+5.  ``~``    toggle character case.
+6.  ``D``    like ``d$``, delete from the cursor position to the end of the line.
+7.  ``.``    repeat command.
+8.  ``U``    undoes all edits on a single line, **as long as the cursor remains on that line**. (todo: it is weird if you use twice repeatly)
+9.  ``8i*``  numberic args for insert command, i.e. insert 8 ``*`` before the cursor position.
 10. ``J``   join two lines.
 
 ### 3. Moving Around in a Hurry
- 1. ``z ENTER``     move cursor line to top of screen and screen.
- 2. ``z .``         move cursor line to middle of screen and screen.
- 3. ``z -``         move cursor line to bottom of screen and screen.
- 4. ``^L``          redrawing the screen.
- 5. ``H``           move to home -- the top line on screen.
- 6. ``M``           move to middle line on screen.
- 7. ``L``           move to last line on screen.
- 8. ``ENTER``       move to the first character of next line.
- 9. ``+``           move to the first character of next line.
-10. ``-``           move to the next character of next line.
-11. ``^``           move to the first nonblank character of current line.
-12. ``e``           move to the end of word.
-13. ``E``           move to the end of word (ingore punctuation).
-14. ``(``           move to beginning of current sentence.
-15. ``)``           move to beginning of next sentence.
-16. ``{``           move to beginning of the current paragraph.
-17. ``}``           move to beginning of the next paragraph.
-18. ``[[``          move to beginning of current section.
-19. ``]]``          move to beginning of next section.
-20. ``fx``          find the cursor to the **next** instance of the characters __x__ of current line.
-21. ``Fx``          find the cursor to the **previous** instance of the characters __x__ of current line.
-22. ``tx``          find character **before** next occurrence of __x__ in the line.
-23. ``Tx``          find character **after** next occurrence of __x__ in the line.
-24. ``;``           repeat previous find command in same direction.
-25. ``;``           repeat previous find command in opposite direction.
-26. ``\`\```        return to previous mark or context
-27. ``''``          return to beginning of line containing previous mark
+1. ``z ENTER``  move cursor line to top of screen and screen.
+2. ``z .``      move cursor line to middle of screen and screen.
+3. ``z -``      move cursor line to bottom of screen and screen.
+4. ``^L``       redrawing the screen.
+5. ``H``        move to home -- the top line on screen.
+6. ``M``        move to middle line on screen.
+7. ``L``        move to last line on screen.
+8. ``ENTER``    move to the first character of next line.
+9. ``+``        move to the first character of next line.
+10. ``-``       move to the next character of next line.
+11. ``^``       move to the first nonblank character of current line.
+12. ``e``       move to the end of word.
+13. ``E``       move to the end of word (ingore punctuation).
+14. ``(``       move to beginning of current sentence.
+15. ``)``       move to beginning of next sentence.
+16. ``{``       move to beginning of the current paragraph.
+17. ``}``       move to beginning of the next paragraph.
+18. ``[[``      move to beginning of current section.
+19. ``]]``      move to beginning of next section.
+20. ``fx``      find the cursor to the **next** instance of the characters __x__ of current line.
+21. ``Fx``      find the cursor to the **previous** instance of the characters __x__ of current line.
+22. ``tx``      find character **before** next occurrence of __x__ in the line.
+23. ``Tx``      find character **after** next occurrence of __x__ in the line.
+24. ``;``       repeat previous find command in same direction.
+25. ``;``       repeat previous find command in opposite direction.
+26. ``\`\```    return to previous mark or context
+27. ``''``      return to beginning of line containing previous mark
 
 ## one more thing
 今天又一个大学舍友来深圳发展了，明天另一个大学舍友将外派到北京出差。friends come and go, live your life, wish us all the best.
