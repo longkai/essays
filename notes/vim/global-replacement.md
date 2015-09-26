@@ -18,3 +18,5 @@ use ``/``, ``n`` and ``.`` is more useful when you not intent to replacement glo
 ## Context-Sensitive Replacement
 ``:g/pattern/s/old/new/g`` This syntax lets you search for a pattern, and then, once you find the line with the pattern, make a substitution on a string different from the pattern.
 
+--
+2015-09-26
