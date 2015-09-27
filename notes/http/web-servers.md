@@ -67,6 +67,19 @@ refer HTTP authentication
 ## Send response -- send the response back to the client
 For persistent Connections, the connection may stay open, in which case the server needs to be extra cautious to compute the Content-Length header correctly, or the client will have no way of knowing when a response ends.
 
+## Construct response -- create the HTTP response message with the right headers.
+
+### Response Entities(if there was a body)
+1. A **Content-Type** header, describing the MIME type of the response body
+2. A **Content-Length** header, describing the size of the response body
+3. The actual message body content
+
+### MIME Typing
+mime.types, Magic typing, Explicit typing, Type negotiation. Web servers also can be configured to associate particular files with MIME types.
+
+### Redirection
+Permanently moved resources, Temporarily moved resources, URL augmentation, Load balancing, Server affinity, Canonicalizing directory names
+
 ## Log transaction -- place notes about the completed transaction in a log file.
 
 --
