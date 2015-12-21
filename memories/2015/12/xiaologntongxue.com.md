@@ -21,7 +21,9 @@
 之前有用过longist.me这个域名作为翻墙服务器的同学注意了，这个域名将在16年1月底到期，记得切换域名到xiaolongtongxue.com吧，其余配置照旧:)
 
 #### EOF
-2015-12-22 in Shenzhen, a little cold.
+\#Life
+
+2015-12-22, Shenzhen, a little cold.
 
 [1]: www.namecheap.com
 [2]: webcomponents.org
