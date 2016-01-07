@@ -42,7 +42,9 @@ public class InfiniteAdapter extends Adapter {
 }
 ```
 
-BTW, 其实还有另一种思路（我没有实践过），不需要把 count 设置为无限大，可能还是要比实际的 count 大1吧，然后利用 ViewPager 的另一个方法 ``setCurrentItem(int, boolean)``偷偷地将页数跳转回到第一页，因为第二个参数可以取消滑动时的动画。然而这个思路实现起来比之前的稍稍麻烦了一些，并且也存在副作用。因为本质上 ViewPager 是一个线性结构，并且还有一个优化，就是会预先加载 n+1 页，这样给用户一种比较快的感觉。如果从第一页突变到第一页，必然不会比上一种方式好。感谢@郑帅 同学的提醒。
+另外，想要在一开始实现第一页继续向左滑动到最后一页，原理也一样，只需把初始的页 n×count 的 n 设为足够大即可，这里就不继续展开了。
+
+BTW, 其实还有另一种思路（我没有实践过），不需要把 count 设置为无限大，可能还是要比实际的 count 大1吧，然后利用 ViewPager 的另一个方法 ``setCurrentItem(int, boolean)``偷偷地将页数跳转回到第一页，因为第二个参数可以取消滑动时的动画。然而这个思路实现起来比之前的稍稍麻烦了一些，并且也存在副作用。因为本质上 ViewPager 是一个线性结构，并且还有一个优化，就是当前为第 n 页的时候会预先加载 n+1 页，这样给用户一种比较快的感觉。如果从最后一页突变到第一页，必然不会比上一种方式好。感谢@Liger 同学的提醒。
 
 #### 自动滑页
 ![](arts/vp1_auto.gif)
@@ -51,7 +53,7 @@ BTW, 其实还有另一种思路（我没有实践过），不需要把 count �
 
 定时自动播放，定时，看到这词，最直接的做法就是使用 Java 标准库的 [Timer][3] 类来定时播放了。我最开始也是这样做的，it works。然而，这个类有诸多缺陷。首先 UI 线程同步问题，接着初始化后不能 reset 状态，又得重新 new 一个，代码不易维护的同时也带来了另一个更严重的问题，内存泄露。``Timer``这个类我记得是在文档中说过，不会及时地释放内存。这里先引出下一个主题，**用户主动滑页和自动滑页的冲突问题：当用户手势滑页的时候需要屏蔽或者说暂停自动滑页，否则就自动**。这个时候如果仍然使用``Timer``的话，那么就得不间断的 new Timer，内存泄露的问题就越来越严重。
 
-幸运的是，Android 自带了解决问题的办法，这个方法每个开发者都应当知道，``Handler.postDelay(Runnable, long)``方法，我最喜欢用这个方法去处理闪屏页的定时跳转问题。并且，任意的 ``View`` 都有一个 ``Handler`` 用来处理 UI 线程同步的问题。所以我们不需要额外的构造 ``Handler`` 而直接调用 ``View.postDealy()`` 以及 ``View.removeCallbacks()`` 方法来实现。具体来说，就是在 ``postDelay()`` 的 ``Runnable`` 中继续调用 ``postDelay()``，从某种意义上说这也算是一种递归吧，最后**记得在 Activity 或者 View 中的相关回调调用 ``removeCallbacks()``，否则可能会存在内存泄露或者无意义的 UI 绘制**。
+幸运的是，Android 自带了解决问题的办法，这个方法每个开发者都应当知道，``Handler.postDelay(Runnable, long)``方法，我最喜欢用这个方法去处理闪屏页的定时跳转问题。并且，任意的 ``View`` 都有一个 ``Handler`` 用来处理 UI 线程同步的问题。所以我们不需要额外的构造 ``Handler`` 而直接调用 ``View.postDealy()`` 以及 ``View.removeCallbacks()`` 方法来实现。具体来说，就是在 ``postDelay()`` 的 ``Runnable`` 中继续调用 ``postDelay()``，从某种意义上说这也算是一种递归吧，最后**记得在 Activity 或者 View 中的相关回调调用 ``removeCallbacks()``，否则可能会存在内存泄露或者无意义的 CPU 消耗**。
 
 用代码来说：
 
@@ -146,7 +148,7 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
 #### One More Thing
 欢迎阅读并留言，敬请期待下一篇关于 ViewPager 的技巧 :)
 
-最后非常感谢@郑帅 @小戴 同学的审阅
+最后非常感谢@Liger @小戴 同学的审阅。
 
 #### EOF
 \#Tech, \#Android   
