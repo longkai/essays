@@ -1,7 +1,7 @@
 A neat way to organize your source code
 ===
 
-#### Before the Start
+### Before the Start
 As a developer, we deal with words, files, directories every day. You don't want your codebase messing up just like you do in your code architecture, the style, or the code itself.
 
 In the book [How Google Works][1], it says, 'Messiness is a virtue'(page 38). It's not something around us neatly but the way we do something neatly matters. If you have not a clear way to organize, maybe you've come to the right place.
@@ -21,7 +21,7 @@ Assuming you have 4 types of projects, ``{}`` is a placeholder.
 
 Note: I strongly recommend you to choose **github.com(or alternatives)** as root path of personal project. I know the feeling when you write something cool and want share with others. This is called social coding and what makes a good software today. However, if you don't want to open source, just keep it there and no publish proceeding.
 
-### What if I clone a project form remote repository?
+### What if I clone a project form a remote repository?
 Same, suppose the author or the community called Bob, puts it into ``~/src/github.com/Bob/{project}``.
 
 ### Bonus
@@ -29,7 +29,7 @@ After you build a project from ``~/src`` and outputs executeable file(s), reside
 
 If you write Go code, set ``GOPATH`` to ``~/src``, all your build artifacts would be seen in ``~/bin``, it's fine, isn't it?
 
-Finally, there is no rules from this article but some personal suggetions. Thanks for reading, happy hacking!
+Finally, there are no rules from this article but some personal suggestions. Thanks for reading, happy hacking!
 
 ### EOF
 2016-02-04, Guilin, very cold so no code
