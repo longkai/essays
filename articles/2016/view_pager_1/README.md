@@ -159,7 +159,7 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
   "weather": "a little warm",
   "summary": "",
   "location": "Shenzhen",
-  "background": ""
+  "background": "/assets/images/crossing.jpg"
 }
 ```
 

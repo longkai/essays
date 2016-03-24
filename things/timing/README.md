@@ -28,7 +28,7 @@
   "weather": "",
   "summary": "",
   "location": "Shenzhen",
-  "background": "timing.png"
+  "background": "/assets/images/crossing.jpg"
 }
 ```
 

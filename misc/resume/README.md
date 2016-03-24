@@ -60,6 +60,19 @@ Java/Android Engineer; Gopher
 广西大学-本科-计算机科学与技术 (2010 - 2014)  
 兴趣：户外，足球，阅读，外设，信用卡，尝试新的技术和产品等  
 
+### EOF
+```json
+{
+  "tags": ["Career"],
+  "reserved": false,
+  "date": "2016-03-02T12:17:00+08:00",
+  "weather": "fine",
+  "summary": "",
+  "location": "Shenzhen",
+  "background": "/assets/images/crossing.jpg"
+}
+```
+
 [1]: https://github.com/longkai/Musseta
 [2]: https://play.google.com/store/apps/details?id=yuejia.liu.musseta&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1
 [3]: http://longkai.github.io/catnut/
