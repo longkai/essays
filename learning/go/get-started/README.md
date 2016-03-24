@@ -134,7 +134,7 @@ func main() {
 
 接下来，依照之前的构建方式``go install``，没有任何输出的话，运行hello就好了
 
-**另外，package下面还可以有子package，也是和刚才的类似的
+另外，package下面还可以有子package，也是和刚才的类似的
 
 ## 从远程获取lib
 git的源代码目录非常的好处就是有利于整个go源代码的管理，你所有用到的代码都统一放到了``$GOPATH``下，比如你需要使用到``example.com/xxx``的源码，那么相应的目录就是``$GOPATH/src/example.com/xxx``，尤其适合git，hg这种版本控制系统！！！
@@ -147,7 +147,7 @@ git的源代码目录非常的好处就是有利于整个go源代码的管理，
 首先，``go get github.com/longkai/go-test``，那么go-test这个源码会自动下载到你的本地，如果已经存在了的话就不用下载了，然后重新install刚才的hello项目即可！
 
 ## 说明
-1. 这个笔记参考的是官方的文档http://golang.org/doc/code.html，强烈大家看看这个文档！这里不详细。
+1. 这个笔记参考的是[官方的文档](http://golang.org/doc/code.html), 强烈大家看看这个文档！这里不详细。
 2. 欢迎讨论，我的邮箱是im.longkai@gmail.com
 
 ### EOF
