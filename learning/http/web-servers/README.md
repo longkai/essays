@@ -89,7 +89,7 @@ Permanently moved resources, Temporarily moved resources, URL augmentation, Load
   "reserved": false,
   "date": "2015-09-26T12:31:18+08:00",
   "weather": "",
-  "summary": "",
+  "summary": "HTTP: The Definitive Guide",
   "location": "Shenzhen",
   "background": "/assets/images/xida.jpg"
 }
