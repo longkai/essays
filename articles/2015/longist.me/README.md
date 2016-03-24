@@ -33,7 +33,7 @@
   "reserved": false,
   "date": "2015-06-08T23:19:48+08:00",
   "weather": "",
-  "summary": "Keep learing, keeping writing.",
+  "summary": " 谨以此纪念原来的域名-.-",
   "location": "Shenzhen",
   "background": ""
 }
