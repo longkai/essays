@@ -22,7 +22,7 @@ use ``/``, ``n`` and ``.`` is more useful when you not intent to replacement glo
 ```json
 {
   "tags": ["Campus", "Vim"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-09-27T01:18:43+08:00",
   "weather": "",
   "summary": "",

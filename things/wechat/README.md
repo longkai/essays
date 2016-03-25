@@ -49,7 +49,7 @@
 ```json
 {
   "tags": ["Campus", "Things"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-04T06:31:36+08:00",
   "weather": "",
   "summary": "微信，你应该知道的玩法",

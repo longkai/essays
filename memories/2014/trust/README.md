@@ -28,7 +28,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-17T23:50:18+08:00",
   "weather": "",
   "summary": "被别人信任时，或者说别人相信你的时候，这是一种怎样的感觉？",

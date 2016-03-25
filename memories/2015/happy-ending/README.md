@@ -39,7 +39,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-07-03T01:36:19+08:00",
   "weather": "",
   "summary": "「最美的邂逅总是在远方」，毕业快乐，各位！",

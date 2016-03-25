@@ -38,7 +38,7 @@
 ```json
 {
   "tags": ["Campus"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-02-01T23:14:58+08:00",
   "weather": "",
   "summary": "福尔摩斯：「我的人生就是一场漫长的逃亡，为的是摆脱平淡庸俗的生活状态」",

@@ -26,7 +26,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-14T22:31:16+08:00",
   "weather": "",
   "summary": "我们都会回家的，一切都会好起来的。",

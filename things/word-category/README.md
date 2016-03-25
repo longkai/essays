@@ -42,7 +42,7 @@
 ```json
 {
   "tags": ["Campus", "Things"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-06T20:35:41+08:00",
   "weather": "",
   "summary": "",

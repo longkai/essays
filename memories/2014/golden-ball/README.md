@@ -34,7 +34,7 @@
 ```json
 {
   "tags": ["Campus"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-14T23:28:07+08:00",
   "weather": "",
   "summary": "c罗获得金球奖，阿森纳客场艰难拿下3分重回英超榜首！",

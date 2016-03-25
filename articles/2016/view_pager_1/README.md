@@ -154,7 +154,7 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
 ```json
 {
   "tags": ["Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2016-01-07T02:50:41+08:00",
   "weather": "a little warm",
   "summary": "",

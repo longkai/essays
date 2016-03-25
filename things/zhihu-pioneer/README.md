@@ -39,7 +39,7 @@ image from the Internet
 ```json
 {
   "tags": ["Campus", "Reading"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-07T22:18:39+08:00",
   "weather": "",
   "summary": "",

@@ -154,7 +154,7 @@ git的源代码目录非常的好处就是有利于整个go源代码的管理，
 ```json
 {
   "tags": ["Campus", "Golang"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-12-05T18:18:07+08:00",
   "weather": "",
   "summary": "",

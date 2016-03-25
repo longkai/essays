@@ -24,7 +24,7 @@
 ```json
 {
   "tags": ["Web"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-12-22T02:59:14+08:00",
   "weather": "a little cold",
   "summary": "",

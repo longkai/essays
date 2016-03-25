@@ -86,7 +86,7 @@ MTU=1500
 ```json
 {
   "tags": ["Campus", "Linux"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-13T23:33:00+08:00",
   "weather": "",
   "summary": "",

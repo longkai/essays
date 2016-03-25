@@ -20,7 +20,7 @@
 ```json
 {
   "tags": ["Work", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-08-18T09:18:07+08:00",
   "weather": "",
   "summary": "毕业一个半月了，好久没写些啥了...",

@@ -609,7 +609,7 @@ project(':services:personService') {
 ```json
 {
   "tags": ["Campus", "Gradle"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-08-08T17:24:27+08:00",
   "weather": "",
   "summary": "",

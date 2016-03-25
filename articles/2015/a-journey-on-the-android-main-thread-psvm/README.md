@@ -149,7 +149,7 @@ public class ActivityThread {
 ```json
 {
   "tags": ["Android", "Translation"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-06-10T23:24:22+08:00",
   "weather": "",
   "summary": "翻译",

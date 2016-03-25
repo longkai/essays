@@ -62,7 +62,7 @@
 ```json
 {
   "tags": ["Campus", "Translation"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-05-27T03:06:44+08:00",
   "weather": "",
   "summary": "译文",

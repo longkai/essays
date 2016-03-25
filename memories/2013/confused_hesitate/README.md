@@ -77,7 +77,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-07-06T01:33:20+08:00",
   "weather": "",
   "summary": "迷茫还是犹豫？大四了，直接就业还是继续学习？是安定工作还是坚持自己内心的想法？",

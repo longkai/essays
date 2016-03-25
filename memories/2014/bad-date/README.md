@@ -26,7 +26,7 @@ image from the Internet
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-04T06:45:42+08:00",
   "weather": "",
   "summary": "",

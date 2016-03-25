@@ -36,7 +36,7 @@ image from the Internet
 ```json
 {
   "tags": ["Campus"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-07T21:34:30+08:00",
   "weather": "",
   "summary": "",

@@ -46,7 +46,7 @@ by longkai on 2014-08-30 in Sz.
 ```json
 {
   "tags": ["Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-08-31T01:09:52+08:00",
   "weather": "",
   "summary": "",

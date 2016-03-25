@@ -279,7 +279,7 @@ nothing to commit, working directory clean
 ```json
 {
   "tags": ["Campus", "Git"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-11-29T01:10:41+08:00",
   "weather": "",
   "summary": "",

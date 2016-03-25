@@ -151,7 +151,7 @@ task wrapper(type: Wrapper) {
 ```json
 {
   "tags": ["Campus", "Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-03-07T00:02:51+08:00",
   "weather": "",
   "summary": "",

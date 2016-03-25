@@ -30,7 +30,7 @@
 ```json
 {
   "tags": ["Campus"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-18T23:48:27+08:00",
   "weather": "",
   "summary": "放假啦，大家假期愉快 :)",

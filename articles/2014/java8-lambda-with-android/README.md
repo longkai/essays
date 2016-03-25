@@ -52,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
 ```json
 {
   "tags": ["Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-11-04T00:45:07+08:00",
   "weather": "",
   "summary": "",

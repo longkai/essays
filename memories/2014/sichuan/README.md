@@ -269,7 +269,7 @@
 ```json
 {
   "tags": ["Campus", "Travel"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-21T08:58:33+08:00",
   "weather": "",
   "summary": "",

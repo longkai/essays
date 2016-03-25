@@ -35,7 +35,7 @@ Finally, there are no rules from this article but some personal suggestions. Tha
 ```json
 {
   "tags": ["Programming", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2016-02-05T20:27:21+08:00",
   "weather": "very cold so no code",
   "summary": "",

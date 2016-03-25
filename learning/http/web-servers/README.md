@@ -86,7 +86,7 @@ Permanently moved resources, Temporarily moved resources, URL augmentation, Load
 ```json
 {
   "tags": ["Web"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-09-26T12:31:18+08:00",
   "weather": "",
   "summary": "HTTP: The Definitive Guide",

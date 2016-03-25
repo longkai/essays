@@ -52,7 +52,7 @@
 ```json
 {
   "tags": [],
-  "reserved": true,
+  "render_option": 2,
   "date": "",
   "weather": "",
   "summary": "",

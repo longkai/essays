@@ -23,7 +23,7 @@
 ```json
 {
   "tags": ["Things"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-12-25T21:47:57+08:00",
   "weather": "",
   "summary": "",

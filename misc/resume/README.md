@@ -63,8 +63,9 @@ Java/Android Engineer; Gopher
 ### EOF
 ```json
 {
+  "title": "Resume",
   "tags": ["Career"],
-  "reserved": false,
+  "render_option": 1,
   "date": "2016-03-02T12:17:00+08:00",
   "weather": "fine",
   "summary": "",

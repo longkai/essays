@@ -31,7 +31,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-12T23:54:44+08:00",
   "weather": "",
   "summary": "总有那么个时刻，会让你想到一些人，一些事，让你感动或者回忆，并且迎上去追求一些人，一些事。",

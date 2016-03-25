@@ -47,7 +47,7 @@ Java开发者当得知需要写一个Python脚本的时候通常会不知所措�
 ```json
 {
   "tags": ["Campus", "Translation"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-05-20T01:27:47+08:00",
   "weather": "",
   "summary": "译文",

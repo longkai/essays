@@ -194,7 +194,7 @@ Finally，我们看到 Java 代码终于变得和 Go 一样简洁了，看起来
 ```json
 {
   "tags": ["Golang", "Java"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2016-01-16T01:37:42+08:00",
   "weather": "rainy",
   "summary": "今天翻看Brian W. Kernighan所著的《The Go Programming Language》，发现一个比较有趣的问题",

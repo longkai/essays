@@ -171,7 +171,7 @@ Licensed under a Creative Commons Attribution 4.0 International License.
 ```json
 {
   "tags": ["Campus", "Paper"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-12-17T12:17:20+08:00",
   "weather": "",
   "summary": "一篇小论文",

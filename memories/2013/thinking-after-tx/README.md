@@ -25,7 +25,7 @@
 ```json
 {
   "tags": ["Campus", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-10-31T03:07:42+08:00",
   "weather": "",
   "summary": "",

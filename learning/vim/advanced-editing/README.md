@@ -33,7 +33,7 @@ the keys not used in command mode that available for user-defined commands:
 ```json
 {
   "tags": ["Campus", "Vim"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-09-27T15:03:12+08:00",
   "weather": "",
   "summary": "",

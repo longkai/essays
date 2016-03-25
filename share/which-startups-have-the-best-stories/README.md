@@ -21,7 +21,7 @@ Facebook和YouTube今天的成就无需多言，看到这个故事你是否也�
 ```json
 {
   "tags": ["Campus", "Translation"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-05-10T02:22:22+08:00",
   "weather": "",
   "summary": "翻译",

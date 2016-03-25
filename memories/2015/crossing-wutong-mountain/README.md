@@ -62,7 +62,7 @@
 ```json
 {
   "tags": ["Life", "Outdoor"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-07-06T20:46:29+08:00",
   "weather": "",
   "summary": "前方多图预警！",

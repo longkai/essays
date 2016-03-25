@@ -26,7 +26,7 @@ From 2015 to 2016
 ```json
 {
   "tags": ["Life", "Thoughts"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-12-31T23:59:04+08:00",
   "weather": "a fine day:)",
   "summary": "",

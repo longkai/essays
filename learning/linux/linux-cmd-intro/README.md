@@ -63,7 +63,7 @@ $ ls --version
 ```json
 {
   "tags": ["Campus", "Linux"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-11-28T19:52:15+08:00",
   "weather": "",
   "summary": "",

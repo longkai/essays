@@ -22,7 +22,7 @@
 ```json
 {
   "tags": ["Campus"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2014-01-05T23:18:29+08:00",
   "weather": "",
   "summary": "大四上 - 班级聚餐",

@@ -328,7 +328,7 @@ public class MyService extends IntentService {
 ```json
 {
   "tags": ["Android", "Translation"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-06-17T20:41:25+08:00",
   "weather": "",
   "summary": "翻译",

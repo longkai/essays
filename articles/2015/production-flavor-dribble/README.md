@@ -88,7 +88,7 @@ feedback welcome, happy coding~
 ```json
 {
   "tags": ["Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-07-28T20:16:55+08:00",
   "weather": "",
   "summary": "Android 多运行时环境自动化构建的两种方法",

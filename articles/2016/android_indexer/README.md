@@ -64,7 +64,7 @@ indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14
 ```json
 {
   "tags": ["Android"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2016-03-11T00:55:48+08:00",
   "weather": "a sudden cold",
   "summary": "An indexer view like Wechat.",

@@ -20,7 +20,7 @@ The Build Lifecycle
 ```json
 {
   "tags": ["Campus", "Gradle"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-08-07T22:12:46+08:00",
   "weather": "",
   "summary": "",

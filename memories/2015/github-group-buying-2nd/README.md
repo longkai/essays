@@ -35,7 +35,7 @@ Github团购第二轮
 ```json
 {
   "tags": ["Activity"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2015-09-20T23:50:47+08:00",
   "weather": "",
   "summary": "这一次，下一次",

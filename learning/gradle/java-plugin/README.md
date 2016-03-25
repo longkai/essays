@@ -50,7 +50,7 @@ apply plugin: 'java'
 ```json
 {
   "tags": ["Campus", "Gradle"],
-  "reserved": false,
+  "render_option": 0,
   "date": "2013-08-08T16:09:38+08:00",
   "weather": "",
   "summary": "",
