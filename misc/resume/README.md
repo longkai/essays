@@ -2,7 +2,7 @@
 广东-深圳-南山  
 +8613168001399  
 im.longkai@gmail.com    
-https://xiaolongtongxue.com
+https://www.xiaolongtongxue.com
 
 ### Orientation
 Java/Android Engineer; Gopher
@@ -33,16 +33,17 @@ Java/Android Engineer; Gopher
 #### 么么嗖 - 深圳市爱美购科技有限公司 Android 工程师 (2014-06 -- 2015-05)
 毕业即加入这家B轮的跨境电商创业公司，在学校宿舍开始从0到1独立开发 Android 客户端直到半年后新同事加入。在此期间学习和实践了很多新技术，如编译环境的实践，编译期生成源代码，自定义控件，自定义模板动态布局原生控件等。应用可在各大市场搜索下载。
 
+#### 个人网站 - xiaolongtongxue.com (2013-07 -- Present)
+记录自己的思考，实践，学习和生活。本地编辑 markdown 文档后 push 到 Github，接着通过 Github Webhook 将文章推送到 blog 服务器，然后即可查看内容更新，支持 HTTP/2，后端采用 go 开发。
+
 #### 时时医 - 深圳时时医科技有限公司 Android 工程师 (2015-06 -- 2016-02)
 期间作为 Android 开发小组组长负责 Android app 开发。
 
 #### Catnut - 新浪微博 Android Resetful Client (2014-02):
-在校期间学习 Android 时独立开发的一个项目。在今天看起来的确有各种问题，但还是很有意义的一个项目，使用了很多当时的新技术，姑且沿用那时的描述。
+在校期间学习 Android 时独立开发的一个项目。在今天看起来的确有各种问题，但还是很有意义的一个项目，使用了很多当时的新技术，[项目主页][3], 应用可在 [Google Play][4] 搜索下载。姑且沿用那时的描述。
 
 > 一个「简洁，流畅，开源，去广告，省流量，支持离线查看，幵且附带了一个每天分享 500px 精彩瞬间」的新浪微博 app
 > 程序架构启发自 Google IO 2010 - developing-RESTful-android-apps,界面设计启发自 Twitter for Android，只为 Android4.1+
-
-[项目主页][3], 应用可在 [Google Play][4] 搜索下载。
 
 #### 广西大学雨无声网站 技术站长 (2012-6 -- 2013-06)
 在此负责所有与技术相关的工作，包括网站的技术规划， Linux 服务器的基本运维，新产品的开发与就项目的维护，以及一些技术培训活动等。
@@ -56,7 +57,7 @@ Java/Android Engineer; Gopher
 主要涉及技术：spring，mybatis，bootstrap，git，gradle，nginx/jetty
 
 ### Profile
-1991-10       
+1991-10  
 广西大学-本科-计算机科学与技术 (2010 - 2014)  
 兴趣：户外，足球，阅读，外设，信用卡，尝试新的技术和产品等  
 
