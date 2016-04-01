@@ -49,7 +49,7 @@ task clean(type: Delete) {
 推荐的做法是**在子项目的 build.gradle 里声明**``buildscript { ... } ``部分；按需（根据项目类型，java，android lib，android app 等）配置环境，而不是一刀切。
 
 ## dependencies, plugins, ..., version 不统一？
-builde.gradle 最爽的，可能就是引入库是如此简单，比如项目需要``appcompat-v7``库，只需要一句
+build.gradle 最爽的，可能就是引入库是如此简单，比如项目需要``appcompat-v7``库，只需要一句
 
 ```groovy
 compile 'com.android.support:appcompat-v7:23.2.0'
