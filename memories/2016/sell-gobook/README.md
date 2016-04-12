@@ -1,4 +1,4 @@
-出售新书： The Go Programming Language
+[已售]出售新书： The Go Programming Language
 ===
 
 > Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.

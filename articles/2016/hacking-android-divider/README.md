@@ -1,7 +1,7 @@
-Hacking Android 分割线
+Hacking Android Divider
 ===
 
-> Keep clam, profile your code, and always remember, perf matters.
+> Keep clam, profile your code, and always remember, perf(performance) matters.
 >
 > -- Android Performance Patterns 
 
@@ -12,7 +12,7 @@ Hacking Android 分割线
 ## 目标
 1. 没有 overdraw
 2. 没有多余的 view(不使用 view 来作为 divider), the less, the better
-3. 灵活, 比如支持 section divider，不同样式（设置高度，drawable, padding等），从简单的 ViewGroup 到 recyclerview 等
+3. 灵活, 比如支持 section divider，不同样式（设置高度，drawable, padding等），从简单的 ViewGroup 到 RecyclerView 等
 
 ## 场景
 在产品需求中常常会有列表加上分割线这样的界面，通常容易想到的解决方案大概有如下几种：
@@ -25,18 +25,18 @@ So far so good，然而上述3种场景有一个共同的问题：无法实现�
 
 ![wechat-discovery-ui](wechat.jpg)
 
-可以看到，这里的 item 被逻辑上分了组（section），组与组之间的 divider 比较粗，并且组内部的 item 之间也有较细的 divider（这 divider 水平方向还有 margin）; last but not least 最底部到 tab 的那一大片区域也可以认为是一个 divider。
+可以看到，这里的 item 被逻辑上分了组（section），组与组之间的 divider 比较粗，并且组内部的 item 之间也有较细的 divider（这 divider 水平方向还有 margin）; last but not leas，最底部到 tab 的那一大片区域也可以认为是一个 divider。
 
-上述3种方式均无法实现，所以我们需要另想办法。
+上述3种方案均无法实现，所以我们需要另想办法。
 
 ## 直观的方案
 这个其实并不难实现。直观地看，可以用 ``View`` 来作为 divider，给 view 设置 background，height，margin 即可实现高度不一且包含 margin 的 divider 了；至于底部那一大片区域......给 items 的 parent view 设置背景（这样做甚至不需要给粗细的 divider view 设置背景了）？
 
 这样做显然是可以的，但是这样简单的思路却有着较为复杂的实现。
 
-首先，违背了目标2。这样做的结果就是 divider view 的个数比 item view 的个数还要多！越少的 view 意味着很多，比如占用的内存少，更快的 GPU 绘制（容易达到60fps），单单是一个``android.view.View``就有着超过2w行的代码你受得了......
+首先，违背了目标2。这样做的结果就是 divider view 的个数比 item view 的个数还要多！越少的 view 意味着很多，比如占用的内存少，更快的 GPU 绘制（60fps），单单是一个``android.view.View``就有着超过2w行的代码你受得了......
 
-其次，给 parent view 设置背景违背了目标1。这里的麻烦在于底部那块的高度是运行时才知道（Android 多样化），所以你没法直接搞定它。如果产品放过你那就没什么事了......如果不是，那直观的的解决方案就是给 parent view 整个设置一个一个 divider 的背景。然而当你设置了之后，你会发现**整个 item view 的背景也变成了 divider 的颜色**！于是，直观给每个 item view 又设置一个白色的背景。OK，搞定；OK，3X+ 的 overdraw（1x parent 背景，2x item 背景，3x item 的内容，......）。
+其次，给 parent view 设置背景违背了目标1。这里的麻烦在于底部那块的高度在运行时才知道，所以你没法直接在 layout xml 中搞定它。如果产品放过你那就没什么事了......如果不是（赶紧请她杯咖啡），那直观的的解决方案就是给 parent view 整个设置一个 divider 的背景。然而当你设置了之后，你会发现**整个 item view 的背景也变成了 divider 的颜色**！于是，又直观给每个 item view 设置一个白色的背景。OK，搞定；OK，3x+ 的 overdraw（1x parent 背景，2x item 背景，3x item 的内容，......）。
 
 最后，上述两点导致代码复杂很多，综上各点利弊需要做出权衡（**trade-off**）。
 
@@ -247,7 +247,8 @@ public class DividerVerticalLayout extends ViewGroup {
 ```
 
 ## Acknowledgment
-- 题图来自 Google Android Team.
+- 题图来自 Google Android Team
+- 谢谢几位同学对本文的审阅
 
 ## EOF
 ```json
@@ -256,7 +257,7 @@ public class DividerVerticalLayout extends ViewGroup {
   "render_option": 0,
   "date": "2016-04-11T22:12:17+08:00",
   "weather": "rainy",
-  "summary": "1. no overdraw; 2. no extra views; 3. flexible(padding, height, section, ViewGroup, RecyclerView etc.)",
+  "summary": "1. no overdraw; 2. no extra views; 3. flexible(padding, height, section, ViewGroup, RecyclerView etc.); #performance-matters.",
   "location": "Shenzhen",
   "background": "perf-matters.jpg"
 }
