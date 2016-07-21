@@ -1,6 +1,6 @@
 Fast Recover Your macOS
 ===
-From time to time, we might switch to a new machine or factory reset our OS for some reasons. You do not want to install every software from scratch since it is tedious and easy forgetting which app you need. Besides, things only goes worse if you are a developer because a lot of configurations needs to be done.
+From time to time, we might switch to a new machine or factory reset our OS for some reasons. You do not want to install every software from scratch since it is tedious and easy forgetting which app you need. Besides, things only goes worse if you are a developer because a lot of configurations need to be done.
 
 Last week I experienced this scenario that I installed the public Beta of the latest macOS where a lot of stuff just did not work. I have no choice but recovering. Fortunately, nearly all my important files are text-based so backup to the USB flash drive really fast(I do not use Time Machine since I have that little stuff to store). Finally, gave it a restore.
 
@@ -9,8 +9,8 @@ Then, I follow the following steps then a quite shining and working OS is welcom
 * Remapping ``CAPSLOCK`` to ``CTRL``, and vice-versa if you are a hard core Unix user
 * Apply voice announcing the time every 15 min in Date&Time setting
 * Apply three finger dragging window
-* Remove any spotlight shortcuts then remap as <C-q>
-* Install input method and map it with <Cmd-space>
+* Remove any spotlight shortcuts then remap as ``C+q``
+* Install input method and map it with ``Cmd+space``
 * Go to Mac appstore to download what you have purchased and need
 * Open native terminal then activate command-line tool with xcode
 * Install ``homebrew`` on native terminal
@@ -24,7 +24,7 @@ Then, I follow the following steps then a quite shining and working OS is welcom
 
 All done, when it comes to automation, do it without manually.
 
-One more thing, I recommend you install Dropbox and soft linking(``ln``) other important directory, then all of the files are syncing amazing!
+One more thing, I recommend you install Dropbox and soft linking(``ln``) other important directories, then all files are syncing amazingly!
 
 My backup and recover script is fairly easy as following,
 
