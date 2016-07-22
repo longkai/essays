@@ -36,8 +36,8 @@ cat /path/to/backuped-apps | xargs brew cask install
 
 ```sh
 #!/bin/bash
-brew ls > /path/to/backuped-pkgs
-brew cask ls > /path/to/backuped-apps
+/usr/local/bin/brew ls > /path/to/backuped-pkgs
+/usr/local/bin/brew cask ls > /path/to/backuped-apps
 ```
 
 We can automate a little further, every Friday 12am schedule ``crontab`` triggering the update/backup task,
