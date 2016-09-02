@@ -86,16 +86,16 @@ Spring 的文档写的特别好，当时是直接看着 Spring 的文档和 demo
 最后，骄傲地使用 Github Hook 推送本文章 :)
 
 ## EOF
-```json
-{
-  "tags": ["Web", "Thoughts"],
-  "render_option": 0,
-  "date": "2016-03-26T21:54:48+08:00",
-  "weather": "a nice day:)",
-  "summary": "Golang + Github + Markdown + Hook + MaterialDesign = xiaolongtongxue.com",
-  "location": "Shenzhen",
-  "background": "/assets/images/xiamen.jpg"
-}
+```yaml
+background: /assets/images/xiamen.jpg
+date: 2016-03-26T21:54:48+08:00
+hide: false
+location: Shenzhen
+summary: Golang + Github + Markdown + Hook + MaterialDesign = xiaolongtongxue.com
+tags:
+- Web
+- Thoughts
+weather: a nice day:)
 ```
 
 [1]: https://github.com/

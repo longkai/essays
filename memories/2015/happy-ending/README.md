@@ -36,14 +36,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Thoughts"],
-  "render_option": 0,
-  "date": "2015-07-03T01:36:19+08:00",
-  "weather": "",
-  "summary": "「最美的邂逅总是在远方」，毕业快乐，各位！",
-  "location": "Shenzhen",
-  "background": "xida.jpg"
-}
+```yaml
+background: xida.jpg
+date: 2015-07-03T01:36:19+08:00
+hide: false
+location: Shenzhen
+summary: 「最美的邂逅总是在远方」，毕业快乐，各位！
+tags:
+- Campus
+- Thoughts
+weather: ""
 ```

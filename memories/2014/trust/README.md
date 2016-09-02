@@ -25,14 +25,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Thoughts"],
-  "render_option": 0,
-  "date": "2014-01-17T23:50:18+08:00",
-  "weather": "",
-  "summary": "被别人信任时，或者说别人相信你的时候，这是一种怎样的感觉？",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-17T23:50:18+08:00
+hide: false
+location: Nanning
+summary: 被别人信任时，或者说别人相信你的时候，这是一种怎样的感觉？
+tags:
+- Campus
+- Thoughts
+weather: ""
 ```

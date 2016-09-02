@@ -325,16 +325,16 @@ public class MyService extends IntentService {
 有没有想过阻塞主线程到底意味着什么？这是下一篇的主题！
 
 ### EOF
-```json
-{
-  "tags": ["Android", "Translation"],
-  "render_option": 0,
-  "date": "2015-06-17T20:41:25+08:00",
-  "weather": "",
-  "summary": "翻译",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2015-06-17T20:41:25+08:00
+hide: false
+location: Shenzhen
+summary: 翻译
+tags:
+- Android
+- Translation
+weather: ""
 ```
 
 [1]: ../a-journey-on-the-android-main-thread-psvm/README.md

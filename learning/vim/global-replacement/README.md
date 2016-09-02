@@ -19,14 +19,14 @@ use ``/``, ``n`` and ``.`` is more useful when you not intent to replacement glo
 ``:g/pattern/s/old/new/g`` This syntax lets you search for a pattern, and then, once you find the line with the pattern, make a substitution on a string different from the pattern.
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Vim"],
-  "render_option": 0,
-  "date": "2015-09-27T01:18:43+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2015-09-27T01:18:43+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Campus
+- Vim
+weather: ""
 ```

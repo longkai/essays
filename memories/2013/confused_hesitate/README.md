@@ -74,14 +74,14 @@
 骚年，加油。
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Thoughts"],
-  "render_option": 0,
-  "date": "2013-07-06T01:33:20+08:00",
-  "weather": "",
-  "summary": "迷茫还是犹豫？大四了，直接就业还是继续学习？是安定工作还是坚持自己内心的想法？",
-  "location": "Nanning",
-  "background": "xida.jpg"
-}
+```yaml
+background: xida.jpg
+date: 2013-07-06T01:33:20+08:00
+hide: false
+location: Nanning
+summary: 迷茫还是犹豫？大四了，直接就业还是继续学习？是安定工作还是坚持自己内心的想法？
+tags:
+- Campus
+- Thoughts
+weather: ""
 ```

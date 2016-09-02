@@ -66,14 +66,14 @@ $ cmd >& out_and_error
 10. %.	上一条命令的最后一个选项（esc+.同样效果）
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Linux"],
-  "render_option": 0,
-  "date": "2013-11-28T19:52:15+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-11-28T19:52:15+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Linux
+weather: ""
 ```

@@ -168,14 +168,14 @@ Copyright longkai 2013-2014
 Licensed under a Creative Commons Attribution 4.0 International License.
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Paper"],
-  "render_option": 0,
-  "date": "2013-12-17T12:17:20+08:00",
-  "weather": "",
-  "summary": "一篇小论文",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-12-17T12:17:20+08:00
+hide: false
+location: Nanning
+summary: 一篇小论文
+tags:
+- Campus
+- Paper
+weather: ""
 ```

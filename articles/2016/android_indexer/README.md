@@ -61,16 +61,15 @@ indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14
 感兴趣的朋友去 Github 上看看或者拿来用用，用 go 写的。
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2016-03-11T00:55:48+08:00",
-  "weather": "a sudden cold",
-  "summary": "An indexer view like Wechat.",
-  "location": "Shenzhen",
-  "background": "/assets/images/west-lake.jpg"
-}
+```yaml
+background: /assets/images/west-lake.jpg
+date: 2016-03-11T00:55:48+08:00
+hide: false
+location: Shenzhen
+summary: An indexer view like Wechat.
+tags:
+- Android
+weather: a sudden cold
 ```
 
 [1]: https://github.com/longkai/indexer

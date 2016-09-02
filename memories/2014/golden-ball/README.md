@@ -31,14 +31,13 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-14T23:28:07+08:00",
-  "weather": "",
-  "summary": "c罗获得金球奖，阿森纳客场艰难拿下3分重回英超榜首！",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-14T23:28:07+08:00
+hide: false
+location: Nanning
+summary: c罗获得金球奖，阿森纳客场艰难拿下3分重回英超榜首！
+tags:
+- Campus
+weather: ""
 ```

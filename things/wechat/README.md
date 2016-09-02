@@ -46,14 +46,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Things"],
-  "render_option": 0,
-  "date": "2014-01-04T06:31:36+08:00",
-  "weather": "",
-  "summary": "微信，你应该知道的玩法",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-01-04T06:31:36+08:00
+hide: false
+location: Nanning
+summary: 微信，你应该知道的玩法
+tags:
+- Campus
+- Things
+weather: ""
 ```

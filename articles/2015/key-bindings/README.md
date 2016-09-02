@@ -41,16 +41,15 @@ IDEA默认就配备了Emacs键位，由于不是Emacs用户，所以没有去尝
 前几天调试时就遇到了这样的一个问题，某个字段里包含大量了JSON字符串，突然想到了现代的浏览器都带了__JSON.js__的，于是就用这种方式搞定了。
 
 ### EOF
-```json
-{
-  "tags": ["Equip"],
-  "render_option": 0,
-  "date": "2015-09-16T00:38:22+08:00",
-  "weather": "",
-  "summary": "不知所云。最重要的是，找到自己喜欢的键位，提高工作效率的同时，留下更多的时间做自己喜欢的事情！",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2015-09-16T00:38:22+08:00
+hide: false
+location: Shenzhen
+summary: 不知所云。最重要的是，找到自己喜欢的键位，提高工作效率的同时，留下更多的时间做自己喜欢的事情！
+tags:
+- Equip
+weather: ""
 ```
 
 

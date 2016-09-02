@@ -51,16 +51,15 @@ HTTP/2 是 HTTP 协议的第二个主要版本。她基于 SPDY 协议，由 HTT
 Happy hacking.
 
 ### EOF
-```json
-{
-  "tags": ["Web"],
-  "render_option": 0,
-  "date": "2016-03-29T02:55:36+08:00",
-  "weather": "fine but a bit cold",
-  "summary": "Let's support HTTP/2.",
-  "location": "Shenzhen",
-  "background": "http.jpg"
-}
+```yaml
+background: http.jpg
+date: 2016-03-29T02:55:36+08:00
+hide: false
+location: Shenzhen
+summary: Let's support HTTP/2.
+tags:
+- Web
+weather: fine but a bit cold
 ```
 
 [1]: https://en.wikipedia.org/wiki/SPDY

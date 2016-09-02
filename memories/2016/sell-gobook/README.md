@@ -89,16 +89,16 @@ go **低耦合** 的接口模式，栗子很棒，很丰富和实用。
 连续第二天跑步了，坚持。俗话说，4月不跑步，5月徒伤悲！
 
 ### EOF
-```json
-{
-  "tags": ["Reading", "Golang"],
-  "render_option": 0,
-  "date": "2016-04-01T23:46:37+08:00",
-  "weather": "run fun",
-  "summary": "出版社 + 作者 + 内容 = 注定经典的一本书",
-  "location": "Shenzhen",
-  "background": "gobook.jpg"
-}
+```yaml
+background: gobook.jpg
+date: 2016-04-01T23:46:37+08:00
+hide: false
+location: Shenzhen
+summary: 出版社 + 作者 + 内容 = 注定经典的一本书
+tags:
+- Reading
+- Golang
+weather: run fun
 ```
 
 [1]: http://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_1?s=books&ie=UTF8&qid=1459200107&sr=1-1&keywords=the+go+programming+language

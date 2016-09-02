@@ -266,14 +266,14 @@
 做个个人的比较。桂林好比才浅有貌。南宁好比无才无貌。而成都就是才貌双全了。瞎掰的，哈哈。再见，成都！
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Travel"],
-  "render_option": 0,
-  "date": "2014-01-21T08:58:33+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Chengdu",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-01-21T08:58:33+08:00
+hide: false
+location: Chengdu
+summary: ""
+tags:
+- Campus
+- Travel
+weather: ""
 ```

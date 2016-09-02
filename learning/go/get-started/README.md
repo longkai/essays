@@ -151,14 +151,14 @@ git的源代码目录非常的好处就是有利于整个go源代码的管理，
 2. 欢迎讨论，我的邮箱是im.longkai@gmail.com
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Golang"],
-  "render_option": 0,
-  "date": "2013-12-05T18:18:07+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-12-05T18:18:07+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Golang
+weather: ""
 ```

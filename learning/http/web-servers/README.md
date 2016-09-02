@@ -83,14 +83,13 @@ Permanently moved resources, Temporarily moved resources, URL augmentation, Load
 ## Log transaction -- place notes about the completed transaction in a log file.
 
 ### EOF
-```json
-{
-  "tags": ["Web"],
-  "render_option": 0,
-  "date": "2015-09-26T12:31:18+08:00",
-  "weather": "",
-  "summary": "HTTP: The Definitive Guide",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2015-09-26T12:31:18+08:00
+hide: false
+location: Shenzhen
+summary: 'HTTP: The Definitive Guide'
+tags:
+- Web
+weather: ""
 ```

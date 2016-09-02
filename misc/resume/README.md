@@ -62,17 +62,16 @@ Java/Android Engineer; Gopher
 兴趣：户外，足球，阅读，外设，信用卡，尝试新的技术和产品等  
 
 ### EOF
-```json
-{
-  "title": "Resume",
-  "tags": ["Career"],
-  "render_option": 1,
-  "date": "2016-03-02T12:17:00+08:00",
-  "weather": "fine",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/crossing.jpg"
-}
+```yaml
+background: /assets/images/crossing.jpg
+date: 2016-03-02T12:17:00+08:00
+hide: true
+location: Shenzhen
+summary: ""
+tags:
+- Career
+title: Resume
+weather: fine
 ```
 
 [1]: https://github.com/longkai/Musseta

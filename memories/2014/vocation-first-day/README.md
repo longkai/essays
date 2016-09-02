@@ -27,14 +27,13 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-18T23:48:27+08:00",
-  "weather": "",
-  "summary": "放假啦，大家假期愉快 :)",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-18T23:48:27+08:00
+hide: false
+location: Nanning
+summary: 放假啦，大家假期愉快 :)
+tags:
+- Campus
+weather: ""
 ```

@@ -211,16 +211,15 @@ ext {
 ```
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2016-03-30T22:05:24+08:00",
-  "weather": "rainy",
-  "summary": "让配置和构建程序化",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2016-03-30T22:05:24+08:00
+hide: false
+location: Shenzhen
+summary: 让配置和构建程序化
+tags:
+- Android
+weather: rainy
 ```
 
 [1]: http://gradle.org/

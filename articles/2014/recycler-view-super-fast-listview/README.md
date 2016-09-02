@@ -286,14 +286,13 @@ by longkai on 1 Sep. in Sz.
 
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2014-09-01T22:16:22+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2014-09-01T22:16:22+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Android
+weather: ""
 ```

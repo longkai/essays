@@ -59,16 +59,16 @@
 > Author: [Rick Viscomi][2], Web Developer at Google
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Translation"],
-  "render_option": 0,
-  "date": "2014-05-27T03:06:44+08:00",
-  "weather": "",
-  "summary": "译文",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-05-27T03:06:44+08:00
+hide: false
+location: Nanning
+summary: 译文
+tags:
+- Campus
+- Translation
+weather: ""
 ```
 
 [1]: http://www.quora.com/Career-Advice/What-are-the-ways-to-utilize-6-months-to-build-skill-set-to-get-hired-at-Facebook-or-Google/answer/Rick-Viscomi?srid=twt8&share=1

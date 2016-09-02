@@ -251,16 +251,16 @@ public class DividerVerticalLayout extends ViewGroup {
 - 谢谢几位同学对本文的审阅
 
 ## EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2016-04-11T22:12:17+08:00",
-  "weather": "rainy",
-  "summary": "1. no overdraw; 2. no extra views; 3. flexible(padding, height, section, ViewGroup, RecyclerView etc.); #performance-matters.",
-  "location": "Shenzhen",
-  "background": "perf-matters.jpg"
-}
+```yaml
+background: perf-matters.jpg
+date: 2016-04-11T22:12:17+08:00
+hide: false
+location: Shenzhen
+summary: '1. no overdraw; 2. no extra views; 3. flexible(padding, height, section,
+  ViewGroup, RecyclerView etc.); #performance-matters.'
+tags:
+- Android
+weather: rainy
 ```
 
 [1]: https://www.youtube.com/watch?v=T52v50r-JfE

@@ -113,14 +113,14 @@
 *longkai@2013-10-31*
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Thoughts"],
-  "render_option": 0,
-  "date": "2013-10-31T03:07:42+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "xida.jpg"
-}
+```yaml
+background: xida.jpg
+date: 2013-10-31T03:07:42+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Thoughts
+weather: ""
 ```

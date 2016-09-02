@@ -23,14 +23,14 @@ From 2015 to 2016
 有些东西没怎么多想，但是这些确实都是自己想做或者已经在做的事情，**未完成的得继续完成，没有做过的应尽力尝试**，这也是2015最后对2016说的话了，新年快乐！
 
 ### EOF
-```json
-{
-  "tags": ["Life", "Thoughts"],
-  "render_option": 0,
-  "date": "2015-12-31T23:59:04+08:00",
-  "weather": "a fine day:)",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/xiamen.jpg"
-}
+```yaml
+background: /assets/images/xiamen.jpg
+date: 2015-12-31T23:59:04+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Life
+- Thoughts
+weather: a fine day:)
 ```

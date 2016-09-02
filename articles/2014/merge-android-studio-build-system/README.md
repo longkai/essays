@@ -148,14 +148,14 @@ task wrapper(type: Wrapper) {
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Android"],
-  "render_option": 0,
-  "date": "2014-03-07T00:02:51+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-03-07T00:02:51+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Android
+weather: ""
 ```

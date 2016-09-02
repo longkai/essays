@@ -29,16 +29,15 @@ app[下载地址][1] [项目主页][2]
 2014-03-05
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-03-05T00:33:19+08:00",
-  "weather": "",
-  "summary": "简洁，流畅，去广告，省流量，支持离线查看，并且附带了一个每天更新的发现精彩瞬间的福利~",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-03-05T00:33:19+08:00
+hide: false
+location: Nanning
+summary: 简洁，流畅，去广告，省流量，支持离线查看，并且附带了一个每天更新的发现精彩瞬间的福利~
+tags:
+- Campus
+weather: ""
 ```
 
 [1]: https://dl.dropboxusercontent.com/u/96034496/apps/catnut-latest.apk "app downlaod link"

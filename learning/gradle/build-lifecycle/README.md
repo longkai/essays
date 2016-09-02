@@ -17,14 +17,14 @@ The Build Lifecycle
 > 5. project lib dependcency
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Gradle"],
-  "render_option": 0,
-  "date": "2013-08-07T22:12:46+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-08-07T22:12:46+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Gradle
+weather: ""
 ```

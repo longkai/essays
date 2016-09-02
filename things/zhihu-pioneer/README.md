@@ -36,14 +36,14 @@ image from the Internet
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Reading"],
-  "render_option": 0,
-  "date": "2014-01-07T22:18:39+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-01-07T22:18:39+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Reading
+weather: ""
 ```

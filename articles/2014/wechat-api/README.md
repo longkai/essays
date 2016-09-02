@@ -20,14 +20,13 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-10T23:30:39+08:00",
-  "weather": "",
-  "summary": "假如你有微信公众号 API 接入的需求可以联系我，我可以免费提供这样的程序和服务器资源 :)",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-10T23:30:39+08:00
+hide: false
+location: Nanning
+summary: 假如你有微信公众号 API 接入的需求可以联系我，我可以免费提供这样的程序和服务器资源 :)
+tags:
+- Campus
+weather: ""
 ```

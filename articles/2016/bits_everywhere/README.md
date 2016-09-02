@@ -254,16 +254,15 @@ int main() {
 - 图片来自[signalvnoise][3]
 
 ## EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2016-03-31T22:37:55+08:00",
-  "weather": "okay day",
-  "summary": "编程珠玑 -> 位操作 -> 位集 -> 网络原理 -> Android 源码, bits everywhere!",
-  "location": "Shenzhen",
-  "background": "go101010.jpg"
-}
+```yaml
+background: go101010.jpg
+date: 2016-03-31T22:37:55+08:00
+hide: false
+location: Shenzhen
+summary: 编程珠玑 -> 位操作 -> 位集 -> 网络原理 -> Android 源码, bits everywhere!
+tags:
+- Android
+weather: okay day
 ```
 
 [1]: https://book.douban.com/subject/3227098/

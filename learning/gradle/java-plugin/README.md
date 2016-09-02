@@ -47,14 +47,14 @@ apply plugin: 'java'
 > 5. manifest jar文件里包含的manifest文件
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Gradle"],
-  "render_option": 0,
-  "date": "2013-08-08T16:09:38+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-08-08T16:09:38+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Gradle
+weather: ""
 ```

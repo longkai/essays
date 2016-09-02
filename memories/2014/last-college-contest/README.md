@@ -29,16 +29,15 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-09T23:02:54+08:00",
-  "weather": "",
-  "summary": "还记得每当你考完试的时候的感受吗？是后悔没有刷够分呢，还是担心自己要挂科了想着怎么打电话给老师求情呐 =.=",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-09T23:02:54+08:00
+hide: false
+location: Nanning
+summary: 还记得每当你考完试的时候的感受吗？是后悔没有刷够分呢，还是担心自己要挂科了想着怎么打电话给老师求情呐 =.=
+tags:
+- Campus
+weather: ""
 ```
 
 [1]: http://zh.wikipedia.org/wiki/%E6%AD%90%E8%90%8A%E7%A6%AE

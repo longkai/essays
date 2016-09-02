@@ -59,14 +59,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Life", "Outdoor"],
-  "render_option": 0,
-  "date": "2015-07-06T20:46:29+08:00",
-  "weather": "",
-  "summary": "前方多图预警！",
-  "location": "Shenzhen",
-  "background": "there.jpg"
-}
+```yaml
+background: there.jpg
+date: 2015-07-06T20:46:29+08:00
+hide: false
+location: Shenzhen
+summary: 前方多图预警！
+tags:
+- Life
+- Outdoor
+weather: ""
 ```

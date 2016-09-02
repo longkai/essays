@@ -39,16 +39,16 @@
 [office帮助 - 创建目录](http://office.microsoft.com/zh-cn/word-help/HA102824256.aspx "创建目录")
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Things"],
-  "render_option": 0,
-  "date": "2014-01-06T20:35:41+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-01-06T20:35:41+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Things
+weather: ""
 ```
 
 [vim]: http://zh.wikipedia.org/zh-cn/Vim "vim"

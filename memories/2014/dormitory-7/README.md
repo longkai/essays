@@ -94,14 +94,13 @@ s：有，3423&^%%%*&*8 密码3#￥#@￥#@￥#@￥@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-08T23:36:56+08:00",
-  "weather": "",
-  "summary": "大学4年，宿舍是我们停留的港湾，在这里每天都有精彩的剧本发生。剧本虽好，可惜临近剧终。感叹之余，何不记一记，若干年后也可以笑一笑咧~",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-08T23:36:56+08:00
+hide: false
+location: Nanning
+summary: 大学4年，宿舍是我们停留的港湾，在这里每天都有精彩的剧本发生。剧本虽好，可惜临近剧终。感叹之余，何不记一记，若干年后也可以笑一笑咧~
+tags:
+- Campus
+weather: ""
 ```

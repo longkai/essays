@@ -172,14 +172,14 @@ Hi，上个周末很开心。小龙萌生了一个 wild thoughts，好像姗姗�
 
 
 ### EOF
-```json
-{
-  "tags": ["Life", "Outdoor"],
-  "render_option": 0,
-  "date": "2015-07-13T19:38:20+08:00",
-  "weather": "",
-  "summary": "越过山丘，虽然已白了头；喋喋不休，时不我予的哀愁",
-  "location": "Shenzhen",
-  "background": "wanting.jpg"
-}
+```yaml
+background: wanting.jpg
+date: 2015-07-13T19:38:20+08:00
+hide: false
+location: Shenzhen
+summary: 越过山丘，虽然已白了头；喋喋不休，时不我予的哀愁
+tags:
+- Life
+- Outdoor
+weather: ""
 ```

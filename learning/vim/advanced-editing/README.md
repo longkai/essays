@@ -30,14 +30,14 @@ the keys not used in command mode that available for user-defined commands:
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Vim"],
-  "render_option": 0,
-  "date": "2015-09-27T15:03:12+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2015-09-27T15:03:12+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Campus
+- Vim
+weather: ""
 ```

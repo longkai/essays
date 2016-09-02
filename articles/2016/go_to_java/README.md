@@ -191,16 +191,16 @@ Finally，我们看到 Java 代码终于变得和 Go 一样简洁了，看起来
 说到 Java，最后一直觉得，我们按照固有的模式把他越写越啰嗦。记得以前写 Spring 项目的时候，什么面向接口编程，到处都是接口，不管怎么样一上来就给你定义一大堆接口。起初我觉得这种方式挺好的，灵活构建各种模块，组件，架构，设计模式等等，但是现在觉得都真的是过了。对于大多数实际项目来说，然并卵；当真正需要抽象为接口的再定义也不迟，否则就定义为一个方法，快速迭代交付再继续憋；最后**接口更应该是接口的聚合，而不是方法的聚合**，就像 FunctionalInterface 那样，小而美。
 
 #### EOF
-```json
-{
-  "tags": ["Golang", "Java"],
-  "render_option": 0,
-  "date": "2016-01-16T01:37:42+08:00",
-  "weather": "rainy",
-  "summary": "今天翻看Brian W. Kernighan所著的《The Go Programming Language》，发现一个比较有趣的问题",
-  "location": "Shenzhen",
-  "background": "/assets/images/wuzhen.jpg"
-}
+```yaml
+background: /assets/images/wuzhen.jpg
+date: 2016-01-16T01:37:42+08:00
+hide: false
+location: Shenzhen
+summary: 今天翻看Brian W. Kernighan所著的《The Go Programming Language》，发现一个比较有趣的问题
+tags:
+- Golang
+- Java
+weather: rainy
 ```
 
 [1]: http://www.gopl.io

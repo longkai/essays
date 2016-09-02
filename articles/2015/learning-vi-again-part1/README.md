@@ -63,14 +63,13 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Tools"],
-  "render_option": 0,
-  "date": "2015-09-06T01:42:25+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2015-09-06T01:42:25+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Tools
+weather: ""
 ```

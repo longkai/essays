@@ -16,14 +16,13 @@
 2014-01-15
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-15T23:40:09+08:00",
-  "weather": "",
-  "summary": "这几天没票回家了，那就写个微博 app 吧",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-15T23:40:09+08:00
+hide: false
+location: Nanning
+summary: 这几天没票回家了，那就写个微博 app 吧
+tags:
+- Campus
+weather: ""
 ```

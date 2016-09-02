@@ -43,14 +43,13 @@ android {
 by longkai on 2014-08-30 in Sz.
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2014-08-31T01:09:52+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2014-08-31T01:09:52+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Android
+weather: ""
 ```

@@ -50,16 +50,16 @@
 这感觉，看这类型的书自己就是在找虐......
 
 ## EOF
-```json
-{
-  "tags": ["Reading", "Bookshelf"],
-  "render_option": 0,
-  "date": "2016-04-06T20:30:01+08:00",
-  "weather": "terrific good",
-  "summary": "没有谁是一座孤岛，每本书都是一个世界。第一次写「书评」（也许不算是......）",
-  "location": "Shenzhen",
-  "background": "cover.jpg"
-}
+```yaml
+background: cover.jpg
+date: 2016-04-06T20:30:01+08:00
+hide: false
+location: Shenzhen
+summary: 没有谁是一座孤岛，每本书都是一个世界。第一次写「书评」（也许不算是......）
+tags:
+- Reading
+- Bookshelf
+weather: terrific good
 ```
 
 [1]: http://baike.baidu.com/link?url=dtb0xbnD2BZGJRPfCa0cBfD3pVh7V_xYH_9CcEcFrvU1FdGLTnJ7NwS4X53AWTBJfbcLZQ6-SFIl9CTfbF99k4-JqNYA8mowm7nmCkFwdDLiOqvKmHQJzTYxEWkAhgHjXvgoFnSB2dD0YJyBHHDK0_

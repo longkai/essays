@@ -32,14 +32,13 @@ Github团购第二轮
 ![](github-group-buying-2nd-11.jpg)
 
 ### EOF
-```json
-{
-  "tags": ["Activity"],
-  "render_option": 0,
-  "date": "2015-09-20T23:50:47+08:00",
-  "weather": "",
-  "summary": "这一次，下一次",
-  "location": "Shenzhen",
-  "background": "github-group-buying-2nd-1.jpg"
-}
+```yaml
+background: github-group-buying-2nd-1.jpg
+date: 2015-09-20T23:50:47+08:00
+hide: false
+location: Shenzhen
+summary: 这一次，下一次
+tags:
+- Activity
+weather: ""
 ```

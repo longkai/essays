@@ -33,14 +33,13 @@ image from the Internet
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-07T21:34:30+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-07T21:34:30+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+weather: ""
 ```

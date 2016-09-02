@@ -146,16 +146,16 @@ public class ActivityThread {
 作者：[Pierre-Yves Ricau][8]
 
 ### EOF
-```json
-{
-  "tags": ["Android", "Translation"],
-  "render_option": 0,
-  "date": "2015-06-10T23:24:22+08:00",
-  "weather": "",
-  "summary": "翻译",
-  "location": "Shenzhen",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2015-06-10T23:24:22+08:00
+hide: false
+location: Shenzhen
+summary: 翻译
+tags:
+- Android
+- Translation
+weather: ""
 ```
 
 [1]: http://www.codinghorror.com/blog/2012/04/learn-to-read-the-source-luke.html

@@ -23,14 +23,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Thoughts"],
-  "render_option": 0,
-  "date": "2014-01-14T22:31:16+08:00",
-  "weather": "",
-  "summary": "我们都会回家的，一切都会好起来的。",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-14T22:31:16+08:00
+hide: false
+location: Nanning
+summary: 我们都会回家的，一切都会好起来的。
+tags:
+- Campus
+- Thoughts
+weather: ""
 ```

@@ -27,16 +27,16 @@
 > Author: [Jonathan Paulson][2], Software Engineer at Google
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Translation"],
-  "render_option": 0,
-  "date": "2014-05-23T03:19:48+08:00",
-  "weather": "",
-  "summary": "译文",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-05-23T03:19:48+08:00
+hide: false
+location: Nanning
+summary: 译文
+tags:
+- Campus
+- Translation
+weather: ""
 ```
 
 [1]: http://www.quora.com/Algorithms/What-are-good-ways-to-master-algorithms-and-data-structure-to-be-a-programming-expert

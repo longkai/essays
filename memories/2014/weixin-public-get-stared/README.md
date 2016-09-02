@@ -22,14 +22,13 @@ image from Jure Kravanja
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-03T00:20:48+08:00",
-  "weather": "",
-  "summary": "对于这个公众号怎么弄，现在我也还是在摸索中。有什么好的建议，欢迎告诉我！",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-03T00:20:48+08:00
+hide: false
+location: Nanning
+summary: 对于这个公众号怎么弄，现在我也还是在摸索中。有什么好的建议，欢迎告诉我！
+tags:
+- Campus
+weather: ""
 ```

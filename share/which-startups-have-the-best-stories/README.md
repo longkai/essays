@@ -18,16 +18,16 @@
 Facebook和YouTube今天的成就无需多言，看到这个故事你是否也有或多或少的想法呢:-)
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Translation"],
-  "render_option": 0,
-  "date": "2014-05-10T02:22:22+08:00",
-  "weather": "",
-  "summary": "翻译",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-05-10T02:22:22+08:00
+hide: false
+location: Nanning
+summary: 翻译
+tags:
+- Campus
+- Translation
+weather: ""
 ```
 
 [原文]: http://www.quora.com/Startups/Which-startups-have-the-best-stories

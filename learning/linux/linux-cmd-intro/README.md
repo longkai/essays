@@ -60,14 +60,14 @@ $ ls --version
 2. 以上的命令选项说明参考《linux口袋书（第二版）》，可能你需要查阅这本书才能查看某个命令是否支持上述的某些选项了:-)
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Linux"],
-  "render_option": 0,
-  "date": "2013-11-28T19:52:15+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-11-28T19:52:15+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Linux
+weather: ""
 ```

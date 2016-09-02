@@ -85,14 +85,13 @@ productionRelease
 feedback welcome, happy coding~
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2015-07-28T20:16:55+08:00",
-  "weather": "",
-  "summary": "Android 多运行时环境自动化构建的两种方法",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2015-07-28T20:16:55+08:00
+hide: false
+location: Shenzhen
+summary: Android 多运行时环境自动化构建的两种方法
+tags:
+- Android
+weather: ""
 ```

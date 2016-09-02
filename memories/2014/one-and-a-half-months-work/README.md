@@ -17,14 +17,14 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Work", "Thoughts"],
-  "render_option": 0,
-  "date": "2014-08-18T09:18:07+08:00",
-  "weather": "",
-  "summary": "毕业一个半月了，好久没写些啥了...",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2014-08-18T09:18:07+08:00
+hide: false
+location: Shenzhen
+summary: 毕业一个半月了，好久没写些啥了...
+tags:
+- Work
+- Thoughts
+weather: ""
 ```

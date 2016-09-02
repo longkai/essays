@@ -9,8 +9,8 @@ Then, I follow the following steps then a quite shining and working OS is welcom
 * Remapping ``CAPSLOCK`` to ``CTRL``, and vice-versa if you are a hard core Unix user
 * Apply voice announcing the time every 15 min in Date&Time setting
 * Apply three finger dragging window
-* Remove any spotlight shortcuts then remap as ``C+q``
-* Install input method and map it with ``Cmd+space``
+* Remove any spotlight shortcuts then remap as ``⌥+q``
+* Install input method and map it with ``⌘+space``
 * Go to Mac appstore to download what you have purchased and need
 * Open native terminal then activate command-line tool with xcode
 * Install ``homebrew`` on native terminal
@@ -53,14 +53,13 @@ We can automate a little further, every Friday 12am schedule ``crontab`` trigger
 that would be great without being aware of it. Note all the paths must be **absolute**.
 
 #### EOF
-```json
-{
-  "tags": ["automation"],
-  "render_option": 0,
-  "date": "2016-07-18T08:09:17+08:00",
-  "weather": "hot",
-  "summary": " When it comes to automation, do it without manually.",
-  "location": "Shenzhen",
-  "background": "recover.png"
-}
+```yaml
+background: recover.png
+date: 2016-07-18T08:09:17+08:00
+hide: false
+location: Shenzhen
+summary: ' When it comes to automation, do it without manually.'
+tags:
+- automation
+weather: hot
 ```

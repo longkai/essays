@@ -45,14 +45,13 @@ Github越来越流行，几乎是软件工程师们每天工作都要浏览的�
 
 
 ### EOF
-```json
-{
-  "tags": ["Activity"],
-  "render_option": 0,
-  "date": "2015-07-24T14:25:39+08:00",
-  "weather": "",
-  "summary": "最近迷上了手办，还想从岛国弄一个初音的-.-",
-  "location": "Shenzhen",
-  "background": "https://cdn.shopify.com/s/files/1/0051/4802/products/mona-2_1024x1024.jpg?v=1422555084"
-}
+```yaml
+background: https://cdn.shopify.com/s/files/1/0051/4802/products/mona-2_1024x1024.jpg?v=1422555084
+date: 2015-07-24T14:25:39+08:00
+hide: false
+location: Shenzhen
+summary: 最近迷上了手办，还想从岛国弄一个初音的-.-
+tags:
+- Activity
+weather: ""
 ```

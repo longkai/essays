@@ -35,14 +35,13 @@
 2014-02-01
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-02-01T23:14:58+08:00",
-  "weather": "",
-  "summary": "福尔摩斯：「我的人生就是一场漫长的逃亡，为的是摆脱平淡庸俗的生活状态」",
-  "location": "Guilin",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-02-01T23:14:58+08:00
+hide: false
+location: Guilin
+summary: 福尔摩斯：「我的人生就是一场漫长的逃亡，为的是摆脱平淡庸俗的生活状态」
+tags:
+- Campus
+weather: ""
 ```

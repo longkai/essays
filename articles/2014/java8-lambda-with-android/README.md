@@ -49,16 +49,15 @@ public class MainActivity extends ActionBarActivity {
 如果你在使用的过程中有什么问题或者发现欢迎告诉我~
 
 ### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2014-11-04T00:45:07+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: 2014-11-04T00:45:07+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Android
+weather: ""
 ```
 
 [showcase]: http://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg

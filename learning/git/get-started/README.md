@@ -276,14 +276,14 @@ nothing to commit, working directory clean
 本笔记参考自[version control with git 2nd]，感谢原作者！
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Git"],
-  "render_option": 0,
-  "date": "2013-11-29T01:10:41+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2013-11-29T01:10:41+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Git
+weather: ""
 ```

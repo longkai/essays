@@ -20,16 +20,15 @@
 起初，是想写关于支持正版软件付费购买的，但是没想到一扯扯到协作沟通的软件去了，甚至是感觉倒是像给Slack做广告...诶，也许大学的时候应该修大学写作这门课的:-(
 
 ### EOF
-```json
-{
-  "tags": ["Things"],
-  "render_option": 0,
-  "date": "2015-12-25T21:47:57+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/crossing.jpg"
-}
+```yaml
+background: /assets/images/crossing.jpg
+date: 2015-12-25T21:47:57+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Things
+weather: ""
 ```
 
 

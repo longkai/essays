@@ -151,16 +151,15 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
 最后非常感谢@Liger @小戴 同学的审阅。
 
 #### EOF
-```json
-{
-  "tags": ["Android"],
-  "render_option": 0,
-  "date": "2016-01-07T02:50:41+08:00",
-  "weather": "a little warm",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": "/assets/images/crossing.jpg"
-}
+```yaml
+background: /assets/images/crossing.jpg
+date: 2016-01-07T02:50:41+08:00
+hide: false
+location: Shenzhen
+summary: ""
+tags:
+- Android
+weather: a little warm
 ```
 
 

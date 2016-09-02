@@ -32,16 +32,16 @@ If you write Go code, set ``GOPATH`` to ``~/src``, all your build artifacts woul
 Finally, there are no rules from this article but some personal suggestions. Thanks for reading, happy hacking!
 
 ### EOF
-```json
-{
-  "tags": ["Programming", "Thoughts"],
-  "render_option": 0,
-  "date": "2016-02-05T20:27:21+08:00",
-  "weather": "very cold so no code",
-  "summary": "",
-  "location": "Guilin",
-  "background": "/assets/images/sea.jpg"
-}
+```yaml
+background: /assets/images/sea.jpg
+date: 2016-02-05T20:27:21+08:00
+hide: false
+location: Guilin
+summary: ""
+tags:
+- Programming
+- Thoughts
+weather: very cold so no code
 ```
 
 [1]: http://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582344

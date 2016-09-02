@@ -58,14 +58,13 @@ GitHub Octocat 手办团购第一轮
 
 
 ### EOF
-```json
-{
-  "tags": ["Activity"],
-  "render_option": 0,
-  "date": "2015-09-04T01:25:24+08:00",
-  "weather": "",
-  "summary": "今天，抗战胜利日，组织的第二波GitHub团购下单了，借着这个机会，突然觉得，假若没有第一次团购的经历，自然也没有这一次。借着这个机会，记录一下第一次的团购那些事儿吧~",
-  "location": "Shenzhen",
-  "background": "octocat-6.jpg"
-}
+```yaml
+background: octocat-6.jpg
+date: 2015-09-04T01:25:24+08:00
+hide: false
+location: Shenzhen
+summary: 今天，抗战胜利日，组织的第二波GitHub团购下单了，借着这个机会，突然觉得，假若没有第一次团购的经历，自然也没有这一次。借着这个机会，记录一下第一次的团购那些事儿吧~
+tags:
+- Activity
+weather: ""
 ```

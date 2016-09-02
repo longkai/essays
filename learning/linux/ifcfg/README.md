@@ -83,14 +83,14 @@ MTU=1500
 >longkai，2013-07-03
 
 ### EOF
-```json
-{
-  "tags": ["Campus", "Linux"],
-  "render_option": 0,
-  "date": "2014-01-13T23:33:00+08:00",
-  "weather": "",
-  "summary": "",
-  "location": "Nanning",
-  "background": "/assets/images/xida.jpg"
-}
+```yaml
+background: /assets/images/xida.jpg
+date: 2014-01-13T23:33:00+08:00
+hide: false
+location: Nanning
+summary: ""
+tags:
+- Campus
+- Linux
+weather: ""
 ```

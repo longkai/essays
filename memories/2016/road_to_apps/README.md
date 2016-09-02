@@ -49,14 +49,12 @@
 #### One More Thing
 
 #### EOF
-```json
-{
-  "tags": [],
-  "render_option": 2,
-  "date": "",
-  "weather": "",
-  "summary": "",
-  "location": "Shenzhen",
-  "background": ""
-}
+```yaml
+background: ""
+date: ""
+hide: true
+location: Shenzhen
+summary: ""
+tags: []
+weather: ""
 ```

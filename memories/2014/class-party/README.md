@@ -19,14 +19,13 @@
 
 
 ### EOF
-```json
-{
-  "tags": ["Campus"],
-  "render_option": 0,
-  "date": "2014-01-05T23:18:29+08:00",
-  "weather": "",
-  "summary": "大四上 - 班级聚餐",
-  "location": "Nanning",
-  "background": "../xida.jpg"
-}
+```yaml
+background: ../xida.jpg
+date: 2014-01-05T23:18:29+08:00
+hide: false
+location: Nanning
+summary: 大四上 - 班级聚餐
+tags:
+- Campus
+weather: ""
 ```
