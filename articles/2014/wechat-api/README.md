@@ -21,7 +21,7 @@
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background:
 date: 2014-01-10T23:30:39+08:00
 hide: false
 location: Nanning

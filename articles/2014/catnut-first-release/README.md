@@ -30,7 +30,7 @@ app[下载地址][1] [项目主页][2]
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background:
 date: 2014-03-05T00:33:19+08:00
 hide: false
 location: Nanning

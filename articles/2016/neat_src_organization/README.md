@@ -17,7 +17,7 @@ Assuming you have 4 types of projects, ``{}`` is a placeholder.
 1. Company project: ``~/src/{example.com}/{project}`` 
 2. Community project: ``~/src/{example.org}/{project}`` or ``~/src/github.com/{organization}/{project}``
 3. Personal project: ``~/src/github.com/{you}/{project}``
-4. Testing scratch project: ``~/src/scratch/{project}``
+4. Testing *foo bar* project: ``~/src/foo-bar/{project}``
 
 Note: I strongly recommend you to choose **github.com(or alternatives)** as root path of personal project. I know the feeling when you write something cool and want share with others. This is called social coding and what makes a good software today. However, if you don't want to open source, just keep it there and no publish proceeding.
 
