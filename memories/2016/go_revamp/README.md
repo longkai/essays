@@ -90,6 +90,7 @@ Spring 的文档写的特别好，当时是直接看着 Spring 的文档和 demo
 background: /assets/images/xiamen.jpg
 date: 2016-03-26T21:54:48+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: Golang + Github + Markdown + Hook + MaterialDesign = xiaolongtongxue.com
 tags:

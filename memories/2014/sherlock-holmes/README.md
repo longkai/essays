@@ -39,6 +39,7 @@
 background: /assets/images/xida.jpg
 date: 2014-02-01T23:14:58+08:00
 hide: false
+license: cc-40-by
 location: Guilin
 summary: 福尔摩斯：「我的人生就是一场漫长的逃亡，为的是摆脱平淡庸俗的生活状态」
 tags:

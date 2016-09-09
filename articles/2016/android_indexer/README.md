@@ -65,6 +65,7 @@ indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14
 background: /assets/images/west-lake.jpg
 date: 2016-03-11T00:55:48+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: An indexer view like Wechat.
 tags:

@@ -37,6 +37,7 @@ image from the Internet
 background: ../xida.jpg
 date: 2014-01-07T21:34:30+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

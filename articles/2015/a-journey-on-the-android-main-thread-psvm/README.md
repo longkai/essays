@@ -150,6 +150,7 @@ public class ActivityThread {
 background: /assets/images/xida.jpg
 date: 2015-06-10T23:24:22+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 翻译
 tags:

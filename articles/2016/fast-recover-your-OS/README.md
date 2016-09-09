@@ -57,9 +57,11 @@ that would be great without being aware of it. Note all the paths must be **abso
 background: recover.png
 date: 2016-07-18T08:09:17+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
-summary: ' When it comes to automation, do it without manually.'
+summary: 'When it comes to automation, do it without manually.'
 tags:
-- automation
+  - learning
+  - automation
 weather: hot
 ```

@@ -22,6 +22,7 @@ Facebook和YouTube今天的成就无需多言，看到这个故事你是否也�
 background: /assets/images/xida.jpg
 date: 2014-05-10T02:22:22+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 翻译
 tags:

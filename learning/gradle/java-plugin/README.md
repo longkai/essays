@@ -51,6 +51,7 @@ apply plugin: 'java'
 background: /assets/images/xida.jpg
 date: 2013-08-08T16:09:38+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

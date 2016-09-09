@@ -21,6 +21,7 @@
 background: ""
 date: 2014-08-18T09:18:07+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 毕业一个半月了，好久没写些啥了...
 tags:

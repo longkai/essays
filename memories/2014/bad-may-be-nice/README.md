@@ -20,6 +20,7 @@
 background: ../xida.jpg
 date: 2014-01-15T23:40:09+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 这几天没票回家了，那就写个微博 app 吧
 tags:

@@ -48,6 +48,7 @@ Java开发者当得知需要写一个Python脚本的时候通常会不知所措�
 background: /assets/images/xida.jpg
 date: 2014-05-20T01:27:47+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 译文
 tags:

@@ -255,6 +255,7 @@ public class DividerVerticalLayout extends ViewGroup {
 background: perf-matters.jpg
 date: 2016-04-11T22:12:17+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: '1. no overdraw; 2. no extra views; 3. flexible(padding, height, section,
   ViewGroup, RecyclerView etc.); #performance-matters.'

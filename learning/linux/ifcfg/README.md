@@ -87,6 +87,7 @@ MTU=1500
 background: /assets/images/xida.jpg
 date: 2014-01-13T23:33:00+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

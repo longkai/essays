@@ -66,6 +66,7 @@ Java/Android Engineer; Gopher
 background: /assets/images/crossing.jpg
 date: 2016-03-02T12:17:00+08:00
 hide: true
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

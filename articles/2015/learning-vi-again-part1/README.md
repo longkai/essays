@@ -67,6 +67,7 @@
 background: ""
 date: 2015-09-06T01:42:25+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

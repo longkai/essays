@@ -27,6 +27,7 @@ From 2015 to 2016
 background: /assets/images/xiamen.jpg
 date: 2015-12-31T23:59:04+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

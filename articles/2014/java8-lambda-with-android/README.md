@@ -53,6 +53,7 @@ public class MainActivity extends ActionBarActivity {
 background: ""
 date: 2014-11-04T00:45:07+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

@@ -27,6 +27,7 @@
 background: ../xida.jpg
 date: 2014-01-14T22:31:16+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 我们都会回家的，一切都会好起来的。
 tags:

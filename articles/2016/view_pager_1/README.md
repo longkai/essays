@@ -155,6 +155,7 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
 background: /assets/images/crossing.jpg
 date: 2016-01-07T02:50:41+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

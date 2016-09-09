@@ -50,6 +50,7 @@
 background: /assets/images/xida.jpg
 date: 2014-01-04T06:31:36+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 微信，你应该知道的玩法
 tags:

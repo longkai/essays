@@ -215,6 +215,7 @@ ext {
 background: /assets/images/xida.jpg
 date: 2016-03-30T22:05:24+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 让配置和构建程序化
 tags:

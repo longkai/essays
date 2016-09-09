@@ -78,6 +78,7 @@
 background: xida.jpg
 date: 2013-07-06T01:33:20+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 迷茫还是犹豫？大四了，直接就业还是继续学习？是安定工作还是坚持自己内心的想法？
 tags:

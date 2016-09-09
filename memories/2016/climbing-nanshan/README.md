@@ -26,6 +26,7 @@
 background: view.jpg
 date: 2016-04-09T20:12:17+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 翻越大南山
 tags:

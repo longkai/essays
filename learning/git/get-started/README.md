@@ -280,6 +280,7 @@ nothing to commit, working directory clean
 background: /assets/images/xida.jpg
 date: 2013-11-29T01:10:41+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

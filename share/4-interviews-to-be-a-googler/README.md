@@ -63,6 +63,7 @@
 background: /assets/images/xida.jpg
 date: 2014-05-27T03:06:44+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 译文
 tags:

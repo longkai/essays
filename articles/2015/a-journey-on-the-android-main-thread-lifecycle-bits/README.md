@@ -329,6 +329,7 @@ public class MyService extends IntentService {
 background: /assets/images/xida.jpg
 date: 2015-06-17T20:41:25+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 翻译
 tags:

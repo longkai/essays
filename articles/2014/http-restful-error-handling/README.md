@@ -172,6 +172,7 @@ Licensed under a Creative Commons Attribution 4.0 International License.
 background: /assets/images/xida.jpg
 date: 2013-12-17T12:17:20+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 一篇小论文
 tags:

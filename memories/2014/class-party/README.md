@@ -23,6 +23,7 @@
 background: ../xida.jpg
 date: 2014-01-05T23:18:29+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: 大四上 - 班级聚餐
 tags:

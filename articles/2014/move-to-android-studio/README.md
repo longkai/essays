@@ -47,6 +47,7 @@ by longkai on 2014-08-30 in Sz.
 background: ""
 date: 2014-08-31T01:09:52+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: ""
 tags:

@@ -42,6 +42,7 @@
 background: view.jpg
 date: 2016-04-03T23:12:17+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 春天到了，出去走走吧
 tags:

@@ -54,6 +54,7 @@ PS: 感谢@Liger 同学的审阅
 background: /assets/images/hk.jpg
 date: 2016-01-20T18:28:43+08:00
 hide: false
+license: cc-40-by
 location: Hong Kong
 summary: 上周末和同学在香港玩了两天，本文内容基于几个旅途见闻的思考
 tags:

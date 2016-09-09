@@ -610,6 +610,7 @@ project(':services:personService') {
 background: /assets/images/xida.jpg
 date: 2013-08-08T17:24:27+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

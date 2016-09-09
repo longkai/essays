@@ -93,6 +93,7 @@ go **低耦合** 的接口模式，栗子很棒，很丰富和实用。
 background: gobook.jpg
 date: 2016-04-01T23:46:37+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 出版社 + 作者 + 内容 = 注定经典的一本书
 tags:

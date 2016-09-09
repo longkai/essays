@@ -54,6 +54,7 @@
 background: cover.jpg
 date: 2016-04-06T20:30:01+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 没有谁是一座孤岛，每本书都是一个世界。第一次写「书评」（也许不算是......）
 tags:

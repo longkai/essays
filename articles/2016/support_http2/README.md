@@ -55,6 +55,7 @@ Happy hacking.
 background: http.jpg
 date: 2016-03-29T02:55:36+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: Let's support HTTP/2.
 tags:

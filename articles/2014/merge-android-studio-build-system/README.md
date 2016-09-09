@@ -152,6 +152,7 @@ task wrapper(type: Wrapper) {
 background: /assets/images/xida.jpg
 date: 2014-03-07T00:02:51+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

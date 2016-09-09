@@ -64,6 +64,7 @@ $ ls --version
 background: /assets/images/xida.jpg
 date: 2013-11-28T19:52:15+08:00
 hide: false
+license: cc-40-by
 location: Nanning
 summary: ""
 tags:

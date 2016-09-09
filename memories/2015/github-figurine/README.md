@@ -49,6 +49,7 @@ Github越来越流行，几乎是软件工程师们每天工作都要浏览的�
 background: https://cdn.shopify.com/s/files/1/0051/4802/products/mona-2_1024x1024.jpg?v=1422555084
 date: 2015-07-24T14:25:39+08:00
 hide: false
+license: cc-40-by
 location: Shenzhen
 summary: 最近迷上了手办，还想从岛国弄一个初音的-.-
 tags:
