@@ -32,7 +32,7 @@ Note the format is(at least one `#`),
 
 ```yaml
 --- sample, only `date` is required
-title: # only required if not specify in markdown
+title: # only required if unspecified in markdown
 date: 2016-01-07T02:50:41+08:00 # required, must be this format(i.e., RFC3339)
 hide: false # if true this article won't appear in the list
 summary: summary for this article
@@ -91,7 +91,6 @@ meta:
   origin: https://your-domain.com # (i.e. `window.location.origin` in JS) required only if using CDN or medium posting service
   bio: something about you
   link: other link about you
-  lang: zh
   name: your name
   title: page title
   mail: you@somewhere

@@ -74,6 +74,6 @@ weather: a sudden cold
 ```
 
 [1]: https://github.com/longkai/indexer
-[2]: https://github.com/longkai/gfdl
+[2]: https://github.com/longkai/xiaolongtongxue.com/tree/alpha/cmd/gfdl
 
 
