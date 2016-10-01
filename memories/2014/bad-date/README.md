@@ -1,6 +1,6 @@
 拿什么拯救你，我的情商
 ======================
-![安慰](http://farm3.staticflickr.com/2834/11737680053_b2a69e4f5f_o.png)
+![安慰](//farm3.staticflickr.com/2834/11737680053_b2a69e4f5f_o.png)
 
 今天犯了几件很脑残的事情，搞得自己挺郁闷的。本来已经约好了一个女生去听一场音乐会的。嗯，单纯的去听一场音乐会。于是又叫了一位情侣一块去，男的是我同班同学，女的是那个女生的同班同学，我原以为这样气氛可能更好。但是忘了告诉那个女生我还叫了人，这太不科学了。。。
 
@@ -24,7 +24,7 @@ image from the Internet
 
 ### EOF
 ```yaml
-background: http://farm3.staticflickr.com/2834/11737680053_b2a69e4f5f_o.png
+background: //farm3.staticflickr.com/2834/11737680053_b2a69e4f5f_o.png
 date: 2014-01-04T06:45:42+08:00
 hide: false
 license: cc-40-by

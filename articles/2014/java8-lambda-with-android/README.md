@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
 
 ### EOF
 ```yaml
-background: http://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg
+background: https://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg
 date: 2014-11-04T00:45:07+08:00
 hide: false
 license: cc-40-by
@@ -61,7 +61,7 @@ tags:
 weather: ""
 ```
 
-[showcase]: http://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg
+[showcase]: https://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg
 [retro-lambda]: https://github.com/orfjackal/retrolambda
 [gradle-retro-lambda]: https://github.com/evant/gradle-retrolambda
 

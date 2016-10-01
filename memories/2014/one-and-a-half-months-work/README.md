@@ -18,7 +18,7 @@
 
 ### EOF
 ```yaml
-background: http://farm9.staticflickr.com/8037/7998186215_6d9e5e51bc.jpg
+background: //farm9.staticflickr.com/8037/7998186215_6d9e5e51bc.jpg
 date: 2014-08-18T09:18:07+08:00
 hide: false
 license: cc-40-by

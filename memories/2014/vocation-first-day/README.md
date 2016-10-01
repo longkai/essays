@@ -1,6 +1,6 @@
 放假第一天
 ============
-![git log](http://farm3.staticflickr.com/2858/12013399865_40bed1727a_o.png)
+![git log](//farm3.staticflickr.com/2858/12013399865_40bed1727a_o.png)
 
 刚洗完澡出来，水真热，都有点不敢近身，看着俩手都红了，难道是放假了没人和我抢热水了么=/=
 
@@ -28,7 +28,7 @@
 
 ### EOF
 ```yaml
-background: http://farm3.staticflickr.com/2858/12013399865_40bed1727a_o.png
+background: //farm3.staticflickr.com/2858/12013399865_40bed1727a_o.png
 date: 2014-01-18T23:48:27+08:00
 hide: false
 license: cc-40-by

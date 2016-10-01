@@ -1,6 +1,6 @@
 被信任的感觉
 ============
-![trust](http://farm3.staticflickr.com/2818/11998229406_002daa10b7_o.jpg)
+![trust](//farm3.staticflickr.com/2818/11998229406_002daa10b7_o.jpg)
 
 今天发生了一件很不愉快的事情，非常的不爽，心中有条猛兽奔过的感觉。
 
@@ -26,7 +26,7 @@
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background: //farm3.staticflickr.com/2818/11998229406_002daa10b7_o.jpg
 date: 2014-01-17T23:50:18+08:00
 hide: false
 license: cc-40-by

@@ -9,18 +9,18 @@
 
 记住今晚的笑脸，若干年后，我们还会有这样的笑脸^_^
 
-![班级聚餐](http://farm8.staticflickr.com/7408/11777122836_b1195900d4_o.jpg)
+![班级聚餐](//farm8.staticflickr.com/7408/11777122836_b1195900d4_o.jpg)
 
-![班级聚餐](http://farm6.staticflickr.com/5478/11776770354_8bf80a3a77_o.jpg)
+![班级聚餐](//farm6.staticflickr.com/5478/11776770354_8bf80a3a77_o.jpg)
 
-![班级聚餐](http://farm4.staticflickr.com/3773/11776351475_4d7849434f_o.jpg)
+![班级聚餐](//farm4.staticflickr.com/3773/11776351475_4d7849434f_o.jpg)
 
-![班级聚餐](http://farm6.staticflickr.com/5533/11776795053_4f1c9fff61_o.jpg)
+![班级聚餐](//farm6.staticflickr.com/5533/11776795053_4f1c9fff61_o.jpg)
 
 
 ### EOF
 ```yaml
-background: http://farm8.staticflickr.com/7408/11777122836_b1195900d4_o.jpg
+background: //farm8.staticflickr.com/7408/11777122836_b1195900d4_o.jpg
 date: 2014-01-05T23:18:29+08:00
 hide: false
 license: cc-40-by

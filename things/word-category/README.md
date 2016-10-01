@@ -13,19 +13,19 @@
 ## 插入标题
 接着，在刚才添加的新页中建立标题，通过标题来建立目录式最简单的方式。那么，怎么建立标题呢？很简单的，先敲几个字，如图所示。
 
-![添加标题文字](http://farm3.staticflickr.com/2875/11797614676_1af1f0dac9_o.png)
+![添加标题文字](//farm3.staticflickr.com/2875/11797614676_1af1f0dac9_o.png)
 
 接下来，选中刚才敲的文字，选择``开始->标题1``
 
-![插入一个标题](http://farm6.staticflickr.com/5528/11797615006_2d5333b773_o.png)
+![插入一个标题](//farm6.staticflickr.com/5528/11797615006_2d5333b773_o.png)
 
 如果觉得标题样式不好看，可以改的哦。
 
 ## 制作目录
 回到第一页，我们要作为目录那一页，然后点击``引用->目录->自动目录->自动目录1/自动目录2``(选一个即可）
-![选择目录](http://farm8.staticflickr.com/7314/11797095763_99dd90428b_o.png)
+![选择目录](//farm8.staticflickr.com/7314/11797095763_99dd90428b_o.png)
 
-![生成目录](http://farm4.staticflickr.com/3765/11797614996_a2ff0aa8d8_o.png)
+![生成目录](//farm4.staticflickr.com/3765/11797614996_a2ff0aa8d8_o.png)
 
 可以看到，目录生成了，不过，标题又回到了第一页，不过没有关系，由于我们使用的是自动目录，把标题移动到你想要的页码，然后点击``引用->更新目录->只更新页码/更新整个目录``即可更新页码哟。
 
@@ -33,14 +33,14 @@
 添加二级目录和上面添加的一级目录类似，只不过，把你的标题设置成标题2即可（貌似只有三级标题，所以最多只能设置三级目录哦，如果有更多的需求，那么建议你搜索一下）
 
 最终的样子应该是这样子的
-![最终效果](http://farm4.staticflickr.com/3785/11797095733_2bfc45632b_o.png)
+![最终效果](//farm4.staticflickr.com/3785/11797095733_2bfc45632b_o.png)
 
 ## 参考资料
 [office帮助 - 创建目录](http://office.microsoft.com/zh-cn/word-help/HA102824256.aspx "创建目录")
 
 ### EOF
 ```yaml
-background: http://farm4.staticflickr.com/3785/11797095733_2bfc45632b_o.png
+background: //farm4.staticflickr.com/3785/11797095733_2bfc45632b_o.png
 date: 2014-01-06T20:35:41+08:00
 hide: false
 license: cc-40-by
