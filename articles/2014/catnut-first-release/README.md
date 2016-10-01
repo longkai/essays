@@ -30,7 +30,7 @@ app[下载地址][1] [项目主页][2]
 
 ### EOF
 ```yaml
-background:
+background: https://farm8.staticflickr.com/7417/12923931494_b40944bdcd_o.png
 date: 2014-03-05T00:33:19+08:00
 hide: false
 license: cc-40-by

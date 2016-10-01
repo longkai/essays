@@ -40,7 +40,7 @@
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: http://farm4.staticflickr.com/3785/11797095733_2bfc45632b_o.png
 date: 2014-01-06T20:35:41+08:00
 hide: false
 license: cc-40-by

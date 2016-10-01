@@ -287,7 +287,7 @@ by longkai on 1 Sep. in Sz.
 
 ### EOF
 ```yaml
-background: "#f4f4f4"
+background: https://dl.dropboxusercontent.com/u/96034496/moments/super-fast-momoso.jpg
 date: 2014-09-01T22:16:22+08:00
 hide: false
 license: cc-40-by

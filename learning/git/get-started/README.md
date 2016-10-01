@@ -277,7 +277,7 @@ nothing to commit, working directory clean
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: /assets/images/default.jpg
 date: 2013-11-29T01:10:41+08:00
 hide: false
 license: cc-40-by

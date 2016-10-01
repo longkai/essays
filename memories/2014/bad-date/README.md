@@ -24,7 +24,7 @@ image from the Internet
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background: http://farm3.staticflickr.com/2834/11737680053_b2a69e4f5f_o.png
 date: 2014-01-04T06:45:42+08:00
 hide: false
 license: cc-40-by

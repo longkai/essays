@@ -31,7 +31,7 @@ the keys not used in command mode that available for user-defined commands:
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: /assets/images/default.jpg
 date: 2015-09-27T15:03:12+08:00
 hide: false
 license: cc-40-by

@@ -152,7 +152,7 @@ git的源代码目录非常的好处就是有利于整个go源代码的管理，
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: /assets/images/default.jpg
 date: 2013-12-05T18:18:07+08:00
 hide: false
 license: cc-40-by

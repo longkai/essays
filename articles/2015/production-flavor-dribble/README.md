@@ -86,7 +86,7 @@ feedback welcome, happy coding~
 
 ### EOF
 ```yaml
-background: ""
+background: /assets/images/default.jpg
 date: 2015-07-28T20:16:55+08:00
 hide: false
 license: cc-40-by

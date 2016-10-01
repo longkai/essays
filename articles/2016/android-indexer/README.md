@@ -62,7 +62,7 @@ indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14
 
 ### EOF
 ```yaml
-background: /assets/images/west-lake.jpg
+background: /assets/images/default.jpg
 date: 2016-03-11T00:55:48+08:00
 hide: false
 license: cc-40-by

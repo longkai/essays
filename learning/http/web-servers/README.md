@@ -84,7 +84,7 @@ Permanently moved resources, Temporarily moved resources, URL augmentation, Load
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: /assets/images/default.jpg
 date: 2015-09-26T12:31:18+08:00
 hide: false
 license: cc-40-by

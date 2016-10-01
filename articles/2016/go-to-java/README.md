@@ -192,7 +192,7 @@ Finally，我们看到 Java 代码终于变得和 Go 一样简洁了，看起来
 
 #### EOF
 ```yaml
-background: /assets/images/wuzhen.jpg
+background: /assets/images/default.jpg
 date: 2016-01-16T01:37:42+08:00
 hide: false
 license: cc-40-by

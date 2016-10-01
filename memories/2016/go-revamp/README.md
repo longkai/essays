@@ -87,7 +87,7 @@ Spring 的文档写的特别好，当时是直接看着 Spring 的文档和 demo
 
 ## EOF
 ```yaml
-background: /assets/images/xiamen.jpg
+background: /assets/images/default.jpg
 date: 2016-03-26T21:54:48+08:00
 hide: false
 license: cc-40-by

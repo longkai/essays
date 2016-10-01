@@ -147,7 +147,7 @@ public class ActivityThread {
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: zygote.png
 date: 2015-06-10T23:24:22+08:00
 hide: false
 license: cc-40-by

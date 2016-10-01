@@ -21,7 +21,7 @@
 
 ### EOF
 ```yaml
-background:
+background: /assets/images/default.jpg
 date: 2014-01-10T23:30:39+08:00
 hide: false
 license: cc-40-by

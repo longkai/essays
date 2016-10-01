@@ -607,7 +607,7 @@ project(':services:personService') {
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: /assets/images/default.jpg
 date: 2013-08-08T17:24:27+08:00
 hide: false
 license: cc-40-by

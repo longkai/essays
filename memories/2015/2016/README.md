@@ -24,7 +24,7 @@ From 2015 to 2016
 
 ### EOF
 ```yaml
-background: /assets/images/xiamen.jpg
+background: /assets/images/default.jpg
 date: 2015-12-31T23:59:04+08:00
 hide: false
 license: cc-40-by

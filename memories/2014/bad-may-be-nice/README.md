@@ -8,7 +8,7 @@
 
 不过也好，这几天也没事了，可以利用这几天在学校把一直想为某人做的一个新浪微博客户端原型给做出来，**Android**系统的，出于各种原因，不想向下兼容低版本了鸟，至少得**4.1.2**版本哦╮(╯_╰)╭
 
-学生时代写的东西，谈不上实际的用途，都是凭着兴趣学习和分享嘛，都开源了，所以这次也不例外。如果对程序设计感兴趣可以在我的github上关注一下[https://github.com/longkai/tingting](https://github.com/longkai/tingting)哦，fork，clone，bug issue各种都欢迎！
+学生时代写的东西，谈不上实际的用途，都是凭着兴趣学习和分享嘛，都开源了，所以这次也不例外。如果对程序设计感兴趣可以在我的[github](https://github.com/longkai/catnut)上关注一下哦，fork，clone，bug issue各种都欢迎！
 
 ---
 题图作者 [Jure Kravanja](http://500px.com/yurko)
@@ -17,7 +17,7 @@
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background: http://farm6.staticflickr.com/5472/11965239225_1b5eeb6d18_o.jpg
 date: 2014-01-15T23:40:09+08:00
 hide: false
 license: cc-40-by

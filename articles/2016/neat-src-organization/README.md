@@ -33,7 +33,7 @@ Finally, there are no rules from this article but some personal suggestions. Tha
 
 ### EOF
 ```yaml
-background: /assets/images/sea.jpg
+background: /assets/images/default.jpg
 date: 2016-02-05T20:27:21+08:00
 hide: false
 license: cc-40-by

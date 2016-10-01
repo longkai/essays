@@ -24,7 +24,7 @@
 
 ### EOF
 ```yaml
-background: ../xida.jpg
+background: http://farm9.staticflickr.com/8037/7998186215_6d9e5e51bc.jpg
 date: 2014-01-14T22:31:16+08:00
 hide: false
 license: cc-40-by

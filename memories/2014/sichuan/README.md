@@ -267,7 +267,7 @@
 
 ### EOF
 ```yaml
-background: /assets/images/xida.jpg
+background: ../xida.jpg
 date: 2014-01-21T08:58:33+08:00
 hide: false
 license: cc-40-by

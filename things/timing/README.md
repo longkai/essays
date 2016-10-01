@@ -21,7 +21,7 @@
 
 ### EOF
 ```yaml
-background: /assets/images/crossing.jpg
+background: timing.png
 date: 2015-12-25T21:47:57+08:00
 hide: false
 license: cc-40-by

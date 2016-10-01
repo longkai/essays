@@ -44,7 +44,7 @@ by longkai on 2014-08-30 in Sz.
 
 ### EOF
 ```yaml
-background: ""
+background: /assets/images/default.jpg
 date: 2014-08-31T01:09:52+08:00
 hide: false
 license: cc-40-by
