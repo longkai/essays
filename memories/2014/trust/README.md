@@ -1,6 +1,6 @@
 被信任的感觉
 ============
-![trust](//farm3.staticflickr.com/2818/11998229406_002daa10b7_o.jpg)
+![trust](https://farm3.staticflickr.com/2818/11998229406_002daa10b7_o.jpg)
 
 今天发生了一件很不愉快的事情，非常的不爽，心中有条猛兽奔过的感觉。
 

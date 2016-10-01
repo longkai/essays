@@ -1,7 +1,7 @@
 微信API接口接入
 =================
 
-![wechat](//farm4.staticflickr.com/3716/11872041935_032fee59b9_o.png)
+![wechat](https://farm4.staticflickr.com/3716/11872041935_032fee59b9_o.png)
 
 今晚，打开微信公众平台的网页时突然想试试微信开发者的API，毕竟这个比较火嘛，很多企业甚至是个人都接入了微信的API接口开展业务。
 

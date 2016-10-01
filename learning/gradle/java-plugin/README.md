@@ -37,7 +37,7 @@ apply plugin: 'java'
 > 7. uploadConfigurationName（使用特定的配置上传项目）
 
 下面是想各种tasks间的关系
-> ![taskrelationship](//www.gradle.org/docs/current/userguide/img/javaPluginTasks.png)
+> ![taskrelationship](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
 
 ## java plugin 的一些属性
 > 1. sourceSets 包括了项目的源代码
@@ -48,7 +48,7 @@ apply plugin: 'java'
 
 ### EOF
 ```yaml
-background: //www.gradle.org/docs/current/userguide/img/javaPluginTasks.png
+background: //docs.gradle.org/current/userguide/img/javaPluginTasks.png
 date: 2013-08-08T16:09:38+08:00
 hide: false
 license: cc-40-by
