@@ -8,11 +8,11 @@ It's so popular. There're a lot of cool stuffs you can do with Raspberry Pi. Lea
 
 Sounds interesting? So I bought one from *element14*, one of the certificated providers.
 
-By the way, it's weird that it was *made in china* but have to pay the import tax even thought I live in China!
+By the way, it's weird that it was *Made in China* but I have to pay the import tax even though I live in China!
 
 This is my very first little tiny Pi :)
 
-![Raspberry Pi 3](rpi.png)
+![Raspberry Pi 3](rpi.png?imageView2/2/w/1024/format/jpg)
 
 Let's play with it!
 
@@ -27,9 +27,9 @@ Besides a Pi, you must at least have,
 Download your favorite OS from [raspberrypi.org][os](I chose *Raspbian* since it's official supported). Plugin card reader to your computer then writing the image to SD card with this [guide][installation guide]. After completion, insert it into Pi, then booting Pi with the usb cable.
 
 ## Network Settings
-It bootstrapped, We need to login into the system. **Note, the network IS NOT a must**. You can connect other cables to your monitor, like HDMI, USB-to-Serial, etc. However, I find the network easy for me to go.
+It bootstrapped, now we need to login into the system. **Note, the network IS NOT a must**. You can connect other cables to your monitor, like HDMI, USB-to-Serial, etc. However, I find the network easy for me to go.
 
-Figuring out the Pi's IP address with your router, then ssh login into as `ssh pi@your-pi-ip`, the default password is `raspberry`.
+Figuring out the Pi's IP address with your router, then login into via `ssh pi@your-pi-ip`, the default password is `raspberry`.
 
 Edit `/etc/network/interfaces` with your favorite editor.
 
@@ -67,6 +67,8 @@ network={
 
 Finally, restart network with `sudo /etc/init.d/networking restart` and you are done!
 
+> You may personalize your taste about the brand new system.
+
 ## GUI Desktop
 Despite the terminal interface, Raspbian acts as a Graphic User Interface Environment by default. It provides a lot of common software, like libre office, chromium, programming development toolkits, even *games*! It's worth a try.
 
@@ -76,23 +78,23 @@ VNC is turn off by default you need to enable it. Run `sudo raspi-config`, then 
 
 Raspbian provides VNC server itself, so the things you need to do is installing VNC-view on your computer and connect both.
 
-The default VNC server is provided by [RealVNC][realvnc], you'd better install its *viewer* on your computer. However, if you use macOS, the *Screen Sharing* app provided by itself, with which you need to `sudo apt-get install tigervnc` on your pi(then connect with port 5901). Either way it's okay:)
+The default VNC server on Pi is [RealVNC][realvnc], you'd better install its *viewer* on your computer. However, if you use macOS, the *Screen Sharing* app provided by itself, with which you need to `sudo apt-get install tigervnc` on your pi(then connect with port 5901). Either way it's okay.
 
 Here is my desktop, the wallpaper is my hometown:)
 
-![wallpaper](rpi-gui.png)
+![wallpaper](rpi-gui.png?imageView2/2/w/1024/format/jpg)
 
 ## What's Next?
 With Pi, you can do a lot of stuffs. My favorite is connecting it with other hardware... Right now, I would like to build a Time Machine backup service. Stay tune! 
 
 ## Remaining issues
-The network performance is laggy. The ping could be range from 1ms to 2000ms, orz...I suppose it's a router problem or the result of Pi's cheap network interface. Whatsoever, let it run first.
+The network performance is laggy. The ping could be range from 1ms to 2000ms, sigh...I suppose it's a router problem or the result of Pi's cheap network interface. Whatsoever, let it run first.
 
 With cables you can have a stunning speed comparing with ssh or VNC, it's worth a try to connect Pi with a cable. What if you have no access of internet?
 
 ## Other Resources
-http://tigervnc.org document about tiger VNC
-https://www.raspberrypi.org contains a huge resources about Pi, blogs, community, forums, more.
+- http://tigervnc.org document about tiger VNC
+- https://www.raspberrypi.org contains a huge resources about Pi, blogs, community, forums, and more
 
 Finally, with the slogan of Pi,
 
@@ -102,10 +104,10 @@ Finally, with the slogan of Pi,
 ```yaml
 date: 2016-11-02T20:43:46+08:00
 summary: Teach, learn and make with Raspberry Pi
-weather: a bit of cold
+weather: a bit cold
 license: cc-40-by
 location: cn
-background: rpi-gui.png
+background: rpi-gui.png?imageView2/2/w/1024/format/jpg
 tags:
   - Raspberry Pi
 ```
