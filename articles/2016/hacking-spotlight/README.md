@@ -56,23 +56,23 @@ Sequentially,
 8. Done and Lock it
 
 ### Apply Proxy Rules
-By watching the HTTP requests, the two **second level domain** Apple uses for Spotlight suggestion is,
+By watching the HTTP requests, the two **second level domain** Apple uses for Spotlight suggestion are,
 
 - `configuration.apple.com`
 - `ls.apple.com`
 
 Hence, put this two domain to your proxy rule list(or global proxy which may cause network laggy).
 
-Note, to be clear, any domain has these two **suffix** should go through a proxy, i.e. `a.b.c.ls.apple.com`.
+To be clear, any domain has these two **suffix** should go through a proxy, i.e. `a.b.c.ls.apple.com`.
 
 ## Further Thoughts
 It works for me very well, however, there're still some things should be taken into count:
 
-- [ ] The Wikipedia not work in the *Dictionary* app
-- [ ] Privacy, since all our search keywords exposed to Apple
-- [ ] By disabling the GPS and IP rule proxy, I'm not sure it would break any functionality(possible not basically, but it's all about assumption).
+* The Wikipedia not work in the *Dictionary* app
+* Privacy, since all our search keywords exposed to Apple
+* By disabling the GPS and IP rule proxy, I'm not sure it would break any functionality
 
-For the former, it's not a big deal since wiki works in Spotlight but if you make it work, please let me know. The latter, I treat it as a reminder, protecting our privacy from time to time.
+For the former, it's not a big deal since wiki works in Spotlight but if you make it work, please let me know. The latter, I treat it as a reminder, protecting our privacy from time to time. The last, basically not, it only has something to do with the Location-Based Suggestions but it's all about assumption.
 
 
 
@@ -93,3 +93,4 @@ tags:
 [avaiable-list]: http://www.apple.com/ios/feature-availability/#spotlight-suggestions-spotlight-suggestions
 [apple-desc]: https://support.apple.com/en-us/HT204014
 [qq-video]: https://v.qq.com/x/page/m03438kx2xx.html
+
