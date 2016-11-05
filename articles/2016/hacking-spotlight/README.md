@@ -1,15 +1,15 @@
-Hacking Spotlight
+Enable Spotlight Suggestions
 ===
 If you're using Mac, this article may appeal to you.
 
-## What's Spotlight
+## What's it?
 According to Apple,
 
 > Spotlight helps you quickly locate files on your Mac, and more.
 
 You should read [this][apple-desc] if you have no idea about it. In short, it improves your productivity **quickly**, search files, open/switch apps, lookup words, do calculation, search online with wiki, twitter, etc.
 
-Here is a video showcase in action(if you cannot open it, try [this][qq-video]).
+Below is a video showcase in action(if you cannot open it, try [this][qq-video]).
 
 [![Spotlight Demo on Vimeo](showcase.png?imageView2/2/w/512/format/jpg)](https://vimeo.com/190262280)
 
@@ -26,7 +26,7 @@ But, how can I enable it?
 Don't worry, you can still give it a try with hints providing in this post.
 
 ## Pre-requisite
-- A little knowledge about network, i.e. HTTP.
+- A little knowledge about Web, i.e. HTTP.
 - A proxy server lives in the [list][avaiable-list] and a client on your local Mac.
 
 Actually, it's all about **how to use a proxy application**.
@@ -35,15 +35,15 @@ Actually, it's all about **how to use a proxy application**.
 Since the feature only available in a certain of country, Apple must know where you are when you using Spotlight. As far as I know, there're three ways that one remote end can **guess** your location.
 
 1. **Language & Region** based location.
-2. **Geographic** based location via GPS.
-3. **IP** based location.
+2. **GPS** based location.
+3. **IP Geographic** based location.
 
 Tried all of them and I suppose Apple use solution 2 and fallback to solution 3. No matter what methods it uses one things is for sure: **they talk via network**, i.e. HTTP protocol.
 
 So, by disabling GPS when searching then letting the search requests go through an HTTP proxy, we're done!
 
 ## In Action
-### Disable Location Based Suggestions
+### System Settings
 Sequentially,
 
 1. System Preferences
@@ -65,11 +65,12 @@ Hence, put this two domain to your proxy rule list(or global proxy which may cau
 
 Note, to be clear, any domain has these two **suffix** should go through a proxy, i.e. `a.b.c.ls.apple.com`.
 
-## Remaining Issues
+## Further Thoughts
 It works for me very well, however, there're still some things should be taken into count:
 
 - [ ] The Wikipedia not work in the *Dictionary* app
 - [ ] Privacy, since all our search keywords exposed to Apple
+- [ ] By disabling the GPS and IP rule proxy, I'm not sure it would break any functionality(possible not basically, but it's all about assumption).
 
 For the former, it's not a big deal since wiki works in Spotlight but if you make it work, please let me know. The latter, I treat it as a reminder, protecting our privacy from time to time.
 
@@ -77,7 +78,7 @@ For the former, it's not a big deal since wiki works in Spotlight but if you mak
 
 Thanks for reading.
 
-### EOF
+## EOF
 ```yaml
 date: 2016-11-04T23:14:40+08:00
 summary: Enable Spotlight suggestions where not available in your country.
