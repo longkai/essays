@@ -56,14 +56,15 @@ Sequentially,
 8. Done and Lock it
 
 ### Apply Proxy Rules
-By watching the HTTP requests, the two **second level domain** Apple uses for Spotlight suggestion are,
+By watching the HTTP requests, the three domain Apple uses for Spotlight suggestion are,
 
-- `configuration.apple.com`
 - `ls.apple.com`
+- `smoot.apple.com`
+- `configuration.apple.com`
 
-Hence, put this two domain to your proxy rule list(or global proxy which may cause network laggy).
+Hence, put these domains to your proxy rule list(or global proxy which may cause network laggy).
 
-To be clear, any domain has these two **suffix** should go through a proxy, i.e. `a.b.c.ls.apple.com`.
+To be clear, any domain has this three **suffix** should go through a proxy, i.e. `a.b.c.ls.apple.com`.
 
 ## Further Thoughts
 It works for me very well, however, there're still some things should be taken into count:

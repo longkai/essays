@@ -9,8 +9,6 @@ Then, I follow the following steps then a quite shining and working OS is welcom
 * Remapping ``CAPSLOCK`` to ``CTRL``, and vice-versa if you are a hard core Unix user
 * Apply voice announcing the time every 15 min in Date&Time setting
 * Apply three finger dragging window
-* Remove any spotlight shortcuts then remap as ``⌥+q``
-* Install input method and map it with ``⌘+space``
 * Go to Mac appstore to download what you have purchased and need
 * Open native terminal then activate command-line tool with xcode
 * Install ``homebrew`` on native terminal
@@ -42,12 +40,14 @@ cat /path/to/backuped-apps | xargs brew cask install
 
 We can automate a little further, every Friday 12am schedule ``crontab`` triggering the update/backup task,
 ```sh
-# every Friday 12am, update and cleanup then backup
-0 12 * * 5 /usr/local/bin/brew update && /usr/local/bin/brew upgrade && /usr/local/bin/brew cask update && /usr/local/bin/brew cleanup && /usr/local/bin/brew cask cleanup && /path/to/backup-script
+# every friday 12:00, update and cleanup then backup
+0 12 * * 5 /usr/local/bin/brew update && /usr/local/bin/brew upgrade && /usr/local/bin/brew cleanup && ~/Documents/configurations/brew/brew-backup.sh
 # at same time update vim plugins
 0 12 * * 5 /Applications/MacVim.app/Contents/MacOS/Vim +PlugUpdate +PlugClean +qall
 # same with zprezto
-0 12 * * 5 /usr/bin/git -C ~/.zprezto pull upstream master
+0 12 * * 5 /usr/local/bin/git -C ~/.zprezto pull upstream master && /usr/local/bin/git -C ~/.zprezto submodule foreach git pull origin master
+# clean useless docker images
+0 12 * * 5 ~/Documents/scripts/clean_docker.sh
 ```
 
 that would be great without being aware of it. Note all the paths must be **absolute**.
