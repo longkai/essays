@@ -1,6 +1,6 @@
 Raspberry Pi as a Service
 ===
-Borrowing from those popular expressions, e.g. `XaaS`, this article gives a brief stories about setting up some of the services right from a tiny Pi.
+Borrowing from those popular expressions, i.e. `XaaS`, this article gives a brief story about setting up some of the services right from a tiny Pi.
 
 ## Local DNS Mapping
 A server usually has a static IP address or more for providing a sustainable and convenient service for the users, which is absolutely fine in the public network. What's more, people don't get well with numbers but text so the DNS comes into play. Our Pi lives in the local or private network, a **static numeric** IP would be in a mess. Supposing you set Pi's IP to `192.168.1.233`, all of the network(i.e. TCP/IP) based service needs an IP address, e.g. ssh, http(s), ftp, etc. Plus sometimes you need to specify a port associate with the service. What a mess.
@@ -18,7 +18,7 @@ If there's a Unix based system, you can try dial `raspberrypi.local`, which may 
 ## Local Git Service
 How about host your own Github like service locally? Github is great and you can always use it. However, for some reasons, maybe sensitive or private, you can't push your work. In this case, a local git service is awesome, you have a full control your work, plus a replica bonus.
 
-There're many open source git services lets you deploy locally, like [gitlab][gitlab], [gogs][gogs] even git itself!
+There're many open source git services letting you deploy locally, like [gitlab][gitlab], [gogs][gogs] even git itself!
 
 For a tiny Pi, I suppose the lightweight *gogs* it's enough. The good news, its deployment is fair simple, no other dependencies required. By the way, you can use docker for a quick start.
 
@@ -35,10 +35,10 @@ You know it.
 
 Happy hacking.
 
-### EOF
+## EOF
 ```yaml
 date: 2016-11-17T18:29:55+08:00
-summary: Borrowing from those popular expressions, i.e. `XaaS`, this article gives a brief stories about setting up some of the well known services right from a tiny Pi.
+summary: Borrowing from those popular expressions, i.e. `XaaS`, this article gives a brief story about setting up some of the well known services right from a tiny Pi.
 weather: fine
 license: cc-40-by
 location: 22,114
