@@ -30,6 +30,8 @@ I chose [ownCloud][ownCloud], an open source providing cross platform client sup
 ## Full Stack Proxy Server
 With Pi's wireless support and built-in Linux OS, there's no reason you can't control your network, even other advanced stuff.
 
+> Update 23/11/16, [Run Shadowsocks right on Docker][ss-on-docker]
+
 You know it.
 
 
@@ -44,7 +46,7 @@ license: cc-40-by
 location: 22,114
 background: docker-raspberry-pi.jpg
 tags:
-  - Hacking
+  - Raspberry Pi
 ```
 [mDNS]: https://en.wikipedia.org/wiki/Multicast_DNS
 [gitlab]: https://about.gitlab.com
@@ -53,4 +55,4 @@ tags:
 [WebDAV]: https://en.wikipedia.org/wiki/WebDAV
 [CalDAV]: https://en.wikipedia.org/wiki/CalDAV
 [CardDAV]: https://en.wikipedia.org/wiki/CardDAV
-
+[ss-on-docker]: https://github.com/longkai/docker-shadowsocks-libev
