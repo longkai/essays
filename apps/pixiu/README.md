@@ -22,6 +22,8 @@ In the settings window, you can also make some changes,
 
 In addition, you can manually trigger syncing by `command + R` shortcuts.
 
+Privacy Policy can be found [here](privacy).
+
 Hope it helps!
 
 ![](inbox.png?imageView2/2/w/1024/format/jpg)
