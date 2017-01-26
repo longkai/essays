@@ -19,16 +19,16 @@ Last but not least, despite things would tend to be different, why not give it a
 
 ## Requirements
 - a network service which supports IPv6 in a library
-- a local socks5 proxy utility
-- a remote socks5 proxy server with IPv6 configured correctly
+- a local SOCKS5 proxy utility
+- a remote SOCKS5 proxy server with IPv6 configured correctly
 
-The keywords is **IPv6**, the version 6 of IP(Network) layer which is the workhorse of TCP/IP protocol suite. **IPv6 is the furture** and we are on the transition from IPv4 to IPv6 currently.
+The keyword is **IPv6**, the version 6 of IP(Internet Protocol) layer which is the workhorse of TCP/IP protocol suite. **IPv6 is the furture** and we are in transition from IPv4 to IPv6 currently.
 
 As far as I know, **IPv6 is only experimented in universities or some institutions in China for the moment**. The public network is all about the IPv4.
 
 ## How to setup
 1. connect to the WIFI(or cable) in a Chinese university library without login and obtain network settings via DHCP(default behaviour)
-2. setup your local proxy and make sure all of the packets outgoing through proxy
+2. setup your local proxy and make sure all of the traffic outgoing through proxy
 3. try a site in your browser, if not work, try using all of your network knowledge, it's fun!
 
 ## What's going on
@@ -68,7 +68,7 @@ nameserver 219.223.254.2
 ```
 
 ### Testing network availability with IPv4
-Dial a website to test the network availability. Take the `qq.com`(Tencent Inc., Chinese largest sns and gaming company) for example,
+Dial a website to test the network availability. Take the `qq.com`(Tencent Inc., Chinese largest SNS and gaming company) for example,
 
 ```sh
 > curl -v http://qq.com
@@ -137,10 +137,10 @@ Now, the fun moment:) Note that each line is prepended a number intentionally fo
 - 1-3: TCP three-way-handshake connection establishment
 - 4: client HTTP request
 - 5: server HTTP response
-- 7-19: client would like to close TCP connection, but server never `ACK` client's `FIN`, so it sent a serials of retransmission packets continuously
+- 7-19: client would like to close TCP connection, but server never `ACK` client's `FIN`, so it sent a serials of retransmission segments continuously
 - 20: all retransmissions timeout, so client gave up and sent a `RST` to reset the connection, leaving the server in a half-open state.
 
-The last packet is interesting, a normal TCP server/client would always like to perform connection termination both side. The tail of `curl` output also indicates that. It seems the server not work normally. We can guess **the server lies us**. It's not the real `qq.com` host but a kind of dispatcher which intercepts your packets flow to see whether you have the networks access authority. If not, it redirects you to do login page by cheating you as if the `qq.com`.
+The last segment is interesting, a normal TCP server/client would always like to perform connection termination both side. The tail of `curl` output also indicates that. It seems the server not work normally. We can guess **the server lies us**. It's not the real `qq.com` host but a kind of dispatcher which intercepts your packets flow to see whether you have the networks access authority. If not, it redirects you to do login page by cheating you as if the `qq.com`.
 
 We just test the web, how about HTTPS(or other non-HTTP services)? It would ends up with a TCP timeout if you try. As a result, we learn that the interception system only talks HTTP protocol.
 
@@ -148,7 +148,16 @@ We just test the web, how about HTTPS(or other non-HTTP services)? It would ends
 As a nature, you may curl your own site occasionally for testing, if any, however, it's where magic things happen. We've got the desired output.
 
 ```sh
-> curl xiaolongtongxue.com
+> curl -i xiaolongtongxue.com
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.10.2
+Date: Thu, 23 Jan 2017 12:29:54 GMT
+Content-Type: text/html
+Content-Length: 185
+Connection: keep-alive
+Location: https://xiaolongtongxue.com/
+Strict-Transport-Security: max-age=15768000
+
 <html>
 <head><title>301 Moved Permanently</title></head>
 <body bgcolor="white">
@@ -187,14 +196,14 @@ Then tcpdump,
 10. 12:30:25.878207 IP6 2001:250:3c02:500:bcb1:ae02:f2a3:79f.57096 > 2001:e42:102:1808:160:16:213:54.80: Flags [.], ack 435, win 4096, options [nop,nop,TS val 792096215 ecr 3285220472], length 0
 ```
 
-This is a fairly normal and simple HTTP request/response packet flow.
+This is a fairly normal and simple HTTP request/response segments flow.
 - 1-3: handshake
 - 4: client HTTP request
-- 5: server's `ACK` to packet 4
+- 5: server's `ACK` to segment 4
 - 6: server's HTTP response
 - 7-10: termination
 
-The distinction form the previous output is `IP6` and IPv6 addresses. It means all of these packets transferred through IPv6. Interesting, does HTTPS or others services(ports) works?
+The distinction form the previous output is `IP6` and IPv6 addresses. It means all of these segments transferred through IPv6. Interesting, does HTTPS or others services(ports) works?
 
 Yes.
 
@@ -203,7 +212,7 @@ So, it turns out: **IPv6 packets are NOT intercepted by the system**.
 
 > It's a bug actually, I suppose.
 
-With this fact, **if all our packets go through IPv6, we can bypass the system and get free network access**. Unfortunately, like I said before, no IPv6 services in China currently(i.e. we cannot visited those IPv4-only services, the whole Chinese public network services). Fortunately, we can add a abstraction layer by sending all our packets to a overseas proxy server via IPv6, letting it be our networking hub.
+With this fact, **if all our traffic go through IPv6, we can bypass the system and get free network access**. Unfortunately, like I said before, no IPv6 services in China currently(i.e. we cannot visited those IPv4-only services, the whole Chinese public network services). Fortunately, we can add a abstraction layer by sending all our traffic to a overseas proxy server via IPv6, letting it be our networking hub.
 
 Suppose the proxy server/client configuration is done,
 
@@ -233,9 +242,9 @@ X-Cache: HIT from tianjin.qq.com
 
 I won't show the tcpdump output because the protocol payload is encrypted and the filter can be tricky, however, the basic rule is the same as before.
 
-Another interesting thing is that in the HTTP response header, `X-Cache HIt`. It's reasonable since my VPS server residents in Tokyo(Tianjin is not far from Japan).
+Another interesting thing is that in the HTTP response header, `X-Cache: HIT from tianjin.qq.com`. It's reasonable since my VPS server residents in Tokyo(Tianjin is not far from Japan).
 
-We have discussed TCP and it works. Another question arisen is that does UDP work? You can figure it out by analytics UDP packets, like DNS, DHCP, Broadcast, and so forth.
+We have discussed TCP and it works. Another question arisen is that does UDP work? You can figure it out by analytics UDP datagram, like DNS, DHCP, Broadcast, and so forth.
 
 The short answer: since UDP sits above on top of IP layer, UDP via IPv6 is perfectly fine.
 
@@ -249,9 +258,9 @@ The short answer: since UDP sits above on top of IP layer, UDP via IPv6 is perfe
 
 ## Reminder
 - again, **use it for good, not evil**
-- since the remote server is abroad, the latency is larger than usual and you have to live with it
+- since the remote server is abroad, the latency is likely larger than usual and you have to live with it
 - same reason as above, some content may be different or restricted due to a certain GEO content delivering policy
-- from tcpdump output in the post, we can see the HTTP packets are plain text(not to mention full protocol decode if enabled), so HTTPS is the prefer way. However, HTTP is easy to debug in the low level anyway
+- from tcpdump output in the post, we can see the HTTP traffic are plain text(not to mention full protocol decode if enabled), so HTTPS is the prefer way. However, HTTP is easy to debug in the low level anyway
 
 
 Happy hacking and thanks for reading.
