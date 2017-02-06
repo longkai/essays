@@ -147,17 +147,34 @@ We just test the web, how about HTTPS(or other non-HTTP services)? It would ends
 ### Another testing with IPv6
 As a nature, you may curl your own site occasionally for testing, if any, however, it's where magic things happen. We've got the desired output.
 
-```sh
-> curl -i xiaolongtongxue.com
-HTTP/1.1 301 Moved Permanently
-Server: nginx/1.10.2
-Date: Thu, 23 Jan 2017 12:29:54 GMT
-Content-Type: text/html
-Content-Length: 185
-Connection: keep-alive
-Location: https://xiaolongtongxue.com/
-Strict-Transport-Security: max-age=15768000
+Note the local proxy URL is `http://127.0.0.1:8123/`
 
+```sh
+> curl -v xiaolongtongxue.com --header "Connection: close"
+* Rebuilt URL to: xiaolongtongxue.com/
+*   Trying ::1...
+* TCP_NODELAY set
+* Connection failed
+* connect to ::1 port 8123 failed: Connection refused
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8123 (#0)
+> GET http://xiaolongtongxue.com/ HTTP/1.1
+> Host: xiaolongtongxue.com
+> User-Agent: curl/7.51.0
+> Accept: */*
+> Proxy-Connection: Keep-Alive
+> Connection: close
+>
+< HTTP/1.1 301 Moved Permanently
+< Server: nginx/1.10.2
+< Date: Thu, 23 Jan 2017 12:29:54 GMT
+< Content-Type: text/html
+< Content-Length: 185
+< Connection: close
+< Location: https://xiaolongtongxue.com/
+< Strict-Transport-Security: max-age=15768000
+<
 <html>
 <head><title>301 Moved Permanently</title></head>
 <body bgcolor="white">
@@ -165,6 +182,8 @@ Strict-Transport-Security: max-age=15768000
 <hr><center>nginx/1.10.2</center>
 </body>
 </html>
+* Curl_http_done: called premature == 0
+* Closing connection 0
 ```
 
 This is my DNS,
