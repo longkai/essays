@@ -4,7 +4,7 @@ I'm glad to tell you that my first Apple platform app, Pixiu, has been released 
 
 [![Mac App Store](https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/mac/images/badge-download-on-the-mac-app-store.svg)](https://geo.itunes.apple.com/app/id1195433805)
 
-What's Pixiu? Well, The lexical meaning in Chinese is a mythical creature, but the app has nothing to with the name. It's a native Gmail inbox snippets and notifications macOS app based on Gmail API. You can learn more in the [intro page][intro].
+What's Pixiu? Well, the lexical meaning in Chinese is a mythical creature, but the app has nothing to with the name. It's a native Gmail inbox snippets and notifications macOS app based on Gmail API. You can learn more in the [intro page][intro].
 
 In this post I would share some experience about the journey.
 
@@ -25,13 +25,13 @@ Sometimes, a framework is more important than the language itself in a project's
 ## Development
 The project is written in Swift plus some C code. Apart from fabric, a crash report framework, there is no third libraries.
 
-The actually development time(writing code) is relatively short. Most of the time is spent on digging into the [Gmail API][Gmail API], the strict Google OAuth flow, and the hidden bug fixes, so on and so forth.
+The actually development time(writing code) is relatively short. Most of the time was spent on digging into the [Gmail API][Gmail API], the strict Google OAuth flow, and the hidden bug fixes, so on and so forth.
 
-First, Gmail API is really great, however, it does have some defects. Take the inbox unread mails for example, you can not get a mail's title/sender/time/etc. directly in a list based API, instead have to request another API. For a user with a large number of unread mails, doing so is bound to trigger API quota limit if performing many requests concurrently. You have to do extra job to keep things working.
+First, Gmail API is really great, however, it does have some defects. Take the inbox unread mails for example, you can not get a mail's title/sender/time/etc. directly in a list based API, instead have to request another API. For a user with a large number of unread mails, doing so is bound to trigger the API quota limit if performing many requests concurrently. You have to do extra job to keep things working.
 
 Second, the Google OAuth flow is strict, plus a bit unclearness. Different platforms have different ways. For a mobile app is easy, not to mention Google provides libraries. For a desktop app, your choices are a redirecting authentication code to a local http server or letting user copy-paste code manually... The former is bad for sandbox if publishing to App Store. It turns out that you have workarounds, but Google's doc doesn't reveal.
 
-Finally, a new language is not always good, it lacks some features or libraries you have been familiar with. Since I can only read Object-C code instead of writing, so I have to write some C code. Swift does have a good support for C except the wired long syntax.
+Finally, a new language is not always good, it lacks some features or libraries you have been familiar with. Since I can only read Objective-C code instead of writing, so I have to write some C code. Swift does have a good support for C except the wired long syntax.
 
 There are does other development aspects to talk, maybe next posts.
 
