@@ -25,7 +25,7 @@ Sometimes, a framework is more important than the language itself in a project's
 ## Development
 The project is written in Swift plus some C code. Apart from fabric, a crash report framework, there is no third libraries.
 
-The actually development time(writing code) is relatively short. Most of the time is spent on digging into the [Gmail API](gmail-api), the strict Google OAuth flow, and the hidden bug fixes, so on and so forth.
+The actually development time(writing code) is relatively short. Most of the time is spent on digging into the [Gmail API][Gmail API], the strict Google OAuth flow, and the hidden bug fixes, so on and so forth.
 
 First, Gmail API is really great, however, it does have some defects. Take the inbox unread mails for example, you can not get a mail's title/sender/time/etc. directly in a list based API, instead have to request another API. For a user with a large number of unread mails, doing so is bound to trigger API quota limit if performing many requests concurrently. You have to do extra job to keep things working.
 
@@ -40,9 +40,9 @@ First app and first submit, indeed, Apple's review is more than I thought. It to
 
 - missing privacy policy
 - crashed in old macOS. It's really hard to debug a native application in old OS.
-- use a restrict C API. Like I said before, I write a small C http server for Google OAuth redirections, however Apple rejected for only server app can use that API.
+- use a restrict C API. Like I said before, I wrote a small C http server for Google OAuth redirections, however Apple rejected for only server apps can use that API.
 - network issue. It's really hard to find this bug, see my accepted answer on [stackoverflow][stackoverflow].
-- reject for crash but the crash report is from another app.
+- rejected for crash but the crash report belongs to another app
 - illegibility of a icon
 
 A long way, reached the *ready for sale* state.
@@ -55,7 +55,7 @@ Thanks for reading.
 ## EOF
 ```yaml
 date: 2017-02-11T15:54:43+08:00
-summary: share the intention, learning, development, and submit experience of the Pixiu app
+summary: Share the intention, learning, development, and submit experience of the Pixiu app
 weather: fine
 license: cc-40-by
 location: 22,144
@@ -67,3 +67,5 @@ tags:
 [intro]: https://xiaolongtongxue.com/apps/pixiu/
 [Gmail API]: https://developers.google.com/gmail/api/
 [stackoverflow]: https://stackoverflow.com/questions/41461481/error-domain-nsposixerrordomain-code-100-protocol-error/41988623#41988623
+[Lantern Festival]: https://en.wikipedia.org/wiki/Lantern_Festival
+
