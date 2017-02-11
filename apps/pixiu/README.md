@@ -27,6 +27,7 @@ Privacy Policy can be found [here](privacy).
 Hope it helps!
 
 ![](inbox.png?imageView2/2/w/1024/format/jpg)
+
 ![](notification.png?imageView2/2/w/1024/format/jpg)
 
 ## One More Thing
