@@ -1,5 +1,6 @@
 Pixiu - an Inbox and Notification App for Gmail on macOS
 ===
+[![Mac App Store](https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/mac/images/badge-download-on-the-mac-app-store.svg)](https://geo.itunes.apple.com/app/id1195433805)
 
 Love the web, keen on Mac? If you stick to the web-based Gmail, with Pixiu, keep up with your inbox snippets and notifications right on your menu bar!
 
