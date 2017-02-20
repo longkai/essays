@@ -11,7 +11,7 @@ In this post I would like to share some experience about the journey.
 ## Intention
 Why did you build it?
 
-Because I need one. I like the web version and it's full-featured except a lack of a native notifications functionality which sometimes cause you trouble(e.g. browser not opened or account not signin).
+Because I need one. I like the web version and it's full-fledged except a lack of a native notifications functionality which sometimes cause you trouble(e.g. browser not opened or account not signin).
 
 Another reason lies in that I have been always wanting to try building something on the Apple platform.
 
@@ -33,7 +33,9 @@ Second, the Google OAuth flow is strict, plus a bit unclearness. Different platf
 
 Finally, a new language is not always good, it lacks some features or libraries you have been familiar with. Since I can only read Objective-C code instead of writing, I have to write some C code. Swift does have a good support for C except the wired long syntax.
 
-There are does other development aspects to talk, maybe next posts.
+There are does other development aspects to talk.
+
+- [Lessons From Gmail API - a Batch Request Design Doc](../lessons-from-gmail-api-a-batch-request-design-doc)
 
 ## Review
 First app and first submit, indeed, Apple's review is more than I thought. It took almost 3 weeks, with many rejections and submits.
