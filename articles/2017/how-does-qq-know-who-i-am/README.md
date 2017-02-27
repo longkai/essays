@@ -24,7 +24,7 @@ Thanks to the Web, an open platform, when in doubt we can dig into the source or
 
 It's easy and let's start!
 
-Take the Qzone for example. Open Chrome DevTools or other similar tools, then visit QZone, in the *Network* tab, we can find a series requests whose URL path is `/pt_get_uins`. The request and response messages looks like below, respectively. Note some identifications are faked.
+Take the Qzone for example. Open Chrome DevTools or other similar tools, then visit QZone, in the *Network* tab, we can find a series of requests whose URL path are `/pt_get_uins`. The request and response messages look like below, respectively. Note some identifications are faked.
 
 ```http
 GET /pt_get_uins?callback=ptui_getuins_CB&r=0.558885784438953&pt_local_tk=690287468 HTTP/1.1
@@ -49,9 +49,9 @@ Content-Type: Application/javascript
 var var_sso_uin_list=[{"account":"my-qq-id-12345678","face_index":-1,"gender":0,"nickname":"咸鱼。","uin":"my-qq-id-12345678","client_type":66818,"uin_flag":8388608}];ptui_getuins_CB(var_sso_uin_list);
 ```
 
-That's it. The QQ client sets up an HTTP server in `localhost.ptlogin2.qq.com:4301`, later their web page requests that endpoint for identifications.
+That's it. It sets up an HTTP server in `localhost.ptlogin2.qq.com:4301`, later their web page requests that endpoint for identifications.
 
-The most interesting thing told by Chrome is the remote address, `127.0.0.1:4301`. **The remote end is the local end**. Indeed, when I queried the DNS, I never thought of a public domain could be configured like this. 
+The most interesting thing told by Chrome is the remote address, `127.0.0.1:4301`. **The remote end is the local**. Indeed, when I queried the DNS, I never thought of a public domain could be configured this way. 
 
 ```sh
 $ host localhost.ptlogin2.qq.com
@@ -66,8 +66,8 @@ QQ        33616 longkai   35u  IPv4 0xaa38583952446abf      0t0  TCP 127.0.0.1:4
 QQ        33616 longkai   36u  IPv4 0xaa385839490683b7      0t0  TCP 127.0.0.1:4301 (LISTEN)
 ```
 
-## Security Considerations
-We are just landing the surface. For a product like this, there must be many security considerations in their design. Since I am not good at security, I can only do some small hacks.
+## Security
+We just landed the surface. For a product like this, there must be many security considerations in their design. Since I am not good at security, I can only do some small hacks.
 
 It turns out **any client can issue the identity requests**. Note `4300` also appeared in the `LISTEN` port list.
 
@@ -89,30 +89,30 @@ $ curl -v http://127.0.0.1:4300/pt_get_uins\?callback\=hello
 <
 * Curl_http_done: called premature == 0
 * Connection #0 to host 127.0.0.1 left intact
-var var_sso_uin_list=[{"account":"my-qq-id-12345678","face_index":-1,"gender":0,"nickname":"咸鱼。","uin":"my-qq-id-12345678","client_type":66818,"uin_flag":8388608}];ptui_getuins_CB(var_sso_uin_list);%
+var var_sso_uin_list=[{"account":"my-qq-id-12345678","face_index":-1,"gender":0,"nickname":"咸鱼。","uin":"my-qq-id-12345678","client_type":66818,"uin_flag":8388608}];ptui_getuins_CB(var_sso_uin_list);
 ```
 
 Same result.
 
 So, if you want to know the QQ number of the end user, you can issue the requests in your native client or even webpages like Tencent does.
 
-However, **knowing the QQ number does NOT mean your account is stolen**, just like they knows your account but it's the first phase of doing bad things.
+However, **knowing the QQ number does NOT mean your account is stolen**, just like they know your mail address but it's the first phase of doing bad things.
 
 The question is, are you willing to tell your QQ number or something like this to someone you don't even know or malicious?
 
 ## Privacy
-For the majority, this feature is fine, since it provides a better user experience. Now that I have logged in on desktop, the extra login flow on the Web is unnecessary. Moreover, Tencent does passively, only you, the user trigger the identify flow.
+For the majority, this feature is fine, since it provides a better user experience. Now that I have logged in desktop, the extra login flow on the Web is unnecessary. Moreover, Tencent does passively, only you, the user trigger the identify flow.
 
 However, two things should be taken into account.
 
 First, as the preceding, you don't want to expose your identity to others, potentially.
 
-Second, for some people with a sense of privacy against being tracked, or potentially in such a situation. As you can see the request message, the Cookie, contains many service identifications. Supposing you just want to view some pages **incognito**, this breaks it.
+Second, for some people with a sense of privacy against being tracked, or potentially in such a situation. As you can see the request message, the Cookie, contains many service identifications. Supposing you just want to view some pages **incognito**, which breaks it.
 
 ## How to Fix It?
 The good news is you **CAN** control it, certainly, since you already know how it works.
 
-Closing your QQ client is the most effective way. For power users, you can alter the DNS of that specific host, or ultimately, a proxy in between performing filtering.
+Closing your QQ client is the most effective way. For power users, you can alter the DNS record of that specific host, or ultimately, a proxy in between performing filtering.
 
 
 ---
