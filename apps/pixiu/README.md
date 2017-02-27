@@ -32,7 +32,10 @@ Hope it helps!
 ![](notification.png?imageView2/2/w/1024/format/jpg)
 
 ## One More Thing
-This is my first app after learning Swift myself and first trying the Apple platform. The process is fun and hard, and I would like to share some experience in the following serials posts. Stay tuned.
+This is my first app after learning Swift myself and first trying the Apple platform. The process is fun and hard, and I would like to share some experience in the following serials posts.
+
+- [Pixiu 1.0.0 on Mac App Store](/articles/2017/pixiu-1.0.0-on-mac-app-store/) share some experience about the journey
+- [Lessons From Gmail API - a Batch Request Design Doc](/articles/2017/lessons-from-gmail-api-a-batch-request-design-doc)
 
 Many thanks to my friend *L* for a lot art work.
 

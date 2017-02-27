@@ -10,13 +10,13 @@ Supposing a list style API for obtaining the unread mail collection, `/mails/unr
 
 ```json
 {
-  "mail": [
+  "mails": [
     "id1",
-    "id2",
-    "id3",
+    "iMored2",
+  More  "id3"c,
     "id4",
-    "an on and on..."
-  ]
+    "and on and on..."
+  More]
 }
 ```
 
@@ -24,7 +24,7 @@ What you got is merely the mail's `id` field, in order to fulfill your job, you 
 
 ```json
 {
-  "id": "idx",
+  "id": "id",
   "title": "Awesome title",
   "sender": "sender@somewhere.com",
   "date": "2016-01-02 15:04:05 +0800",
@@ -32,7 +32,7 @@ What you got is merely the mail's `id` field, in order to fulfill your job, you 
 }
 ```
 
-The problem is: **If a user has many unread mails(hundreds is fairly reasonable), how would you do?**
+The problem is: **if a user has many unread mails(hundreds is fairly reasonable), how would you do?**
 
 An intuitive solution is sending multiple API requests concurrently. However, it brings many drawbacks.
 
@@ -40,7 +40,7 @@ An intuitive solution is sending multiple API requests concurrently. However, it
 Concurrency does not make that much sense in this situation. Imagine hundreds of threads, nearly impossible.
 
 - Only a number of threads could be executed at a time
-- TCP connection establishment/retransmission if any
+- TCP lentency, connection establishment/retransmission if any
 
 ### Resource Wasted
 It's obvious the number of requests is **proportional** to the system resources. The more you request, the more resources consumed, including but not limited to,
@@ -73,10 +73,11 @@ The HTTP/1.1 specification, [RFC 2616][], introduces a *Media Type*, `applicatio
 With this standard *Content-Type*, **how to build the requests and response entity(content body)**? 
 
 ### Multipart Media Types
-MIME *multipart* emails messages contain multiple messages stuck together and sent as a single, complex message. HTTP also supports multipart bodies, typically used in from submission or range requests. The syntax is defined in section 5.1.1 of [RFC 2046][]. A typical entity body looks like this,
+MIME *multipart* emails messages contain multiple messages stuck together and sent as a single, complex message. HTTP also supports multipart bodies, typically used in form submissions or range requests. The syntax is defined in section 5.1.1 of [RFC 2046][]. A typical entity body looks like this,
 
 ```http
 Content-Type: multipart/form-data; boundary=abcde
+Content-Length: 12345
 
 --abcde
 Content-Disposition: form-data; name="name"
@@ -176,6 +177,8 @@ Simple design, better performance.
 
 These yield a better user experience.
 
+However the server side programming is not easy, but once you done, any requests could be handled.
+
 ### Alternative: Custom Encoding/Decoding
 This is same thing as the preceding, essentially. For example, we could encode multiple requests into a JSON format. However, it's not HTTP-idiomatic, which means it may not utilize existing HTTP related library/code.
 
@@ -189,9 +192,9 @@ There are some points should be taken into account,
 - Reusing existing library/code for decoding/encoding if possible
 - Limit requests count in each batching
 - provide some mechanism letting clients strip unwanted fields
-- **Caching** results
+- **Caching** batching results
 
-For server side, Google has provide its [Batch API][]; As of client side example, you could find my Swift [Google Batch Helper][] cocoapods library for iOS and macOS.
+For server side, Google has provide its [Batch API][]; as of client side example, you could find my Swift [Google Batch Helper][] cocoapods library for iOS and macOS.
 
 ## Open Issues
 - If one or more request(s) in batching is time consuming, it may impact others
