@@ -28,7 +28,7 @@ Take the Qzone for example. Open Chrome DevTools or other similar tools, then vi
 
 ```http
 GET /pt_get_uins?callback=ptui_getuins_CB&r=0.558885784438953&pt_local_tk=690287468 HTTP/1.1
-Host: localhost.ptlogin2.qq.com:4300
+Host: localhost.ptlogin2.qq.com:4301
 Connection: keep-alive
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Accept: */*
