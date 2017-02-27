@@ -51,7 +51,7 @@ var var_sso_uin_list=[{"account":"my-qq-id-12345678","face_index":-1,"gender":0,
 
 That's it. The QQ client sets up an HTTP server in `localhost.ptlogin2.qq.com:4301`, later their web page requests that endpoint for identifications.
 
-The most interesting thing told by Chrome is the remote address, `127.0.0.1:4301`. **The remote end is the local end**. Indeed, when I queried the DNS, I never thought of a public domain could configured like this. 
+The most interesting thing told by Chrome is the remote address, `127.0.0.1:4301`. **The remote end is the local end**. Indeed, when I queried the DNS, I never thought of a public domain could be configured like this. 
 
 ```sh
 $ host localhost.ptlogin2.qq.com
@@ -96,7 +96,7 @@ Same result.
 
 So, if you want to know the QQ number of the end user, you can issue the requests in your native client or even webpages like Tencent does.
 
-However, **knowing the QQ number does mean your account is stolen**, just like they knows your account but it's the first phase of doing bad things.
+However, **knowing the QQ number does NOT mean your account is stolen**, just like they knows your account but it's the first phase of doing bad things.
 
 The question is, are you willing to tell your QQ number or something like this to someone you don't even know or malicious?
 
