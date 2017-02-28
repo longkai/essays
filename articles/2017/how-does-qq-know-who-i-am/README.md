@@ -5,6 +5,7 @@ This post gives a brief intro how does QQ identifies who you are in the browser 
 
 ## Notice
 - Only test on macOS
+- No Cookie discussed, think of a pure incognito browser environment
 - As of this writing, Feb. 27 2017, some information may be changed in the future
 - Correct me if I am wrong
 

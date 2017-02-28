@@ -12,11 +12,11 @@ Supposing a list style API for obtaining the unread mail collection, `/mails/unr
 {
   "mails": [
     "id1",
-    "iMored2",
-  More  "id3"c,
+    "id2",
+    "id3",
     "id4",
     "and on and on..."
-  More]
+  ]
 }
 ```
 
