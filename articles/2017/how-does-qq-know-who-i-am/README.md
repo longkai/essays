@@ -95,7 +95,7 @@ var var_sso_uin_list=[{"account":"my-qq-id-12345678","face_index":-1,"gender":0,
 
 Same result.
 
-So, if you want to know the QQ number of the end user, you can issue the requests in your native client or even web pages like Tencent does.
+So, if you want to know the QQ number of the end user, issue the requests in your native client or even the web pages like Tencent does.
 
 **Knowing the QQ number does NOT mean your account is stolen**, however, think of somebody knows your mail address and it's the first phase of doing bad things.
 
