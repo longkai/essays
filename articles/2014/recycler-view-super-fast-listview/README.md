@@ -3,7 +3,7 @@ Android RecyclerView: Super Fast ListView
 
 先上图，看效果：
 
-![img](https://dl.dropboxusercontent.com/u/96034496/moments/super-fast-momoso.jpg)
+![img](https://www.dropbox.com/s/qymidbvci32h2d7/super-fast-momoso.jpg?dl=1)
 
 前几天刚release完公司的一个项目，有了点时间，于是就想找一些有意思的东西学习一下，顺便运用在项目之中。看到iOS的同事们在谈论iOS8的xx特性时，我突然也有想在公司项目的下一个版本中添加Android L版本的特性。
 
@@ -287,7 +287,7 @@ by longkai on 1 Sep. in Sz.
 
 ### EOF
 ```yaml
-background: https://dl.dropboxusercontent.com/u/96034496/moments/super-fast-momoso.jpg
+background: https://www.dropbox.com/s/qymidbvci32h2d7/super-fast-momoso.jpg?dl=1
 date: 2014-09-01T22:16:22+08:00
 hide: false
 license: cc-40-by
