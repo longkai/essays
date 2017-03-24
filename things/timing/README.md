@@ -1,7 +1,7 @@
 时间都去哪了？
 ===
 
-![Timing app screen shot](timing.png)
+![Timing app screen shot](timing.jpg)
 
 #### Timing
 今天，趁着西方圣诞节打折，又购买了一款Mac上的应用，叫做[Timing][1]，用来跟踪每天花在电脑上不同应用的时间。貌似每到圣诞节，老外就喜欢发版本和搞促销，猜测类似于咱们国家过年放长假了吧，赶紧完成今年的计划收拾东西准备回家陪伴家人。
@@ -21,7 +21,7 @@
 
 ### EOF
 ```yaml
-background: timing.png
+background: timing.jpg
 date: 2015-12-25T21:47:57+08:00
 hide: false
 license: cc-40-by

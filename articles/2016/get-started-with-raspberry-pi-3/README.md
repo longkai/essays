@@ -12,7 +12,7 @@ By the way, it's weird that it was *Made in China* but I have to pay the import 
 
 This is my very first little tiny Pi :)
 
-![Raspberry Pi 3](rpi.png?imageView2/2/w/1024/format/jpg)
+![Raspberry Pi 3](rpi.jpg?imageView2/2/w/1024/format/jpg)
 
 Let's play with it!
 
@@ -82,7 +82,7 @@ The default VNC server on Pi is [RealVNC][realvnc], you'd better install its *vi
 
 Here is my desktop, the wallpaper is my hometown:)
 
-![wallpaper](rpi-gui.png?imageView2/2/w/1024/format/jpg)
+![wallpaper](rpi-gui.jpg?imageView2/2/w/1024/format/jpg)
 
 ## What's Next?
 With Pi, you can do a lot of stuffs. My favorite is connecting it with other hardware... Right now, I would like to build a Time Machine backup service. Stay tune! 
@@ -107,7 +107,7 @@ summary: Teach, learn and make with Raspberry Pi
 weather: a bit cold
 license: cc-40-by
 location: cn
-background: rpi-gui.png?imageView2/2/w/1024/format/jpg
+background: rpi-gui.jpg?imageView2/2/w/1024/format/jpg
 tags:
   - Raspberry Pi
 ```

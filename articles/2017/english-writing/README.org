@@ -81,7 +81,7 @@ Writing good code has much in common with writing good English.
 
 *** 为什么写作风格很重要？
 
-我也在学习，不敢妄言。这里引用还是 [[https://en.wikipedia.org/wiki/E._B._White][E. B. White]] 在 《The Elements of Style》说的：
+我也在学习，不敢妄言。这里还是引用 [[https://en.wikipedia.org/wiki/E._B._White][E. B. White]] 在 《The Elements of Style》说的：
 
 #+BEGIN_QUOTE
 It is old observation that the best writers sometimes disregard the rules of rhetoric. When they do so, however, the reader will usually find in the sentence some compensating merit, attained at the cost of the violation. Unless he is certain of doing as well, he will probably do the best to follow the rules.

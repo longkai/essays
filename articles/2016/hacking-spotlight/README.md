@@ -11,7 +11,7 @@ You should read [this][apple-desc] if you have no idea about it. In short, it im
 
 Below is a video showcase in action(if you cannot open it, try [this][qq-video]).
 
-[![Spotlight Demo on Vimeo](showcase.png?imageView2/2/w/512/format/jpg)](https://vimeo.com/190262280)
+[![Spotlight Demo on Vimeo](showcase.jpg?imageView2/2/w/512/format/jpg)](https://vimeo.com/190262280)
 
 Come on, try on your Mac, you would find it helpful. However, some of you may notice that your spotlight doesn't show any **online results** but local stuff. If you did see it, free feel to skip the following section and enjoy your day:)
 
@@ -86,7 +86,7 @@ summary: Enable Spotlight suggestions where not available in your country.
 weather: a bit cold
 license: cc-40-by
 location: 22, 114
-background: spotlight.png?imageView2/2/w/1024/format/jpg
+background: spotlight.jpg?imageView2/2/w/1024/format/jpg
 tags:
   - Hacking
 ```

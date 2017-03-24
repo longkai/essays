@@ -1,3 +1,4 @@
+
 # 英文写作
 
 最近读了两本书：《[The Elements of Style](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X)》阐述了英文的写作风格，《[The Practice of Programming](https://www.amazon.com/Practice-Programming-Addison-Wesley-Professional-Computing/dp/020161586X)》则分享了编程实践。写作和编程，两个看似无关实则有着相当重叠的事情，都强调了风格重要性。
@@ -75,7 +76,7 @@ Brian Kernighan 在 《The Practice of Programming》 中写道：
 
 ### 为什么写作风格很重要？
 
-我也在学习，不敢妄言。这里引用还是 [E. B. White](https://en.wikipedia.org/wiki/E._B._White) 在 《The Elements of Style》说的：
+我也在学习，不敢妄言。这里还是引用 [E. B. White](https://en.wikipedia.org/wiki/E._B._White) 在 《The Elements of Style》说的：
 
 > It is old observation that the best writers sometimes disregard the rules of rhetoric. When they do so, however, the reader will usually find in the sentence some compensating merit, attained at the cost of the violation. Unless he is certain of doing as well, he will probably do the best to follow the rules.
 
@@ -88,6 +89,7 @@ Brian Kernighan 在 《The Practice of Programming》 中写道：
 3.  The Practice of Programming
 
 ## EOF
+
 ```yaml
 title: 英文写作
 date: 2017-03-19T17:46:31+08:00

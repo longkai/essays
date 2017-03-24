@@ -31,7 +31,7 @@
 #### 电梯上
 > 乘扶手电梯时，如果你不赶时间，请往右边站，留出左边的位置给赶时间的人。
 
-![半山扶梯](elevator.jpg)
+![半山扶梯](elevator@full.jpg)
 
 这个栗子：所有不忙的操作（不赶时间的乘客）都不该阻塞忙的操作（赶时间的游客）。这就好比图形界面程序，绝不能阻塞 UI routine，所有忙的操作都扔到其他 routine 中处理，留给用户一个流畅的体验；留出电梯左边的通道给赶时间的人有一种很和谐的感觉 :)
 
@@ -57,6 +57,7 @@ hide: false
 license: cc-40-by
 location: Hong Kong
 summary: 上周末和同学在香港玩了两天，本文内容基于几个旅途见闻的思考
+background: elevator@full.jpg
 tags:
 - Programming,Thoughts
 weather: a bit cold

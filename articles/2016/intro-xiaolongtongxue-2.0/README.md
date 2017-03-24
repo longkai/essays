@@ -129,7 +129,7 @@ summary: Turn markdowns into website with Github, Docker, and more.
 weather: hey, what's the weather like?
 license: cc-40-by
 location: somewhere 
-background: blue-sky.png
+background: blue-sky.jpg
 tags:
   - Leaning
   - Hacking

@@ -27,9 +27,9 @@ Privacy Policy can be found [here](privacy).
 
 Hope it helps!
 
-![](inbox.png?imageView2/2/w/1024/format/jpg)
+![](inbox.jpg?imageView2/2/w/1024/format/jpg)
 
-![](notification.png?imageView2/2/w/1024/format/jpg)
+![](notification.jpg?imageView2/2/w/1024/format/jpg)
 
 ## One More Thing
 This is my first app after learning Swift myself and first trying the Apple platform. The process is fun and hard, and I would like to share some experience in the following serials posts.

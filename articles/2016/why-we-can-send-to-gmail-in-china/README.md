@@ -20,7 +20,7 @@ Note the final `.` followed a newline, which is the terminator of mail(think of 
 
 Then, sign in your Gmail(which requires a proxy if you're in China). Since our mail is nothing but a test we find it in spam,
 
-![inbox screenshot](inbox.png)
+![inbox screenshot](inbox.jpg)
 
 Take a look at the sender's address, which is the combination of `whoami@hostname`.
 
