@@ -277,7 +277,7 @@ public class MainActivity extends Activity {
 
 最后附一张效果图，比较丑，只是为了演示而已
 
-![simple](https://dl.dropboxusercontent.com/u/96034496/moments/simple-recycler-card.jpg)
+![simple](https://www.dropbox.com/s/cn8pujd5wmj9ual/simple-recycler-card.jpg?dl=1)
 
 由于是公司的项目，所以比较详细的代码没有贴出来，但是也是依据这段代码弄出来的，有时间的话，改天封装一个出来~
 
