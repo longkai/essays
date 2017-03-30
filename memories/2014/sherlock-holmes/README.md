@@ -37,7 +37,6 @@
 ### EOF
 ```yaml
 background: ../xida.jpg
-date: 2014-02-01T23:14:58+08:00
 hide: false
 license: cc-40-by
 location: Guilin
@@ -45,4 +44,5 @@ summary: 福尔摩斯：「我的人生就是一场漫长的逃亡，为的是�
 tags:
 - Campus
 weather: ""
+date: 2014-02-01T23:14:58+08:00
 ```

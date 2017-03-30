@@ -29,7 +29,6 @@
 ### EOF
 ```yaml
 background: //farm3.staticflickr.com/2858/12013399865_40bed1727a_o.png
-date: 2014-01-18T23:48:27+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -37,4 +36,5 @@ summary: 放假啦，大家假期愉快 :)
 tags:
 - Campus
 weather: ""
+date: 2014-01-18T23:48:27+08:00
 ```

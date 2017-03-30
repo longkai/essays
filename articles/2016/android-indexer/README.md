@@ -63,7 +63,6 @@ indexerView.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2016-03-11T00:55:48+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -71,6 +70,7 @@ summary: An indexer view like Wechat.
 tags:
 - Android
 weather: a sudden cold
+date: 2016-03-11T00:55:48+08:00
 ```
 
 [1]: https://github.com/longkai/indexer

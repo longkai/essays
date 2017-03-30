@@ -61,7 +61,6 @@
 ### EOF
 ```yaml
 background: there.jpg
-date: 2015-07-06T20:46:29+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -70,4 +69,5 @@ tags:
 - Life
 - Outdoor
 weather: ""
+date: 2015-07-06T20:46:29+08:00
 ```

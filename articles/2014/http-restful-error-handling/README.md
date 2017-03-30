@@ -170,7 +170,6 @@ Licensed under a Creative Commons Attribution 4.0 International License.
 ### EOF
 ```yaml
 background: http-restful-error-handling-1.png 
-date: 2013-12-17T12:17:20+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -179,4 +178,5 @@ tags:
 - Campus
 - Paper
 weather: ""
+date: 2013-12-17T12:17:20+08:00
 ```

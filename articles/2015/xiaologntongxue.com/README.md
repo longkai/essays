@@ -23,7 +23,6 @@
 #### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2015-12-22T02:59:14+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -31,6 +30,7 @@ summary: ""
 tags:
 - Web
 weather: a little cold
+date: 2015-12-22T02:59:14+08:00
 ```
 
 [1]: www.namecheap.com

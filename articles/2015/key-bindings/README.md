@@ -42,8 +42,6 @@ IDEA默认就配备了Emacs键位，由于不是Emacs用户，所以没有去尝
 
 ### EOF
 ```yaml
-background: /assets/images/default.jpg
-date: 2015-09-16T00:38:22+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -51,6 +49,7 @@ summary: 不知所云。最重要的是，找到自己喜欢的键位，提高�
 tags:
 - Equip
 weather: ""
+date: 2015-09-16T00:38:22+08:00
 ```
 
 

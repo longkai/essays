@@ -49,7 +49,6 @@ apply plugin: 'java'
 ### EOF
 ```yaml
 background: //docs.gradle.org/current/userguide/img/javaPluginTasks.png
-date: 2013-08-08T16:09:38+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -58,4 +57,5 @@ tags:
 - Campus
 - Gradle
 weather: ""
+date: 2013-08-08T16:09:38+08:00
 ```

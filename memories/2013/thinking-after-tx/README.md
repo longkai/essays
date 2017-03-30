@@ -24,7 +24,6 @@
 ### EOF
 ```yaml
 background: ../xida.jpg
-date: 2013-10-31T03:07:42+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -33,4 +32,5 @@ tags:
 - Campus
 - Thoughts
 weather: ""
+date: 2013-10-31T03:07:42+08:00
 ```

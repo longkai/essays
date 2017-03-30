@@ -198,7 +198,6 @@ Thanks for reading.
 
 ## EOF
 ```yaml
-date: 2016-09-18T21:23:05+08:00
 summary: You may think of the mail providers have their overseas proxy servers, which is definitely okay. However, in this essay, we will see sending mail directly from computer without a proxy is OK.
 weather: rainy
 license: cc-40-by
@@ -207,6 +206,7 @@ background: gmail.jpg
 tags:
   - Hacking
   - Learning
+date: 2016-09-18T21:23:05+08:00
 ```
 
 [tcpdump]: http://www.tcpdump.org/

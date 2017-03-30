@@ -41,7 +41,6 @@ Finally, read well, think fast, talk smart, write more, in 2017.
 
 ## EOF
 ```yaml
-date: 2017-01-02T18:57:19+08:00
 summary: My reading list in 2016
 weather: warm
 license: cc-40-by
@@ -49,4 +48,5 @@ location: 22,114
 background: we-space.jpg
 tags:
   - Reading
+date: 2017-01-02T18:57:19+08:00
 ```

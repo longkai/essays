@@ -34,7 +34,6 @@ Finally, there are no rules from this article but some personal suggestions. Tha
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2016-02-05T20:27:21+08:00
 hide: false
 license: cc-40-by
 location: Guilin
@@ -43,6 +42,7 @@ tags:
 - Programming
 - Thoughts
 weather: very cold so no code
+date: 2016-02-05T20:27:21+08:00
 ```
 
 [1]: http://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582344

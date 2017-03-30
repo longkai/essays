@@ -91,7 +91,6 @@ go **低耦合** 的接口模式，栗子很棒，很丰富和实用。
 ### EOF
 ```yaml
 background: gobook.jpg
-date: 2016-04-01T23:46:37+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -100,6 +99,7 @@ tags:
 - Reading
 - Golang
 weather: run fun
+date: 2016-04-01T23:46:37+08:00
 ```
 
 [1]: http://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_1?s=books&ie=UTF8&qid=1459200107&sr=1-1&keywords=the+go+programming+language

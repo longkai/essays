@@ -52,7 +52,6 @@ PS: 感谢@Liger 同学的审阅
 #### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2016-01-20T18:28:43+08:00
 hide: false
 license: cc-40-by
 location: Hong Kong
@@ -61,6 +60,7 @@ background: elevator.jpg
 tags:
 - Programming,Thoughts
 weather: a bit cold
+date: 2016-01-20T18:28:43+08:00
 ```
 
 [1]: https://blog.golang.org/share-memory-by-communicating

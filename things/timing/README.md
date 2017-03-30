@@ -22,7 +22,6 @@
 ### EOF
 ```yaml
 background: timing.jpg
-date: 2015-12-25T21:47:57+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -30,6 +29,7 @@ summary: ""
 tags:
 - Things
 weather: ""
+date: 2015-12-25T21:47:57+08:00
 ```
 
 

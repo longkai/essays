@@ -288,7 +288,6 @@ by longkai on 1 Sep. in Sz.
 ### EOF
 ```yaml
 background: https://www.dropbox.com/s/qymidbvci32h2d7/super-fast-momoso.jpg?dl=1
-date: 2014-09-01T22:16:22+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -296,4 +295,5 @@ summary: ""
 tags:
 - Android
 weather: ""
+date: 2014-09-01T22:16:22+08:00
 ```

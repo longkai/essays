@@ -24,7 +24,6 @@
 ## EOF
 ```yaml
 background: view.jpg
-date: 2016-04-09T20:12:17+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -32,6 +31,7 @@ summary: 翻越大南山
 tags:
 - Outdoor
 weather: rainy & foggy
+date: 2016-04-09T20:12:17+08:00
 ```
 
 [1]: https://zh.wikipedia.org/wiki/%E5%8D%97%E5%B1%B1%E5%8C%BA_(%E6%B7%B1%E5%9C%B3%E5%B8%82)

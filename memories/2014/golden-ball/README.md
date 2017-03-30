@@ -33,7 +33,6 @@
 ### EOF
 ```yaml
 background: //farm4.staticflickr.com/3823/11949666736_bb75712cb8_o.jpg
-date: 2014-01-14T23:28:07+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -41,4 +40,5 @@ summary: c罗获得金球奖，阿森纳客场艰难拿下3分重回英超榜首
 tags:
 - Campus
 weather: ""
+date: 2014-01-14T23:28:07+08:00
 ```

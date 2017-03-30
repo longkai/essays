@@ -102,7 +102,6 @@ Finally, with the slogan of Pi,
 
 ### EOF
 ```yaml
-date: 2016-11-02T20:43:46+08:00
 summary: Teach, learn and make with Raspberry Pi
 weather: a bit cold
 license: cc-40-by
@@ -110,6 +109,7 @@ location: cn
 background: rpi-gui.jpg?imageView2/2/w/1024/format/jpg
 tags:
   - Raspberry Pi
+date: 2016-11-02T20:43:46+08:00
 ```
 
 [wiki]: https://en.wikipedia.org/wiki/Raspberry_Pi

@@ -1,4 +1,3 @@
-#+OPTIONS: toc:nil 
 
 * 英文写作
   
@@ -99,7 +98,6 @@ It is old observation that the best writers sometimes disregard the rules of rhe
 
 #+BEGIN_SRC yaml
 title: 英文写作
-date: 2017-03-19T17:46:31+08:00
 summary: 关于英文写作的体会
 weather: rainy
 license: cc-40-by
@@ -107,7 +105,8 @@ location: 22,144
 background: teos.jpg
 tags:
   - Writing
+date: 2017-03-19T17:46:31+08:00
 #+END_SRC
 
-
 感谢阅读。
+

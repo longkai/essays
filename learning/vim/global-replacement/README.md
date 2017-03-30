@@ -21,7 +21,6 @@ use ``/``, ``n`` and ``.`` is more useful when you not intent to replacement glo
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2015-09-27T01:18:43+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -30,4 +29,5 @@ tags:
 - Campus
 - Vim
 weather: ""
+date: 2015-09-27T01:18:43+08:00
 ```

@@ -55,7 +55,6 @@ that would be great without being aware of it. Note all the paths must be **abso
 #### EOF
 ```yaml
 background: recover.jpg
-date: 2016-07-18T08:09:17+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -64,4 +63,5 @@ tags:
   - learning
   - automation
 weather: hot
+date: 2016-07-18T08:09:17+08:00
 ```

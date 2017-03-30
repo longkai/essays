@@ -31,7 +31,6 @@
 ### EOF
 ```yaml
 background: ../xida.jpg
-date: 2014-01-09T23:02:54+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -39,6 +38,7 @@ summary: 还记得每当你考完试的时候的感受吗？是后悔没有刷�
 tags:
 - Campus
 weather: ""
+date: 2014-01-09T23:02:54+08:00
 ```
 
 [1]: http://zh.wikipedia.org/wiki/%E6%AD%90%E8%90%8A%E7%A6%AE

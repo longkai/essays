@@ -268,7 +268,6 @@
 ### EOF
 ```yaml
 background: ../xida.jpg
-date: 2014-01-21T08:58:33+08:00
 hide: false
 license: cc-40-by
 location: Chengdu
@@ -277,4 +276,5 @@ tags:
 - Campus
 - Travel
 weather: ""
+date: 2014-01-21T08:58:33+08:00
 ```

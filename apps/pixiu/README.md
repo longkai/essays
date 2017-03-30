@@ -47,7 +47,6 @@ Thanks for reading.
 
 ## EOF
  ```yaml
-date: 2017-01-15T20:12:17+08:00
 summary: Pixiu - an Inbox and Notification App for Gmail on macOS
 weather: cold
 license: cc-40-by
@@ -56,6 +55,7 @@ background: banner.jpg
 tags:
   - Products
   - macOS
+date: 2017-01-15T20:12:17+08:00
 ```
 
 [gmail-api]: https://developers.google.com/gmail/api/

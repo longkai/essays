@@ -56,7 +56,6 @@ Thanks for reading.
 
 ## EOF
 ```yaml
-date: 2017-02-11T15:54:43+08:00
 summary: Share the intention, learning, development, and submit experience of the Pixiu app
 weather: fine
 license: cc-40-by
@@ -64,6 +63,7 @@ location: 22,144
 background: ../../../apps/pixiu/banner.jpg
 tags:
   - apps
+date: 2017-02-11T15:54:43+08:00
 ```
 
 [intro page]: https://xiaolongtongxue.com/apps/pixiu/

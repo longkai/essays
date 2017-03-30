@@ -148,7 +148,6 @@ public class ActivityThread {
 ### EOF
 ```yaml
 background: zygote.png
-date: 2015-06-10T23:24:22+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -157,6 +156,7 @@ tags:
 - Android
 - Translation
 weather: ""
+date: 2015-06-10T23:24:22+08:00
 ```
 
 [1]: http://www.codinghorror.com/blog/2012/04/learn-to-read-the-source-luke.html

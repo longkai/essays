@@ -208,7 +208,6 @@ For server side, Google has provide its [Batch API][]; as of client side example
 
 ## EOF
 ```yaml
-date: 2017-02-18T21:10:12+08:00
 summary: Batch multiple requests into a single one for better performance. Simple design, better performance.
 weather: sunny
 license: cc-40-by
@@ -216,6 +215,7 @@ location: 22,144
 background: art.jpg
 tags:
   - Design
+date: 2017-02-18T21:10:12+08:00
 ```
 
 [RFC 2616]: https://www.rfc-editor.org/rfc/rfc2616.txt

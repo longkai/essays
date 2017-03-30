@@ -35,7 +35,6 @@ image from the Internet
 ### EOF
 ```yaml
 background: //farm8.staticflickr.com/7294/11817939844_f60ede6dfe_o.png
-date: 2014-01-07T21:34:30+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -43,4 +42,5 @@ summary: ""
 tags:
 - Campus
 weather: ""
+date: 2014-01-07T21:34:30+08:00
 ```

@@ -288,7 +288,6 @@ PS: The Chinese Spring Festival is coming, best wishes for you!
 
 ## EOF
 ```yaml
-date: 2017-01-23T17:46:31+08:00
 summary: Tricks for a free and unlimited public network accessing service in a library.
 weather: fine
 license: cc-40-by
@@ -297,4 +296,5 @@ background: library.jpg?imageView2/2/w/1024/format/jpg
 tags:
   - Hacking
   - Networking
+date: 2017-01-23T17:46:31+08:00
 ```

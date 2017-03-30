@@ -174,7 +174,6 @@ Hi，上个周末很开心。小龙萌生了一个 wild thoughts，好像姗姗�
 ### EOF
 ```yaml
 background: wanting.jpg
-date: 2015-07-13T19:38:20+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -183,4 +182,5 @@ tags:
 - Life
 - Outdoor
 weather: ""
+date: 2015-07-13T19:38:20+08:00
 ```

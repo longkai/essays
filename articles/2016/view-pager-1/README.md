@@ -153,7 +153,6 @@ mViewPager.setInteractingListener(new InteractingListenViewPager.InteractingList
 #### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2016-01-07T02:50:41+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -161,6 +160,7 @@ summary: ""
 tags:
 - Android
 weather: a little warm
+date: 2016-01-07T02:50:41+08:00
 ```
 
 

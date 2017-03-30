@@ -87,7 +87,6 @@ feedback welcome, happy coding~
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2015-07-28T20:16:55+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -95,4 +94,5 @@ summary: Android 多运行时环境自动化构建的两种方法
 tags:
 - Android
 weather: ""
+date: 2015-07-28T20:16:55+08:00
 ```

@@ -24,7 +24,6 @@ image from Jure Kravanja
 ### EOF
 ```yaml
 background: ../xida.jpg
-date: 2014-01-03T00:20:48+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -32,4 +31,5 @@ summary: 对于这个公众号怎么弄，现在我也还是在摸索中。有�
 tags:
 - Campus
 weather: ""
+date: 2014-01-03T00:20:48+08:00
 ```

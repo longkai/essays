@@ -256,7 +256,6 @@ int main() {
 ## EOF
 ```yaml
 background: go101010.jpg
-date: 2016-03-31T22:37:55+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -264,6 +263,7 @@ summary: 编程珠玑 -> 位操作 -> 位集 -> 网络原理 -> Android 源码, 
 tags:
 - Android
 weather: okay day
+date: 2016-03-31T22:37:55+08:00
 ```
 
 [1]: https://book.douban.com/subject/3227098/

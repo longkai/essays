@@ -34,7 +34,6 @@ Github团购第二轮
 ### EOF
 ```yaml
 background: github-group-buying-2nd-1.jpg
-date: 2015-09-20T23:50:47+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -42,4 +41,5 @@ summary: 这一次，下一次
 tags:
 - Activity
 weather: ""
+date: 2015-09-20T23:50:47+08:00
 ```

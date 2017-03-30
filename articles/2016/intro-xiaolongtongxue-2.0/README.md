@@ -123,7 +123,6 @@ Happy hacking.
 
 ### EOF
 ```yaml
-date: 2016-09-12T21:01:17+08:00
 hide: false
 summary: Turn markdowns into website with Github, Docker, and more.
 weather: hey, what's the weather like?
@@ -133,6 +132,7 @@ background: blue-sky.jpg
 tags:
   - Leaning
   - Hacking
+date: 2016-09-12T21:01:17+08:00
 ```
 
 [github fav md]: https://guides.github.com/features/mastering-markdown/

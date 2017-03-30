@@ -37,7 +37,6 @@ Happy hacking.
 
 ## EOF
 ```yaml
-date: 2016-11-17T18:29:55+08:00
 summary: Borrowing from those popular expressions, i.e. `XaaS`, this article gives a brief story about setting up some of the well known services right from a tiny Pi.
 weather: fine
 license: cc-40-by
@@ -45,6 +44,7 @@ location: 22,114
 background: docker-raspberry-pi.jpg
 tags:
   - Hacking
+date: 2016-11-17T18:29:55+08:00
 ```
 [mDNS]: https://en.wikipedia.org/wiki/Multicast_DNS
 [gitlab]: https://about.gitlab.com

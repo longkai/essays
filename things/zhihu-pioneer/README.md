@@ -38,7 +38,6 @@ image from the Internet
 ### EOF
 ```yaml
 background: //farm6.staticflickr.com/5527/11818274986_5884ed8a29_o.jpg
-date: 2014-01-07T22:18:39+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -47,4 +46,5 @@ tags:
 - Campus
 - Reading
 weather: ""
+date: 2014-01-07T22:18:39+08:00
 ```

@@ -327,7 +327,6 @@ public class MyService extends IntentService {
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2015-06-17T20:41:25+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -336,6 +335,7 @@ tags:
 - Android
 - Translation
 weather: ""
+date: 2015-06-17T20:41:25+08:00
 ```
 
 [1]: ../a-journey-on-the-android-main-thread-psvm/README.md

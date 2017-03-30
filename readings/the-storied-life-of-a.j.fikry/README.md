@@ -52,7 +52,6 @@
 ## EOF
 ```yaml
 background: cover.jpg
-date: 2016-04-06T20:30:01+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -61,6 +60,7 @@ tags:
 - Reading
 - Bookshelf
 weather: terrific good
+date: 2016-04-06T20:30:01+08:00
 ```
 
 [1]: http://baike.baidu.com/link?url=dtb0xbnD2BZGJRPfCa0cBfD3pVh7V_xYH_9CcEcFrvU1FdGLTnJ7NwS4X53AWTBJfbcLZQ6-SFIl9CTfbF99k4-JqNYA8mowm7nmCkFwdDLiOqvKmHQJzTYxEWkAhgHjXvgoFnSB2dD0YJyBHHDK0_

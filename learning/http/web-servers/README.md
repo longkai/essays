@@ -85,7 +85,6 @@ Permanently moved resources, Temporarily moved resources, URL augmentation, Load
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2015-09-26T12:31:18+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -93,4 +92,5 @@ summary: 'HTTP: The Definitive Guide'
 tags:
 - Web
 weather: ""
+date: 2015-09-26T12:31:18+08:00
 ```

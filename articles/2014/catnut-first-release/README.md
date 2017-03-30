@@ -31,7 +31,6 @@ app[下载地址][1] [项目主页][2]
 ### EOF
 ```yaml
 background: https://farm8.staticflickr.com/7417/12923931494_b40944bdcd_o.png
-date: 2014-03-05T00:33:19+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -39,6 +38,7 @@ summary: 简洁，流畅，去广告，省流量，支持离线查看，并且�
 tags:
 - Campus
 weather: ""
+date: 2014-03-05T00:33:19+08:00
 ```
 
 [1]: https://dl.dropboxusercontent.com/u/96034496/apps/catnut-latest.apk "app downlaod link"

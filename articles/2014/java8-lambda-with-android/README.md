@@ -51,7 +51,6 @@ public class MainActivity extends ActionBarActivity {
 ### EOF
 ```yaml
 background: https://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg
-date: 2014-11-04T00:45:07+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -59,6 +58,7 @@ summary: ""
 tags:
 - Android
 weather: ""
+date: 2014-11-04T00:45:07+08:00
 ```
 
 [showcase]: https://ww4.sinaimg.cn/large/aa61ae0egw1ely9jgwzenj21io0v4aht.jpg

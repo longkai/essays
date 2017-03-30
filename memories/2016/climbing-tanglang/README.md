@@ -40,7 +40,6 @@
 ## EOF
 ```yaml
 background: view.jpg
-date: 2016-04-03T23:12:17+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -48,6 +47,7 @@ summary: 春天到了，出去走走吧
 tags:
 - Outdoor
 weather: humid & foggy
+date: 2016-04-03T23:12:17+08:00
 ```
 
 [1]: http://baike.baidu.com/link?url=kPPoRrHVLRe8kn7ziY8L2m5qxzhlxAZ34eCGqZAzXtmsyw8ryTz0_XxxMXGlQjDkYuPFE6QDE2fC1SG2s0UoLa

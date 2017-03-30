@@ -122,7 +122,6 @@ Thanks for reading.
 
 ## EOF
 ```yaml
-date: 2017-02-26T21:12:17+08:00
 summary: This post gives a brief intro how does QQ identifies who you are in the browser even you have no intention of login, plus some security and privacy considerations.
 weather: cold 😳
 license: cc-40-by
@@ -132,6 +131,7 @@ tags:
   - Hacking
   - Security
   - Privacy
+date: 2017-02-26T21:12:17+08:00
 ```
 
 [Tencent QQ]: https://en.wikipedia.org/wiki/Tencent_QQ

@@ -60,7 +60,6 @@ GitHub Octocat 手办团购第一轮
 ### EOF
 ```yaml
 background: octocat-6.jpg
-date: 2015-09-04T01:25:24+08:00
 hide: false
 license: cc-40-by
 location: Shenzhen
@@ -68,4 +67,5 @@ summary: 今天，抗战胜利日，组织的第二波GitHub团购下单了，�
 tags:
 - Activity
 weather: ""
+date: 2015-09-04T01:25:24+08:00
 ```

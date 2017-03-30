@@ -48,7 +48,6 @@
 ### EOF
 ```yaml
 background: //farm3.staticflickr.com/2811/11738815385_6f650ff36a_q.jpg
-date: 2014-01-04T06:31:36+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -57,4 +56,5 @@ tags:
 - Campus
 - Things
 weather: ""
+date: 2014-01-04T06:31:36+08:00
 ```

@@ -64,7 +64,6 @@ Java/Android Engineer; Gopher
 ### EOF
 ```yaml
 background: /assets/images/crossing.jpg
-date: 2016-03-02T12:17:00+08:00
 hide: true
 license: cc-40-by
 location: Shenzhen
@@ -73,6 +72,7 @@ tags:
 - Career
 title: Resume
 weather: fine
+date: 2016-03-02T12:17:00+08:00
 ```
 
 [1]: https://github.com/longkai/Musseta

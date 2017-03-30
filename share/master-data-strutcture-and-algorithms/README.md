@@ -29,7 +29,6 @@
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2014-05-23T03:19:48+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -38,6 +37,7 @@ tags:
 - Campus
 - Translation
 weather: ""
+date: 2014-05-23T03:19:48+08:00
 ```
 
 [1]: http://www.quora.com/Algorithms/What-are-good-ways-to-master-algorithms-and-data-structure-to-be-a-programming-expert

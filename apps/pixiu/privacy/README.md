@@ -25,7 +25,6 @@ Any future change to this policy will be posted to this page.
 ## EOF
 ```yaml
 hide: true
-date: 2017-01-17T11:48:57+08:00
 summary: Pixiu Privacy Policy
 weather: cold
 license: all-rights-reserved
@@ -33,6 +32,7 @@ location: 22,114
 background: ../banner.jpg
 tags:
   - Privacy Policy
+date: 2017-01-17T11:48:57+08:00
 ```
 
 [Fabric]: https://fabric.io/privacy

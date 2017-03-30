@@ -150,7 +150,6 @@ task wrapper(type: Wrapper) {
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2014-03-07T00:02:51+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -159,4 +158,5 @@ tags:
 - Campus
 - Android
 weather: ""
+date: 2014-03-07T00:02:51+08:00
 ```

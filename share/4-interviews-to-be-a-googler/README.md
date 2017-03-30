@@ -61,7 +61,6 @@
 ### EOF
 ```yaml
 background: /assets/images/default.jpg
-date: 2014-05-27T03:06:44+08:00
 hide: false
 license: cc-40-by
 location: Nanning
@@ -70,6 +69,7 @@ tags:
 - Campus
 - Translation
 weather: ""
+date: 2014-05-27T03:06:44+08:00
 ```
 
 [1]: http://www.quora.com/Career-Advice/What-are-the-ways-to-utilize-6-months-to-build-skill-set-to-get-hired-at-Facebook-or-Google/answer/Rick-Viscomi?srid=twt8&share=1
