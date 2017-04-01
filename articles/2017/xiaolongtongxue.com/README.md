@@ -1,4 +1,4 @@
-# xiaolongtongxue.com
+# xiaolongtongxue.com v3.0
 
 Turn your favorite markup git repository as a website, with Github favorite rendering layout, automatically.
 
@@ -13,8 +13,24 @@ Turn your favorite markup git repository as a website, with Github favorite rend
 
 ### Each Doc Must...
 
-- Resident in a directory, one per one.
+- Resident in a directory, one per one, the directory path is the HTTP URL path for the document.
 - Have an `EOF` headline followed by a `YAML` code block.
+
+For example:
+
+```sh
+$ cd /path/to/repo
+$ ll articles/2017/how-does-qq-know-who-i-am
+$ total 56K
+-rw-r--r-- 1 longkai staff 7.2K Mar 27 16:23 README.md
+-rw-r--r-- 1 longkai staff  48K Mar 24 02:04 qq.jpg
+```
+
+The *README.md* is your document which will be rendered as a web page, you could, however, change the file name pattern with willcard, see [configuration](#configuration). Its URL path is `/articles/2017/how-does-qq-know-who-i-am`, same layout as directory.
+
+You could import any image relative in you repository directory, or internet resources, of course. Suppose you have a full image along with its thumbnail, call *nice.jpg* for instance, by convention the full image should be named as *nice@full.jpg*.
+
+Each doc shoud have a mark up convention providing its metadata.
 
 For markdown:
 
@@ -59,40 +75,6 @@ date: 2016-01-07T02:50:41+08:00 # required, must be this format(i.e., RFC3339)
 
 There is even a command-line tool for auto-generating this format, go [get it](cmd/newdoc)!
 
-## Run with Docker
-
-Run `docker run -d -p 1217:1217 -v /path/to/repo:/repo -v /path/to/conf.yml:/conf.yml:ro longkai/xiaolongtongxue.com` Don't forget to replace your volumes.
-
-Or, if you prefer `docker-compose`, [modify](docker-compose.yml) for your environment:
-
-```yaml
-essays:
-  image: longkai/xiaolongtongxue.com:latest
-  ports:
-    - 1217:1217
-  volumes:
-    - $PWD/log.txt:/log.txt
-    - $PWD/conf.yml:/conf.yml:ro
-    - $HOME/src/github.com/longkai/essays:/repo
-  restart: always
-```
-
-Run `docker-compose up -d`.
-
-## Build Manually
-
-### Pre-requisite
-
-- [golang][go] >= 1.7
-- [bower][bower]
-
-### Building
-
-1. `go get github.com/longkai/xiaolongtongxue.com && rm $GOPATH/bin/xiaolongtongxue.com`
-2. `cd $GOPATH/src/github.com/longkai/xiaolongtongxue.com`
-3. `./build.sh`
-4. `./xiaolongtongxue.com [/path/to/conf.yml]`
-
 ## Configuration
 
 Note wildcard `**` is not supported by Golang.
@@ -131,6 +113,41 @@ redir: # Redirection mapping, i.e., HTTP 301
 
 Remember in the `assets/images/` directory there are some placeholder images, you would like to replace them with yours.
 
+
+## Run with Docker
+
+Run `docker run -d -p 1217:1217 -v /path/to/repo:/repo -v /path/to/conf.yml:/conf.yml:ro longkai/xiaolongtongxue.com` Don't forget to replace your volumes.
+
+Or, if you prefer `docker-compose`, [modify](docker-compose.yml) for your environment:
+
+```yaml
+essays:
+  image: longkai/xiaolongtongxue.com:latest
+  ports:
+    - 1217:1217
+  volumes:
+    - $PWD/log.txt:/log.txt
+    - $PWD/conf.yml:/conf.yml:ro
+    - $HOME/src/github.com/longkai/essays:/repo
+  restart: always
+```
+
+Run `docker-compose up -d`.
+
+## Build Manually
+
+### Pre-requisite
+
+- [golang][go] >= 1.7
+- [bower][bower]
+
+### Building
+
+1. `go get github.com/longkai/xiaolongtongxue.com && rm $GOPATH/bin/xiaolongtongxue.com`
+2. `cd $GOPATH/src/github.com/longkai/xiaolongtongxue.com`
+3. `./build.sh`
+4. `./xiaolongtongxue.com [/path/to/conf.yml]`
+
 ## Front-end template
 
 I am not good at front-end development, so there is only one template site I grab from the Internet. If you would like to replace your site's design, you need to understand a little about [template usage][go-template] of Golang, it's not hard.
@@ -153,16 +170,13 @@ Happy hacking.
 
 ## EOF
 ```yaml
-hide: false
-summary: Turn markdowns into website with Github, Docker, and more.
-weather: hey, what's the weather like?
+summary: Turn your favorite markup git repository as a website, with Github favorite rendering layout, automatically.
+weather: fine
 license: cc-40-by
-location: somewhere 
-background: blue-sky.jpg
-tags:
-  - Leaning
-  - Hacking
-date: 2016-09-12T21:01:17+08:00
+location: 22,144
+background: sunset.jpg
+tags: [Leaning, Hacking]
+date: 2017-04-01T21:12:17+08:00
 ```
 
 [markdown]: https://guides.github.com/features/mastering-markdown/
