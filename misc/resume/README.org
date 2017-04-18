@@ -37,7 +37,7 @@
 
 *** 其他
 
-自己从大学到现在写过的若干项目，可在 [[https://github.com/longkai][Github]] 和 [[https://play.google.com/store/apps/developer?id=%25E5%25B0%258F%25E9%25BE%2599%25E5%2590%258C%25E5%25AD%25A6][Google Play]] 找到。
+自己从大学到现在写过的若干项目，可在 [[https://github.com/longkai][Github]] 和 [[https://play.google.com/store/apps/developer?id=%E5%B0%8F%E9%BE%99%E5%90%8C%E5%AD%A6][Google Play]] 找到。
 
 ** EOF
 #+BEGIN_SRC yaml
