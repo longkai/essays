@@ -14,7 +14,7 @@
 ** 语言，环境和技术
 
 #+BEGIN_SRC yaml
-英语: 自由地在社区交流，编写博客，阅读原版书籍
+英语: 自由地在社区交流，写博客，阅读原版书籍
 语言: 熟悉 C/Go/Java/Swift，了解 汇编/JavaScript/Objective-C/Lisp
 基础: 熟悉常用的数据结构和算法，了解设计模式，熟悉 TCP/IP/HTTP 等网络协议
 环境: 熟悉 Linux 环境及 shell script 的编写，熟练使用 Emacs/Vim/curl/tcpdump/docker 等日常软件
@@ -23,21 +23,21 @@
 
 ** 项目经验
 
-*** Pixiu
-
-使用 Swift3 和 C 编写的 macOS 端 Gmail 收件箱通知应用，已经在 [[https://geo.itunes.apple.com/app/id1195433805][Mac App Store]] 上架。通过设计和实现了一个 HTTP Batch Request/Response 编码/解码器；减少了96%的 Gmail API 并发调用次数，更少的内存占用和响应时间。
-
-*** 个人网站
-
-使用 Go 写的个人博客生成网站，支持将各种格式（org-mode, markdown, rst 等）的标记文档渲染成网页；利用 Github Webhooks 自动更新。借助 Go 的高并发特性，设计和实现了一个 Non-blocking rendering cache；安全和快速地对文档渲染，缓存及其刷新。
-
 *** 么么嗖
 
-毕业即加入的一家跨境电商 Android app 项目，最初完全由自己一人独立开发到上线。通过实现一个自定义模版引擎，将服务端下发的模版文件渲染成原生的 Android 界面，让电商促销活动可以不通过更新版本而自动更新。可以在各大市场搜索到。
+毕业即加入的一家跨境电商创业公司 Android app 项目，最初完全由自己一人独立开发到上线。实现了一个自定义模版引擎，将服务端下发的模版文件渲染成原生的 Android 界面，使得电商促销活动可以不通过更新版本而自动更新。可在各大市场搜索到。
+
+*** Pixiu
+
+使用 Swift3 和 C 编写的 macOS 端 Gmail 收件箱摘要/通知应用，已经在 [[https://geo.itunes.apple.com/app/id1195433805][Mac App Store]] 上架。通过设计和实现了一个 HTTP Batch Request/Response 编码/解码器；减少了96%的 Gmail API 并发请求次数，更少的内存占用和响应时间。
+
+*** 博客生成器
+
+使用 Go 写的个人博客生成网站，支持将各种格式（org-mode, markdown, rst 等）的标记文档渲染成网页；利用 Github Webhooks 自动更新博客。借助 Go 的高并发特性，设计和实现了一个 Non-blocking rendering cache；安全和快速地对文档渲染，缓存及其刷新。
 
 *** 其他
 
-自己从大学到现在写过不少其他项目，包括但不限于 Android/iOS app，web前后端等，可以在 [[https://github.com/longkai][Github]] 和 [[https://play.google.com/store/apps/developer?id=%25E5%25B0%258F%25E9%25BE%2599%25E5%2590%258C%25E5%25AD%25A6][Google Play]] 检索到。
+自己从大学到现在写过的若干项目，可在 [[https://github.com/longkai][Github]] 和 [[https://play.google.com/store/apps/developer?id=%25E5%25B0%258F%25E9%25BE%2599%25E5%2590%258C%25E5%25AD%25A6][Google Play]] 找到。
 
 ** EOF
 #+BEGIN_SRC yaml
