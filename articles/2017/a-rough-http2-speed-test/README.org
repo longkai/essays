@@ -27,9 +27,9 @@ Note cache is disabled and close then open a new incognito chrome for each test.
 ./configure --with-http_ssl_module --with-openssl=../openssl-1.1.0e --with-http_v2_module
 #+END_SRC
 
-Where http has nothing configured, http2 has all while https sits in between.
+Where HTTP has nothing configured, HTTP2 has all while https sits in between.
 
-Here is the nginx SSL/TLS section configuration, which grabbing from the [[https://mozilla.github.io/server-side-tls/ssl-config-generator/][Mozilla SSL Configuration Generator]].
+Here is the nginx SSL/TLS configuration section, which grabbed from the [[https://mozilla.github.io/server-side-tls/ssl-config-generator/][Mozilla SSL Configuration Generator]].
 
 #+BEGIN_SRC sh
 listen       80;
@@ -70,7 +70,7 @@ resolver_timeout 10;
 
 **** HTTP
 
-[[file:http.jpg][HTTP]]
+[[file:http.jpg]]
 
 The connection ID can help identify the TCP connection. We can see that at most 5 or 6 connection per one page request.
 
@@ -78,15 +78,14 @@ The waterfall column tells us that the request firing has the timing order.
 
 **** HTTPS 
 
-[[file:https.jpg][HTTPS]]
-
+[[file:https.jpg]]
 There is almost no difference with HTTP except that the time is larger than HTTP. More specifically, the very first connections, e.g., first 3 connection ID timing are much larger then HTTP. Take the HTML document request for example, is 288ms vs. 639ms. HTTP connection establishment needs only the classic three-way-handshake(usually one RTT), while the HTTPS goes further, which does complex TLS handshake(usually two RTTs).
 
 Although the https encryption/decryption needs time, the impact of network delay dominates the performance, however.
 
 **** HTTP2
 
-[[file:http2.jpg][HTTP2]]
+[[file:http2.jpg]]
 
 Only one connection, wow, it's outstanding. Look at the waterfall, the request firing is almost at same time(after DOM being loaded).
 
