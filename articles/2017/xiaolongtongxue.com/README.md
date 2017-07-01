@@ -24,7 +24,7 @@ $ ls articles/2017/how-does-qq-know-who-i-am
 README.md  qq.jpg
 ```
 
-The *README.md* is your document which will be rendered as a web page, you could, however, change the file name pattern with willcard, see the configuration. Its URL path is `/articles/2017/how-does-qq-know-who-i-am`, same layout as directory.
+The *README.md* is your document which will be rendered as a web page, you could, however, change the file name pattern with willcard, see the configuration section. Its URL path is `/articles/2017/how-does-qq-know-who-i-am`, same layout as directory.
 
 You could import any image relative in you repository directory, or internet resources, of course. Suppose you have a full image along with its thumbnail, called `nice.jpg` for instance, by convention the full image should be named as `nice@full.jpg`.
 
@@ -82,16 +82,16 @@ port: 1217 # Server listen port.
 repo_dir: /repo # Local Github documents repo location.
 medium_token: # Medium Self-issued access tokens, optional.
 glob_docs: # The markup file name wilcards.
-  - README.* # Any file start with README.xxx would be parse as an articles.
-skip_dirs: # Skip parse dirs.
-  - .* # Skip hidden dirs
-  - assets # assets dir is resered as front-end resources.
+  - README.* # Any file start with README.xxx would be parse as an article.
+skip_dirs: # Dirs will be skipped when parsing.
+  - .* # Skip hidden dirs.
+  - assets # *assets* dir is resered as front-end resources.
 github:
   user: # Github user name
   repo: # Github repo name
   hook_secret: # Github WebHook secret
   access_token: # Github Personal access token
-meta: # optional
+meta: # All optional
   ga: GA tracker ID
   gf: false # Use Google Fonts, check `templ/include.html`
   origin: https://your-domain.com # required only if medium posting service enabled.
@@ -109,7 +109,7 @@ redir: # Redirection mapping, i.e., HTTP 301
   "/path/to/old": "/path/to/new"
 ```
 
-Remember in the `assets/images/` directory there are some placeholder images, you would like to replace them with yours.
+Remember in the `assets/images/` directory, some placeholder images, you would like to replace them with yours.
 
 
 ## Run with Docker

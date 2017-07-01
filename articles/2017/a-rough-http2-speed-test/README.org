@@ -1,0 +1,138 @@
+* A Rough HTTP2 Speed Test
+
+** Abstract
+
+The evergreen web work horse protocol, HyperText Transfer Protocol, or HTTP, has been updated officially in May 2015. Since then, many browsers and servers support it and more and more web sites start trying HTTP2.
+
+Although HTTP/2 is better than HTTP/1.x, not every sites will benefit from it. This post gives a simple and rough test for the HTTP/2 performance vs. HTTP only and HTTPS in my own site.
+
+** Background
+
+*** What's the key features in HTTP/2?
+
+- binary payload, rather than text, making it more compact and efficient for transport.
+- a single TCP connection per domain for multiplexing, rather than multiple connection for each request.
+- header is compressed.
+- TLS/SSL is required, making it secured.
+
+** Testing
+
+*** Environment
+
+Test a site with many mixed resources(mostly images) with nearly 357 requests, 25MB made.
+
+Note cache is disabled and close then open a new incognito chrome for each test. The nginx server config is fairly simple:
+
+#+BEGIN_SRC sh
+./configure --with-http_ssl_module --with-openssl=../openssl-1.1.0e --with-http_v2_module
+#+END_SRC
+
+Where http has nothing configured, http2 has all while https sits in between.
+
+Here is the nginx SSL/TLS section configuration, which grabbing from the [[https://mozilla.github.io/server-side-tls/ssl-config-generator/][Mozilla SSL Configuration Generator]].
+
+#+BEGIN_SRC sh
+listen       80;
+listen       [::]:80;
+listen       443 ssl http2;
+listen       [::]:443 ssl http2;
+
+# certs sent to the client in SERVER HELLO are concatenated in ssl_certificate
+ssl_certificate		/etc/letsencrypt/live/xiaolongtongxue.com/fullchain.pem;
+ssl_certificate_key	/etc/letsencrypt/live/xiaolongtongxue.com/privkey.pem;
+ssl_session_timeout 1d;
+ssl_session_cache shared:SSL:50m;
+ssl_session_tickets off;
+
+# Diffie-Hellman parameter for DHE ciphersuites, recommended 2048 bits
+ssl_dhparam  /etc/ssl/certs/dhparam.pem;
+
+# modern configuration. tweak to your needs.
+ssl_protocols TLSv1.2;
+ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256';
+ssl_prefer_server_ciphers  on;
+
+# HSTS (ngx_http_headers_module is required) (15768000 seconds = 6 months)
+add_header Strict-Transport-Security max-age=15768000;
+
+# OCSP Stapling ---
+# fetch OCSP records from URL in ssl_certificate and cache them
+ssl_stapling on;
+ssl_stapling_verify on;
+
+## verify chain of trust of OCSP response using Root CA and Intermediate certs
+ssl_trusted_certificate /etc/letsencrypt/live/xiaolongtongxue.com/chain.pem;
+resolver 8.8.8.8 8.8.4.4 valid=86400;
+resolver_timeout 10;
+#+END_SRC
+
+*** Screen Shots
+
+**** HTTP
+
+[[file:http.jpg][HTTP]]
+
+The connection ID can help identify the TCP connection. We can see that at most 5 or 6 connection per one page request.
+
+The waterfall column tells us that the request firing has the timing order.
+
+**** HTTPS 
+
+[[file:https.jpg][HTTPS]]
+
+There is almost no difference with HTTP except that the time is larger than HTTP. More specifically, the very first connections, e.g., first 3 connection ID timing are much larger then HTTP. Take the HTML document request for example, is 288ms vs. 639ms. HTTP connection establishment needs only the classic three-way-handshake(usually one RTT), while the HTTPS goes further, which does complex TLS handshake(usually two RTTs).
+
+Although the https encryption/decryption needs time, the impact of network delay dominates the performance, however.
+
+**** HTTP2
+
+[[file:http2.jpg][HTTP2]]
+
+Only one connection, wow, it's outstanding. Look at the waterfall, the request firing is almost at same time(after DOM being loaded).
+
+The initial DOM request is also faster than HTTPS does.
+
+*** Result Summary
+
+Summary test on a usual latency(100ms) network
+
+| type     | test1 | test2 | test3 | average |
+|----------+-------+-------+-------+---------|
+| HTTP/1.1 | 18.91 | 19.28 | 18.98 |   19.06 |
+| HTTPS    | 19.40 | 19.28 | 19.21 |   19.30 |
+| HTTP/2   | 19.78 | 20.50 | 20.77 |   20.35 |
+
+
+We can see that HTTP is faster than HTTPS, the newcomer, HTTP/2 is the worst in performance, however.
+
+In short, some sites may not benefit from HTTP2.
+
+*** Why?
+
+- My rough tests method may be wrong since I do not dig into the protocol but hit the ground.
+- HTTPS/HTTP2 needs time to do the TLS handshake while HTTP doesn't have to pay.
+- Much of the payloads are image data which are binary compressed already, where http2 doesn't gain any advantages.
+- Only one TCP connection, it may results a single point failure(I am not sure, but I bet the designer must be bound to consider it)?
+- Network environment is complicated, different network should have different performance.
+
+
+For a more accurate testing, we need to analytics the networking. I'm learning [[https://www.wireshark.org/][Wireshark]] recently and it's a great network protocol analyzer! When ready, this post would be fulfilled.
+
+
+Thanks for reading.
+
+** Resources
+
+- https://www.nginx.com/blog/7-tips-for-faster-http2-performance/
+
+** EOF
+
+#+BEGIN_SRC yaml
+summary: Although HTTP/2 is better than HTTP/1.x, not every sites will benefit from it. This post gives a simple and rough test for the HTTP/2 performance vs. HTTP only and HTTPS in my own site.
+weather: summer
+license: cc-40-by
+location: 22, 144
+background: wireshark.jpg
+tags: [Networking, HTTP2]
+date: 2017-07-01T12:12:17+08:00
+#+END_SRC
