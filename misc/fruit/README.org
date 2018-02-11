@@ -159,7 +159,10 @@ http://hr.tencent.com/position_detail.php?id=34114&keywords=%E5%8C%BB%E5%AD%A6&t
 summary: find a good job for fruit!
 weather: fine
 license: cc-40-by
+<<<<<<< HEAD
 hide: true
+=======
+>>>>>>> ae6089165c4faa498599912016802b8e2c8e1b41
 location: 22, 144
 background: wawa.jpg
 tags: [misc, fruit]
