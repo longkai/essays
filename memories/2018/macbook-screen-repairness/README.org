@@ -33,7 +33,7 @@ MacBook Pro Retina 的屏幕显示非常清晰锐利，用过之后就不想看�
 [[file:mbp.jpg]]
 
 #+BEGIN_QUOTE
-又可以换贴纸啦，猜猜我选了哪两张，哈哈
+又可以换贴纸啦
 #+END_QUOTE
 
 最后总结一下，给有同样问题的小伙伴们：
