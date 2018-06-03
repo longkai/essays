@@ -6,23 +6,23 @@ MacBook Pro Retina 的屏幕显示非常清晰锐利，用过之后就不想看�
 
 约的时间是上周六12点半，准时到了之后工作人员很客气的安排的位置等候。发现有很多人是现场预约的，对面对一哥们说得等到下午5点了。还好，下次要是网上约不到对话可以直接打电话给客服。没过多久，对接对工作人员来了。问机器是啥问题，我说屏幕涂层脱落，他看了一眼，直接就说帮我换屏。估计这也是一个普遍的问题吧，然后说会检查一下是否还有其他的问题，然后2-7个自然日内会打电话通知去拿。很利索。
 
-[[file:holiday-plaza.jpg][holiday plaza]]
+[[file:holiday-plaza.jpg]]
 
 #+BEGIN_QUOTE
-白天
+白天，很热
 #+END_QUOTE
 
 周日傍晚在超市买菜，突然接到一个电话，0755开头的，然后猜到是多半是苹果打来多。没错，说电脑屏幕已经换好了，晚上就可以去拿了。然后检查的时候发现电池鼓胀，根据苹果的政策，3年之内可以免费更换，换电池顺便也把键盘给换了。真刺激啊，心中一阵小开心，还好自己试了一下，就差那么三四天，换得了一个新的屏幕和电池键盘，价值8k大洋，难道 CPU 和内存就值3k多么...
 
-[[file:holiday-plaza-night.jpg][holiday plaza night]]
+[[file:holiday-plaza-night.jpg]]
 
 #+BEGIN_QUOTE
-傍晚
+夜晚，还是很热。。
 #+END_QUOTE
 
-[[file:list1.png][list 1]]
+[[file:list1.png]]
 
-[[file:list2.png][list 2]]
+[[file:list2.png]]
 
 #+BEGIN_QUOTE
 维修清单，贼贵了，东西好用，但是坏了真的修不起啊。。。
@@ -30,7 +30,7 @@ MacBook Pro Retina 的屏幕显示非常清晰锐利，用过之后就不想看�
 
 拿到电脑后，检查了下，ABC 面都换了。小情人干净得又换了新的衣服，一起生活，学习和工作3年了，一直都有你在身边。
 
-[[file:mbp.jpg][mbp stickers]]
+[[file:mbp.jpg]]
 
 #+BEGIN_QUOTE
 又可以换贴纸啦，猜猜我选了哪两张，哈哈
