@@ -190,7 +190,7 @@
 ** EOF
 
 #+BEGIN_SRC yaml
-summary: 那些和足球有关的事
+summary: 18年俄罗斯世界杯刚刚开打，不知不觉间，作为一个伪球迷，看球已经12年了。
 weather: fine
 license: cc-40-by
 location: 22, 114
