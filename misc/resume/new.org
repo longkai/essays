@@ -15,18 +15,8 @@
 
 *** 深圳瓶子科技（腾讯全资子公司） - iOS/Android 开发工程师（2017-5 至今）
 
-负责活点地图的Android和iOS端开发，以及参与腾讯蘑菇VR Android端app开发。包括前期的地图，即时聊天，表情动画的技术调研并实现了好友地图，表情动画，好友实时位置的上报和获取等模块。并在Android端项目中引入 Kotlin 语言。
+负责活点地图的Android和iOS端开发，包括前期的地图，即时聊天，表情动画的技术调研并实现了好友地图，表情动画，好友实时位置的上报和获取等模块。18年主要负责求知鸟付费课程项目的后台开发，包括API服务，推荐系统等。
 
-*** 独立开发者 (2016-3 至 2017-4)
-
-思考自己的职业发展以及总结工作经验后，重返学校，开始专心研究一些以前想搞但是没有时间静下心来弄的知识和技术，做一些 side projects:
-
-- 用英文写了十几篇技术博客
-- 阅读并实践了 [[https://xiaolongtongxue.com/memories/2017/2016-reading-list][30 多本书]]，其中多数为经典英文原版，如 csapp，tcpipiv1，unp
-- Unix 系统编程和网络编程实践
-- 刷 LeetCode，提升算法能力并保持状态
-- 实践了多种程序语言并写了若干项目，包括个人网站后端，iOS/macOS 原生应用并上架到应用商店
-- 掌握了一些生产力工具和技能并运用在日常的学习，开发，部署和调式中，如 Emacs，Docker，tcpdump
 
 *** 深圳市时时医科技有限公司 - Android 开发工程师 (2015-6 至 2016-3)
 
@@ -36,11 +26,11 @@
 
 负责 Android 端海淘电商 App 的开发，包括首页，商品详情，购物车，订单，微信／支付宝支付，物流查询，自定义控件等模块。其中前半年里只有自己一个人开发，从零到上线。
 
-*** 广西大学雨无声网站 - 技术站长 (2012-6 至 2013-6)
-
-负责校园网站的技术管理， [[http://bbs.newgxu.cn/index.yws][BBS]] (SSH 框架) 的维护，首页改版，论坛活动的开发，校园信息 Android App，新人的技术培训等。此外还写过一个仿 Twitter 界面的新浪微博客户端，并上架到 Google Play。
-
 ** 项目经历
+
+*** 求知鸟付费课程项目 - 后台开发
+
+主要负责[[https://studybird.wehere.me][付费课程]]的后端（业务逻辑，运营后台，推荐系统以及中间服务等）开发，同时也参与部分微信小程序和h5网站的开发。在技术使用了微服务架构，在腾讯云上使用k8s容器服务部署各种语言(Java/JavaScript/Go)编写的项目。
 
 *** 活点地图 - iOS/Android App
 
@@ -49,14 +39,6 @@
 *** 么么嗖海淘 - Android App
 
 因为电商运营经常要搞活动，首页界面变动频繁，为了保证原生体验和免去提交商店更新的耗时，实现了一个自定义模版引擎，将服务端下发的布局描述文件渲染成原生界面。使得活动界面可以随时更新而无需提交新版本，加快了运营的脚步。可在各大市场 [[http://sj.qq.com/myapp/detail.htm?apkName=com.imaygou.android][下载]]。
-
-*** Pixiu - Inbox and Notifications for Gmail
-
-使用 Swift3 和 C 写的 macOS 端 Gmail 收件箱摘要/通知应用。由于应用需要频繁地并发调用 Gmail API，导致代码难以编写和维护，通过 [[https://xiaolongtongxue.com/articles/2017/lessons-from-gmail-api-a-batch-request-design-doc][设计和实现]] 了一个 HTTP Batch Request/Response 编码/解码器；减少了96%的请求，实现了更少的内存占用和更快的响应时间。应用可在 [[https://geo.itunes.apple.com/app/id1195433805][Mac App Store]] 下载。
-
-*** 博客引擎
-
-使用 Go 写的博客生成引擎，支持将各种格式（org-mode, markdown, rst 等）的标记文档渲染成美观的网页；利用 Github Webhooks，每当 =git push= 文档到 Github 即可实现博客的增量更新。考虑在高并发请求时，如何在不使用锁保证安全的前提下，对请求同一文档的渲染有且仅有一次。通过设计和实现了一个 Non-blocking rendering cache 解决了这个问题。项目可在 [[https://github.com/longkai/xiaolongtongxue.com][Github]] 找到。
 
 ** 技术能力
 
