@@ -1,7 +1,4 @@
-- [给Kubernetes下的klog项目贡献代码](#sec-1)
-  - [EOF](#sec-1-1)
-
-# 给Kubernetes下的klog项目贡献代码<a id="sec-1"></a>
+# 给Kubernetes下的klog项目贡献代码
 
 先前写过一篇glog源码阅读的[文章](./read-google-logging-library-glog)，在使用的过程中发现一些体验问题，偶然发现Kubernetes项目其实已经fork了glog维护着一个[klog](https://github.com/kubernetes/klog)项目，实际上Kubernetes使用klog作为其日志库。看了下，刚好也解决了默认所有配置都在`init()`中初始化带来的问题。
 
@@ -29,7 +26,7 @@
 
 在开源中学习，并做出贡献。
 
-## EOF<a id="sec-1-1"></a>
+## EOF
 
 ```yaml
 title: 给Kubernetes的klog项目提交代码
