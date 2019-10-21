@@ -3,6 +3,16 @@
 
 最近把一个新写的Go项目的日志模块从标准库中的=log=切换到了Google的[[https://github.com/golang/glog][glog]]。它解决了标准库中很多痛点，如给日志分级，写入文件并切分等。大名鼎鼎的[[https://kubernetes.io/][Kubernetes]]就是使用它作为日志模块。看了下代码，3个文件，1k多行，非常适合学习，于是便仔细阅读了一下源码和大家分享。
 
+#+begin_quote
+由于glog自身存在的一些问题以及基本上停止开发了，Kubernetes fork glog为[[https://github.com/kubernetes/klog][klog]]，修正了一些问题并新增了单个文件日志等特性，但是变化基本不大。
+
+默认情况下不在=init()=函数里去读取=flags=变量，除此一位还有一个新的=logr=日志接口，看起来挺有意思的，可以关注下。
+
+另外，我还给klog[[./contribute-klog][贡献了代码]]，嘿嘿。
+
+2019-10-21
+#+end_quote
+
 ** What
 
 先简要介绍一下glog，让大家有个概念。你可以给每条日志指定一个级别（Severity Level），内置4个，从低到高分别是：
