@@ -434,7 +434,7 @@ summary: 阅读Google glog源码
 weather: rainy
 license: cc-40-by
 location: 22, 114
-background: https://raw.githubusercontent.com/golang/go/master/doc/gopher/fiveyears.jpg
+background: https://cdn.jsdelivr.net/gh/golang/go/doc/gopher/fiveyears.jpg
 tags: [golang, source]
 date: 2019-09-02T22:55:27+08:00
 ```
