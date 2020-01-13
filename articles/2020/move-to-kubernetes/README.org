@@ -7,7 +7,7 @@ favicon换了个emoji，感觉又年轻了一些：）
 ** Why
 为毛把这小破网站挂在k8s上？这让我想起了在推上看到这图，一种大炮打蚊子赶脚：
 
-[[k8s-as-a-car.jpg][k8s-as-a-car]]
+[[file:k8s-as-a-car.jpg][k8s-as-a-car]]
 
 hmmm，其实这也不是本意。原来免费的GCE账号到期了，一些重要的服务还是得继续，于是室友给了我他的新注册的Google账号，继续白嫖一年。。。
 
