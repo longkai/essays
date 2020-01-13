@@ -1,0 +1,64 @@
+* Move to Kubernetes
+上个周末，在个人服务器上整了个Kubernetes，把原来所有基于Docker的服务切换到了k8s上。没错，你现在浏览的页面，powered by k8s😬
+
+favicon换了个emoji，感觉又年轻了一些：）
+
+** Why
+为毛把这小破网站挂在k8s上？这让我想起了在推上看到这图，一种大炮打蚊子赶脚：
+[[file:k8s-as-a-car.jpg][k8s-as-a-car]]
+
+hmmm，其实这也不是本意。原来免费的GCE账号到期了，一些重要的服务还是得继续，于是室友给了我他的新注册的Google账号，继续白嫖一年。。。
+
+原来的服务是基于=docker-compose=的，使用乞丐版套餐，micro，只有600M内存。这样剩下的赠金就能都花在流量上，GCE上出站中国的流量是最贵的。然鹅这回600M内存的却很难把所有的服务跑起来，不是Dropbox起不来就是容器启动的时候各种OOM。
+
+多次尝试无果后只能转向1.6G内存的plan了，但是想了一下，这些服务用这么多资源又浪费，要不整个单节点Kubernetes算了，这不，最近搭了好几个私有云下的集群。
+
+说干就干。
+** How
+现在搭建k8s已经很容易了，尤其是在没有网络的问题的国外。别看机器配置小，其实有1G内存就可以，当然这样可以运行的pod不会多，但是对于个人站点来说，没啥鸭梨。
+
+先前试过ubuntu官方出一个[[https://microk8s.io/][MicroK8s]]项目，但是体验不好，所以最终还是使用了更纯正的[[https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/][kubeadm]]。虽说kubeadm要求每节点最低配置2CPU，2G内存，但是这些preflight check忽略掉就行了，加上选项=ignore-preflight-errors=NumCPU=，不出意外单节点的集群就建好了。在这过程中写了一个一键安装docker和k8s的[[https://gist.github.com/longkai/e1f57d5612e86957e5b5c51f120c5a95][脚本]]，在GCE上多次测试通过，感兴趣可以了解下。
+
+最后把原来docker的运行参数改成k8s的各种资源，最终的服务是这个样子的（亮点自寻😂）
+
+#+begin_src sh
+$ kubectl get svc | awk '{ print $1 }'
+NAME
+envoy-ingress
+essays
+kubernetes
+nginx
+omnifocus
+shadowsocks-libev
+#+end_src
+** Result
+#+begin_quote
+Learning by doing.
+#+end_quote
+
+把服务丢在k8s上后，对于这个站点，其实就感觉就是更现代了些。当然后面可玩性也多了，能尝试更多新的东西。
+
+比如我们在生产环境使用[[https://istio.io/][istio]]做微服务网格，但是这配置肯定带不动。istio网络相关的特性其实依靠Lyft的[[https://www.envoyproxy.io/][Envoy]]项目，于是我直接部署了一个envoy服务作为ingress gateway。在这个过程中，你会发现istio的virtual service都是对envoy配置的封装。某些时候，istio配置无法满足业务需求时，我们就需要使用=EnovyFilter=去和envoy打交道了。这需求其实很常见，比如pod需要得到remote的real ip，或者希望在envoy sidecar中提供=GRPC-JSON Transcoder=的能力，这些功能都需要直接和envoy打交道，了解envoy越多，istio使用理解越顺手。
+
+envoy在lb这一块，比nginx灵活易用太多，当然envoy项目也是站在后来者的视角上，更适合现在这种微服务架构吧。注意这里并不是说envoy可以取代nginx了，两者各有所长，所以两个我都用了😂。envoy做lb/observer，nginx做web/cache。
+
+BTW，envoy还代理了shadowsocks的服务，让它看起来就是一个web服务。这就很有意思了，感觉我可以专门写一篇envoy的文章了，嗯。
+
+最后感谢Dropbox和Github提供的持久化存储，把复杂的东西弄简单。
+** To Be Continued
+好不容易活到2020年了，还没被消灭，还有很多事要做。
+
+新的一年希望能沉淀，思考，记录更多。
+** Acknowledgments
+题图来自[[https://twitter.com/dexhorthy/status/856639005462417409][推特]]
+** EOF
+
+#+BEGIN_SRC yaml
+summary: 上周末，整了个k8s，写了个一键部署脚本
+weather: fine
+license: cc-40-by
+location: 22, 114
+background: k8s-as-a-car.jpg
+tags: [k8s, envoy]
+date: 2020-01-13T23:48:08+08:00
+#+END_SRC
