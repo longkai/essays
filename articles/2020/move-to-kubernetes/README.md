@@ -1,18 +1,11 @@
-- [Move to Kubernetes](#sec-1)
-  - [Why](#sec-1-1)
-  - [How](#sec-1-2)
-  - [Result](#sec-1-3)
-  - [To Be Continued](#sec-1-4)
-  - [Acknowledgments](#sec-1-5)
-  - [EOF](#sec-1-6)
 
-# Move to Kubernetes<a id="sec-1"></a>
+# Move to Kubernetes
 
 上个周末，在个人服务器上整了个Kubernetes，把原来所有基于Docker的服务切换到了k8s上。没错，你现在浏览的页面，powered by k8s😬
 
 favicon换了个emoji，感觉又年轻了一些：）
 
-## Why<a id="sec-1-1"></a>
+## Why
 
 为毛把这小破网站挂在k8s上？这让我想起了在推上看到这图，一种大炮打蚊子赶脚： [k8s-as-a-car](k8s-as-a-car.jpg)
 
@@ -24,7 +17,7 @@ hmmm，其实这也不是本意。原来免费的GCE账号到期了，一些重�
 
 说干就干。
 
-## How<a id="sec-1-2"></a>
+## How
 
 现在搭建k8s已经很容易了，尤其是在没有网络的问题的国外。别看机器配置小，其实有1G内存就可以，当然这样可以运行的pod不会多，但是对于个人站点来说，没啥鸭梨。
 
@@ -43,7 +36,7 @@ omnifocus
 shadowsocks-libev
 ```
 
-## Result<a id="sec-1-3"></a>
+## Results
 
 > Learning by doing.
 
@@ -57,17 +50,17 @@ BTW，envoy还代理了shadowsocks的服务，让它看起来就是一个web服�
 
 最后感谢Dropbox和Github提供的持久化存储，把复杂的东西弄简单。
 
-## To Be Continued<a id="sec-1-4"></a>
+## To Be Continued
 
 好不容易活到2020年了，还没被消灭，还有很多事要做。
 
 新的一年希望能沉淀，思考，记录更多。
 
-## Acknowledgments<a id="sec-1-5"></a>
+## Acknowledgments
 
 题图来自[推特](https://twitter.com/dexhorthy/status/856639005462417409)
 
-## EOF<a id="sec-1-6"></a>
+## EOF
 
 ```yaml
 summary: 上周末，整了个k8s，写了个一键部署脚本

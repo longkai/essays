@@ -1,3 +1,4 @@
+#+OPTIONS: toc:nil
 * Move to Kubernetes
 上个周末，在个人服务器上整了个Kubernetes，把原来所有基于Docker的服务切换到了k8s上。没错，你现在浏览的页面，powered by k8s😬
 
@@ -31,7 +32,7 @@ nginx
 omnifocus
 shadowsocks-libev
 #+end_src
-** Result
+** Results
 #+begin_quote
 Learning by doing.
 #+end_quote
