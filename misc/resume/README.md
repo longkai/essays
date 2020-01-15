@@ -53,3 +53,15 @@
 广西大学 - 计算机科学与技术 - 本科 (2010 至 2014)
 
 英语六级，能够熟练地阅读和撰写英文文档
+
+## EOF
+
+```yaml
+hide: true
+license: all-rights-resered
+location: 22, 114
+tags: [Career]
+title: Resume
+weather: fine
+date: 2017-04-17T12:17:00+08:00
+```
