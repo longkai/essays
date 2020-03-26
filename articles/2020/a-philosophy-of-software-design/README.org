@@ -54,7 +54,7 @@
 ** EOF
 
 #+BEGIN_SRC yaml
-summary: book review: A Philosophy of Software Design
+summary: book review for A Philosophy of Software Design
 weather: a little rain
 license: cc-40-by
 location: 22, 114
