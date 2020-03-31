@@ -5,17 +5,18 @@
 -   广东 - 深圳 - 南山
 -   im.longkai@gmail.com
 -   <https://www.xiaolongtongxue.com>
+-   <https://m.douban.com/people/60187253>
 -   意向岗位：Go 后台开发，Kubernetes 容器平台相关开发
 
 ## 技术能力
 
--   熟悉 Go/Java，了解 C/Objective-C/JavaScript 等
--   熟悉 Go 服务端开发，REST/gRPC 微服务框架，了解 Spring 框架
--   熟悉 Kubernetes/Docker 平台相关的计算和网络，了解 Istio 服务网格
--   了解 MySQL，Redis 等分布式中间件
+-   熟悉 Go/Java，了解并使用过 C/JavaScript/Swift 等语言
+-   熟悉 Go 环境下的 REST/gRPC 服务端开发
+-   了解 MySQL，Redis 等存储中间件
 -   熟悉 Android 开发，了解 iOS/Web/小程序 的开发
+-   熟悉 Kubernetes/Docker 平台相关的计算和网络，熟悉 Istio 服务网格
 -   熟练使用 Linux 进行日常工作开发，喜好折腾各种效率和网络工具，如 Emacs/Vim/curl/ss/tcpdump/Wireshark
--   了解常用的数据结构和算法，架构设计，并发编程，对 TCP/IP 协议栈有较深的理解，如 TLS，HTTP，HTTP/2，WebSocket
+-   熟悉常用的数据结构和算法，并发编程，了解分布式系统设计，对 TCP/IP 协议栈有较深的理解，如 TLS，HTTP，HTTP/2，WebSocket
 
 ## 项目经历
 
@@ -24,8 +25,9 @@
 -   腾讯云长沙市超脑项目 / 健康长沙门户 （19年4月至今）
     -   技术负责人
     -   设计并实现了一个 Non-Blocking 的获取第三方 API token 服务，安全高效地解决了不同版本，环境的应用间并发获取 token 资源的问题
+    -   设计并实现了一个使用 DSL 描述 HTTP 接口调用与适配的库，包含字段映射，类型转换，格式化，请求依赖等，大大简化了适配不同供应商接口代码的编写
     -   将业务 API server 的接口重构为 Google 的最佳实践，统一了接近70%的接口风格，增加版本控制，更稳定方便和客户端对接
-    -   在项目中紧跟标准，如参考 [RFC6749](https://tools.ietf.org/html/rfc6749) 和 [RFC7807](https://tools.ietf.org/html/rfc7807)分别实现了OAuth2授权与统一接口错误信息，定位问题速度提升至少2X
+    -   在项目中紧跟标准，如参考 [RFC6749](https://tools.ietf.org/html/rfc6749) 和 [RFC7807](https://tools.ietf.org/html/rfc7807)分别实现了OAuth2授权，无状态的JWT&JWK认证，以及统一友好的接口错误，易于接入和快速定位问题
     -   引入 Protocol Buffers/gRPC 通信协议，并在 Envoy sidecar 上实现了 gRPC-JSON 转码，同时支持 REST/JSON 调用，减少了前后端对接时间，提升了后台30%的开发效率
     -   主导项目从单个大应用，转换为各个微服务的过程；搭建 Kubernetes 集群，将所有的服务迁移到 k8s 上，大大提高了项目的敏捷度并扩宽了团队的技术栈
     -   使用 Istio 服务网格进行流量管理，路由，监控，发布新版时线上服务 zero down-time，并且多个分支进行A/B测试互不影响，开发与测试更容易
