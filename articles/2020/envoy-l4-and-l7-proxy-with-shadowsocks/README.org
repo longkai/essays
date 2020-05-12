@@ -62,17 +62,35 @@ Envoy最常见的就是用来路由HTTP请求了，当然还有JWT鉴权，重�
 
 Shadowsocks是一个工作在7层的应用，由于是一个*非主流*协议（非HTTP，HTTPS），远端端口通常也不是80和443，所以容易被干扰（甚至是识别），造成延迟增加，丢包甚至随机无法访问。
 
-聪明的人们也想到了对应的办法，伪装自己是一个HTTP(S)请求，也就是混淆。Shadowsocks提供了一个[[https://github.com/shadowsocks/simple-obfs][插件]]来做这件事，虽然已经废弃了转而推荐使用v2ray-plugin，但是原理目测一样的。由于我所使用的客户端不支持v2ray，所以这里还是以老插件为例。
+聪明的人们也想到了对应的办法，伪装自己是一个HTTP(S)请求，也就是混淆。Shadowsocks提供了一个[[https://github.com/shadowsocks/simple-obfs][插件]]来做这件事，虽然已经废弃了转而推荐使用v2ray-plugin，但是原理目测一样的。由于我所使用的客户端不支持v2ray，所以这里还是以老插件为例，配置如下：
 
-虽然使用了插件，比如使用HTTP选项设置请求头=Host=伪装自己是发往=www.baidu.com=或其他主机的包，但是IP却并不是baidu的，这样的混淆程度也不高。最好的方式是数据包的目标地址和混淆的=Host=是一样的。
+#+begin_src sh
+  # On the client:
+
+  ss-local -c config.json --plugin obfs-local --plugin-opts "obfs=http;obfs-host=www.bing.com"
+
+  # On the server:
+
+  ss-server -c config.json --plugin obfs-server --plugin-opts "obfs=http"
+#+end_src
+
+虽然使用了插件，比如使用HTTP选项设置请求头=Host=伪装自己是发往=www.bing.com=或其他主机的包，但是IP却并不是bing的，这样的混淆程度也不高。最好的方式是数据包的目标地址和混淆的=Host=是一样的。
 
 这意味着我们真的有一个HTTP网站（返回任意的页面或者状态码都行），然后*透过这个HTTP服务*，将混淆的Shadowsocks数据包代理到真实的ss服务中。
 
 怎么做呢？这需要分析ss的http混淆数据包格式，是时候祭出Wireshark了，当然对这部分不感兴趣也没关系，可以直接看配置。
 
-[[pcap.png]]
+#+CAPTION: wireshark pcap
+#+NAME:   fig:SED-HR4049
+[[file:pcap.png]]
 
 可以看到，从最前面的三次握手，然后接下来就是关键了，发送了一个路径为=/steam=的HTTP请求，从下面的头信息中，=Host=的确是指向我的配置的host，特别的，这是一个Websocket协议升级请求（=Upgrade: websocket=）。接下来服务器返回101状态码同意升级协议，Websockets连接就这样建立了，后续的流量都通过这个双向的管道以二进制的方式发送，因此，ss的数据包就这样随着HTTP过去了。
+
+流程可以简化如下图：
+
+#+CAPTION: shadowsocket websocket
+#+NAME:   fig:SED-HR4049
+[[file:ss-websocket.png]]
 
 OK，知道了原理，那怎么做websocket代理呢？Websocket建立连接有一个特征，请求头一定会有=connection: Upgrade=，所以类似A/B测试，对请求中携带这个头信息的，统统路由到真实的ss服务就OK了。当然还有几个小细节要注意，具体看下面的配置吧，
 
@@ -123,7 +141,6 @@ OK，知道了原理，那怎么做websocket代理呢？Websocket建立连接有
 当然还有另一种方式，使用TLS混淆，这个我还没有尝试过，但是原理应该就是通过将ss的数据包放到了TLS流量里，需要提前配置一个tls证书和域名，相对来说操作难度大一些，但是有可能，性能和混淆效果要更好一些。
 
 目测可以利用=sni=配置，将raw流量路由到tls模式的ss中，或者tls剥离后再转发，我还没试过，后续可以试一下，有试过的同学也可以分享下经验。
-
 ** Next
 
 下一篇还会是网络相关的，敬请期待！
@@ -135,7 +152,7 @@ summary: 使用Envoy在L4和L7路由Shadowsocks流量
 weather: rain
 license: cc-40-by
 location: mars
-background: ./envoy-logo.svg
+background: ./ss-websocket.png
 tags: [network, envoy, shadowsocks]
 date: 2020-05-12T01:46:43+08:00
 #+END_SRC
