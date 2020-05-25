@@ -21,11 +21,11 @@
 
 ** TLS Origination
 
-作为一个代理服务器，接收内部服务的 HTTP 明文流量，然后将其加密，最后转发到一个HTTPS服务上，该服务既可以是内部，也可以是外部的。流程如下，
+作为一个代理服务器，接收内部服务的 HTTP 明文流量，然后将其加密，最后转发到一个HTTPS服务上，该服务既可以是内部，也可以是外部的，但看起来就像是一个内部的服务。流程如下，
 
 [[file:origination.png]]
 
-作为与边界入口网关对立的存在，出口网关也通常放置在网络的边界。所有的出口流量都会经过它，在这个节点上我们可以统一实施一些访问控制策略，或监控，或日志等，这和 Ingres 的功能其实是一样的，最大的不同在于*将明文流量加密再转发*。
+作为与边界入口网关对立的存在，出口网关也通常放置在网络的边界。所有的出口流量都被它接管，在这个节点上我们可以统一实施一些访问控制策略，或监控，或日志等，这和 Ingres 的功能其实是一样的，最大的不同在于*将明文流量加密再转发*。
 
 我们对向外主动请求的流量常常是不设防的，这样的*严进宽出*在安全要求较高的场合是不合适的。了解了 Egress 这个概念后，不仅仅是在安全上对我们的业务有帮助，对于业务架构的设计其实也是有所裨益的。
 
@@ -55,7 +55,7 @@
 
 问题的关键就是在 Envoy 中配置我们今天的主角，TLS termination&origination，这实际上也是 [[https://www.envoyproxy.io/docs/envoy/latest/start/start][Envoy helloworld]] 的内容，反代 google.com .
 
-首先配置 =listerns LDS= TLS termination，
+首先配置 =listeners LDS= TLS Termination，
 
 #+begin_src yaml
   listeners:
@@ -69,7 +69,7 @@
           "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
           stat_prefix: ingress_http
           codec_type: AUTO
-          route_config:
+          route_config: # 根据host路由
             name: local_route
             virtual_hosts:
             - name: dockerhub_service
@@ -84,12 +84,12 @@
                 route: { host_rewrite_literal: gcr, cluster: service_gcr }
           http_filters:
           - name: envoy.filters.http.router
-      transport_socket:
+      transport_socket: # 配置tls
         name: envoy.transport_sockets.tls
         typed_config:
           "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext
           common_tls_context:
-            alpn_protocols: h2,http/1.1
+            alpn_protocols: h2,http/1.1 # alpn 支持h2和http1.1
             tls_certificates:
             - certificate_chain:
                 filename: "/etc/letsencrypt/live/example.com/fullchain.pem"
@@ -120,7 +120,7 @@
       name: envoy.transport_sockets.tls
       typed_config:
         "@type": type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext
-        sni: registry-1.docker.io
+        sni: registry-1.docker.io # dockerhub 镜像源的host
   - name: service_gcr
     connect_timeout: 0.25s
     type: LOGICAL_DNS
