@@ -76,12 +76,12 @@ listeners:
             domains: ["example.com"]
             routes:
             - match: { prefix: "/" }
-              route: { host_rewrite_literal: dockerhub, cluster: service_dockerhub }
+              route: { host_rewrite_literal: registry-1.docker.io, cluster: service_dockerhub }
           - name: gcr_service
             domains: ["gcr.example.com"]
             routes:
             - match: { prefix: "/" }
-              route: { host_rewrite_literal: gcr, cluster: service_gcr }
+              route: { host_rewrite_literal: gcr.io, cluster: service_gcr }
         http_filters:
         - name: envoy.filters.http.router
     transport_socket: # 配置tls
