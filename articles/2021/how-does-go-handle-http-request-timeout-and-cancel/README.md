@@ -410,7 +410,7 @@ func (cc *http2ClientConn) roundTrip(req *Request) (res *Response, gotErrAfterRe
 }
 ```
 
-这里模型还是http/1.1一样的，select等待超时条件，`request.Cancel`和context实现基本一致，所以我们只看context到期的，区别于http/1.1，http/2提供了`RST_STREM`桢来将一个stream的request给cancel掉，所以这也是它的一个优化吧，毕竟连接建立比较耗时。
+这里模型还是http/1.1一样的，select等待超时条件，`request.Cancel`和context实现基本一致，所以我们只看context到期的，区别于http/1.1，http/2提供了`RST_STREM`桢来将一个stream的request给cancel掉，所以这也是它的一个优化吧，毕竟连接建立比较耗时。
 
 ## 小结
 以上，带大家走马观花似的看了一下http请求的代码，如果只看超时/取消的原理，其实不难，模型其实都是一样的，通过select以及cancel channel来提前返回到底是超时还是正常的http事务，几乎所有可能超时的链路都使用了这个模型。
@@ -443,19 +443,25 @@ func doWithTimeout(ctx context.Context, fn fn) result {
 }
 
 func main() {
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second * 10)
-	defer cancel()
-	result := doWithCancel(ctx, func(ctx context.Context) result {
-		req, _ := http.NewRequestWithContext(ctx, http.MethodGet, "https://www.google.com/", nil)
-		resp, err := http.DefaultClient.Do(req)
-		return result{
-			Val: resp,
-			Err: err,
-		}
-	})
-	if result.Err != nil {
-		panic(result.Err)
-	}
+    ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+    defer cancel()
+    result := doWithTimeout(ctx, func(ctx context.Context) result {
+        // replace with your own logic!
+        req, _ := http.NewRequestWithContext(ctx, http.MethodGet, "https://www.google.com/", nil)
+        resp, err := http.DefaultClient.Do(req)
+        return result{
+            Val: resp,
+            Err: err,
+        }
+    })
+    switch {
+    case ctx.Err() == context.DeadlineExceeded:
+        // handle timeout
+    case result.Err != nil:
+        // handle logic error
+    default:
+        // do with result.Val
+    }
 }
 ```
 
