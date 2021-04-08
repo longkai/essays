@@ -1,0 +1,15 @@
+* sync loop
+
+Content goes here...
+
+** EOF
+
+#+BEGIN_SRC yaml
+summary: 
+weather: 
+license: cc-40-by
+location: 
+background: 
+tags: [tag1, tag2]
+date: 2021-04-08T20:40:29+08:00
+#+END_SRC
