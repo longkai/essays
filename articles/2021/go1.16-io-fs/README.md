@@ -516,7 +516,7 @@ no warning, no error. 是的，我们只需要实现Open就足矣。
 
 是的。以上便是整个`io.fs`的设计和实现。
 
-最后在提一下递归遍历目录的写法，以前我们是用`ioutil.WalkDir`，现在可以直接用`fs.WalkDir`，如：
+最后在提一下递归遍历目录的写法，以前我们是用`filepath.WalkDir`，现在可以直接用`fs.WalkDir`，如：
 
 ```go
 fs.WalkDir(Fsys, "/tmp", func(path string, d fs.DirEntry, err error) error {
