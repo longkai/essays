@@ -339,7 +339,7 @@ var _ fs.File = (*openMapFile)(nil)
 
 这个MapFS把`io/fs`里的接口都实现了，全部在内存中，我们只需要提供文件名key，还有文件的内容来初始化这个fs，然后拿它去初始化待测的结构体就OK了，这样才是真正的单元测试。
 
-除此之外，go1.16在fs的测试上还提供了一个方法，`TestFS`，看看[它](https://github.com/golang/go/blob/go1.16.3/src/testing/fstest/testfs.go#L38)，它可以用来检测一个文件系统的实现是否满足要求（walk当前及子目录树，打开所有的文件检测行为是否满足标准），不以及是否在文件系统中存在某些文件：
+除此之外，go1.16在fs的测试上还提供了一个方法，`TestFS`，看看[它](https://github.com/golang/go/blob/go1.16.3/src/testing/fstest/testfs.go#L38)，它可以用来检测一个文件系统的实现是否满足要求（walk当前及子目录树，打开所有的文件检测行为是否满足标准），以及是否在文件系统中存在某些文件：
 
 ```go
 // TestFS tests a file system implementation.
